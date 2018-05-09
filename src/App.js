@@ -20,24 +20,7 @@ class App extends Component {
 
     var myChart = echarts.init(document.getElementById('main'));
 
-    // myChart.setOption({
-    //     series : [
-    //         {
-    //             name: '访问来源',
-    //             type: 'pie',
-    //             radius: '55%',
-    //             roseType: 'angle',
-    //             data:[
-    //                 {value:235, name:'视频广告'},
-    //                 {value:274, name:'联盟广告'},
-    //                 {value:310, name:'邮件营销'},
-    //                 {value:335, name:'直接访问'},
-    //                 {value:400, name:'搜索引擎'}
-    //             ]
-    //         }
-    //     ]
-    // });
-    axios.get('http://echarts.baidu.com/examples/data/asset/data/hangzhou-tracks.json').then(function (data) {
+    axios.get('data/asset/data/hangzhou-tracks.json').then(function (data) {
 
         var points = [].concat.apply([], data.data.map(function (track) {
             return track.map(function (seg) {
@@ -77,6 +60,7 @@ class App extends Component {
 
     });
   }
+
 }
 
 export default App;

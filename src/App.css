@@ -4,5 +4,8 @@
 
 #main {
   width: 1366px;
-  height:700px;
+  height: 700px;
+  position: absolute;
+  z-index: 1;
+  background-color: gray;
 }
