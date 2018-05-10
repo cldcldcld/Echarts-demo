@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
 import './LeftList.css';
 import {List, ListItem} from 'material-ui/List';
-import ContentInbox from 'material-ui/svg-icons/content/inbox';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
-import ContentSend from 'material-ui/svg-icons/content/send';
-import ContentDrafts from 'material-ui/svg-icons/content/drafts';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class LeftList extends Component {
+
   render() {
     return (
       <div className="list">
         <MuiThemeProvider>
             <List>
-              <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-              <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
-              <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
-              <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
-              <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+              <ListItem primaryText="Pie Chart A" leftIcon={<ActionGrade />} />
+              <ListItem primaryText="Pie Chart B" leftIcon={<ActionGrade />} />
+              <ListItem primaryText="Pie Chart C" leftIcon={<ActionGrade />} />
+              <ListItem primaryText="Pie Chart D" leftIcon={<ActionGrade />} />
+              <ListItem primaryText="Pie Chart E" leftIcon={<ActionGrade />} />
             </List>
         </MuiThemeProvider>
       </div>

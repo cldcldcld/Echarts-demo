@@ -4,6 +4,7 @@ import axios from 'axios';
 import echarts from 'echarts';
 import BMap from 'echarts/extension/bmap/bmap.js';
 import LeftList from './LeftList.js'
+import RightList from './RightList.js'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <div id="main">
         </div>
         <LeftList></LeftList>
+        <RightList></RightList>
       </div>
     );
   }

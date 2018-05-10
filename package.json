@@ -19,7 +19,7 @@
   "proxy": {
     "data/asset/data/hangzhou-tracks.json": {
       "target": "http://echarts.baidu.com/examples/",
-      "changeOrigin":true
+      "changeOrigin": true
     }
   }
 }
