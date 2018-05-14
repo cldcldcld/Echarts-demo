@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
+import './baseRadarChart.css'
 
 class baseRadarChart extends Component {
   render() {
     return (
-      <div>
-        <div id="radar"></div>
+      <div className='baseRadarChart'>
+        <div id='radar'></div>
       </div>
     );
   }
@@ -44,7 +45,6 @@ class baseRadarChart extends Component {
       series: [{
           name: '预算 vs 开销（Budget vs spending）',
           type: 'radar',
-          // areaStyle: {normal: {}},
           data : [
               {
                   value : [4300, 10000, 28000, 35000, 50000, 19000],

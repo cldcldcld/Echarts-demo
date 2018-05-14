@@ -10,10 +10,8 @@ import { Route, BrowserRouter } from 'react-router-dom'
 ReactDOM.render((
   <BrowserRouter>
   	<div>
-    	<Route path="/" component={App}/>
-    </div>
-    <div>
-    	<Route path="/baseRadarChart" component={baseRadarChart}/>
+     	<Route path="/" exact component={App}/>
+     	<Route path="/baseRadarChart" component={baseRadarChart}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))
