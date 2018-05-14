@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 #main {
-  width: 1515px;
-  height: 735px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   background-color: gray;

@@ -12,8 +12,6 @@ class App extends Component {
       <div className="App">
         <div id="main">
         </div>
-        <LeftList></LeftList>
-        <RightList></RightList>
       </div>
     );
   }

@@ -1,14 +1,14 @@
 .pie {
-	width: 400px;
-	height: 400px;
+	width: 20%;
+	height: 30%;
   	position: relative;
   	z-index: 2;
 	float: left;
 	background-color: lightgray;
-	top: 350px;
+	margin-top: 32%;
 }
 
 #chart {
-	width: 400px;
-	height: 400px;
+	width: 20%;
+	height: 30%;
 }
