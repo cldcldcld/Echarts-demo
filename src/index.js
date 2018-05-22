@@ -12,6 +12,7 @@ import baseLineChart from './baseLine/baseLineChart';
 import stackLineChart from './stackLine/stackLineChart';
 import standardHistogramChart from './standardHistogram/standardHistogramChart';
 import gaugeChart from './gauge/gaugeChart';
+import scatterChart from './scatter/scatterChart';
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter } from 'react-router-dom'
 
@@ -30,6 +31,7 @@ ReactDOM.render((
      	<Route path="/stackLineChart" component={stackLineChart}/>
      	<Route path="/standardHistogramChart" component={standardHistogramChart}/>
      	<Route path="/gaugeChart" component={gaugeChart}/>
+        <Route path="/scatterChart" component={scatterChart}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

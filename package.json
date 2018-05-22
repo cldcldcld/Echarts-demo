@@ -25,6 +25,10 @@
     "data/asset/data/confidence-band.json": {
       "target": "http://echarts.baidu.com/examples/",
       "changeOrigin": true
-    }    
+    },
+    "data/asset/data/nutrients.json": {
+      "target": "http://echarts.baidu.com/examples/",
+      "changeOrigin": true
+    }   
   }
 }
