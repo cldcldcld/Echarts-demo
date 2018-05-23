@@ -6,14 +6,14 @@ class gaugeChart extends Component {
   render() {
     return (
       <div className='gaugeChart'>
-        <div id='gaugeChart'></div>
+        <div className='gauge-chart' id={this.props.idName}></div>
       </div>
     );
   }
 
   componentDidMount() {
 
-    var myChart = echarts.init(document.getElementById('gaugeChart'));
+    var myChart = echarts.init(document.getElementById(this.props.idName));
 
     var option = {
         tooltip : {

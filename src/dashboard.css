@@ -1,10 +1,48 @@
 .dashboard {
   	height: 100%;
   	width: 100%;
+  	background: #454545;
 }
 
-.twenty-percent {
+.map {
+	width: 100%;
+	height: 60%;
+}
+
+.radar-chart {
+	width: 44.8%;
+	height: 40%;
+	float: left;
+	margin-left: 0.2%;
+}
+
+.heat-table {
+	width: 55%;
+	height: 40%;
+	float: left;
+}
+
+.left {
 	width: 50%;
-	height: 50%;
+	height: 100%;
+	float: left;
+}
+
+.gauge {
+	width: 24.8%;
+	height: 20%;
 	display: inline-block;
+	margin-left: 0.2%;
+}
+
+.histogram-chart {
+	width: 50%;
+	height: 20%;
+	display: inline-block;
+}
+
+.scatter-chart {
+	width: 50%;
+	height: 39%;
+	float: left;
 }

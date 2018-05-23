@@ -236,7 +236,7 @@ class scatterChart extends Component {
         var gridBottom = 80;
 
         return {
-            backgroundColor: '#2c343c',
+            backgroundColor: 'black',
             tooltip: {
                 trigger: 'none',
                 padding: [10, 20, 10, 20],

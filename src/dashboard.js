@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './dashboard.css';
-import App from './app';
+import App from './App'
+import RadarChart from './radarImage/radarChart';
 import HistogramChart from './histogram/histogramChart';
 // import ConfidenceBandChart from './confidenceBand/confidenceBandChart';
 import HeatMapChart from './heatMap/heatMapChart';
@@ -16,14 +17,40 @@ class dashboard extends Component {
   render() {
     return (
       	<div className="dashboard">
-        	<div className="twenty-percent">
+            <div className="left">
+                <div className="map">
+                    <App></App>
+                </div>
+                <div className="heat-table">
+                    <HeatMapChart></HeatMapChart>
+                </div>
+                <div className="radar-chart">
+                    <RadarChart></RadarChart>
+                </div>
+            </div>
+            <div className="gauge">
+                <GaugeChart idName={'gauge1'}></GaugeChart>
+            </div>
+            <div className="gauge">
+                <GaugeChart idName={'gauge2'}></GaugeChart>
+            </div>
+            <div className="gauge">
+                <GaugeChart idName={'gauge3'}></GaugeChart>
+            </div>
+            <div className="gauge">
+                <GaugeChart idName={'gauge4'}></GaugeChart>
+            </div>
+            <div className="histogram-chart">
+                <HistogramChart></HistogramChart>
+            </div>
+            <div className="scatter-chart">
+                <ScatterChart></ScatterChart>
+            </div>
+        	{/*<div className="twenty-percent">
         		<RadarChart></RadarChart>
         	</div>
         	<div className="twenty-percent">
         		<HistogramChart></HistogramChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<HeatMapChart></HeatMapChart>
         	</div>
         	<div className="twenty-percent">
         		<StackLineChart></StackLineChart>
@@ -32,14 +59,11 @@ class dashboard extends Component {
         		<StandardHistogramChart></StandardHistogramChart>
         	</div>
         	<div className="twenty-percent">
-        		<GaugeChart></GaugeChart>
-        	</div>
-        	<div className="twenty-percent">
         		<ScatterChart></ScatterChart>
         	</div>
         	<div className="twenty-percent">
         		<AQIRadarChart></AQIRadarChart>
-        	</div>
+        	</div>*/}
       	</div>
     );
   }
