@@ -42,6 +42,11 @@ class heatMapChart extends Component {
             data: hours,
             splitArea: {
                 show: true
+            },
+            axisLine: {
+                lineStyle: {
+                    color: 'white'
+                }
             }
         },
         yAxis: {
@@ -49,6 +54,11 @@ class heatMapChart extends Component {
             data: days,
             splitArea: {
                 show: true
+            },
+            axisLine: {
+                lineStyle: {
+                    color: 'white'
+                }
             }
         },
         visualMap: {

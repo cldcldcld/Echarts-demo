@@ -94,7 +94,8 @@ class standardHistogramChart extends Component {
             align: app.config.align,
             verticalAlign: app.config.verticalAlign,
             rotate: app.config.rotate,
-            formatter: '{c}  {name|{a}}',
+            formatter: '{a}',
+            // formatter: '{c}  {name|{a}}',
             fontSize: 16,
             rich: {
                 name: {
@@ -113,7 +114,10 @@ class standardHistogramChart extends Component {
             }
         },
         legend: {
-            data: ['Forest', 'Steppe', 'Desert', 'Wetland']
+            data: ['PM2.5', 'CO', 'NO2', 'SO2'],
+            textStyle: {
+                color: 'white'
+            }
         },
         toolbox: {
             show: true,
@@ -133,36 +137,46 @@ class standardHistogramChart extends Component {
             {
                 type: 'category',
                 axisTick: {show: false},
-                data: ['2012', '2013', '2014', '2015', '2016']
+                data: ['2012', '2013', '2014', '2015', '2016'],
+                axisLine: {
+                    lineStyle: {
+                        color: 'white'
+                    }
+                }
             }
         ],
         yAxis: [
             {
-                type: 'value'
+                type: 'value',
+                axisLine: {
+                    lineStyle: {
+                        color: 'white'
+                    }
+                }
             }
         ],
         series: [
             {
-                name: 'Forest',
+                name: 'PM2.5',
                 type: 'bar',
                 barGap: 0,
                 label: labelOption,
                 data: [320, 332, 301, 334, 390]
             },
             {
-                name: 'Steppe',
+                name: 'CO',
                 type: 'bar',
                 label: labelOption,
                 data: [220, 182, 191, 234, 290]
             },
             {
-                name: 'Desert',
+                name: 'NO2',
                 type: 'bar',
                 label: labelOption,
                 data: [150, 232, 201, 154, 190]
             },
             {
-                name: 'Wetland',
+                name: 'SO2',
                 type: 'bar',
                 label: labelOption,
                 data: [98, 77, 101, 99, 40]

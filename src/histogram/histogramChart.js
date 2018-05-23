@@ -49,9 +49,19 @@ class histogramChart extends Component {
           silent: false,
           splitLine: {
               show: false
+          },
+          axisLine: {
+              lineStyle: {
+                  color: 'white'
+              }
           }
       },
       yAxis: {
+          axisLine: {
+              lineStyle: {
+                  color: 'white'
+              }
+          }
       },
       series: [{
           name: 'bar',

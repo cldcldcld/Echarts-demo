@@ -19,9 +19,17 @@ class radarChart extends Component {
       angleAxis: {
           type: 'category',
           data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-          z: 10
+          z: 10,
+          axisLabel: {
+            color: 'white'
+          }
       },
       radiusAxis: {
+          axisLine: {
+              lineStyle: {
+                  color: 'white'
+              }
+          }
       },
       polar: {
       },
@@ -46,7 +54,10 @@ class radarChart extends Component {
       }],
       legend: {
           show: true,
-          data: ['A', 'B', 'C']
+          data: ['A', 'B', 'C'],
+          textStyle: {
+              color: 'white'
+          }
       }      
     });
 

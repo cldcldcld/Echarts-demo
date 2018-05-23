@@ -13,6 +13,8 @@ import stackLineChart from './stackLine/stackLineChart';
 import standardHistogramChart from './standardHistogram/standardHistogramChart';
 import gaugeChart from './gauge/gaugeChart';
 import scatterChart from './scatter/scatterChart';
+import dashboard from './dashboard';
+import AQIRadarChart from './AQIRadar/AQIRadarChart';
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter } from 'react-router-dom'
 
@@ -20,7 +22,8 @@ import { Route, BrowserRouter } from 'react-router-dom'
 ReactDOM.render((
   <BrowserRouter>
   	<div style={{height: '100%'}}>
-     	<Route path="/" exact component={App}/>
+  		<Route path="/" exact component={dashboard}/>
+     	<Route path="/map" component={App}/>
      	<Route path="/baseRadarChart" component={baseRadarChart}/>
      	<Route path="/radarChart" component={radarChart}/>
      	<Route path="/histogramChart" component={histogramChart}/>
@@ -32,6 +35,7 @@ ReactDOM.render((
      	<Route path="/standardHistogramChart" component={standardHistogramChart}/>
      	<Route path="/gaugeChart" component={gaugeChart}/>
         <Route path="/scatterChart" component={scatterChart}/>
+        <Route path="/AQIRadarChart" component={AQIRadarChart}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

@@ -23,11 +23,11 @@ class confidenceBandChart extends Component {
         }, Infinity);
 
         myChart.setOption({
-            title: {
-                text: 'Confidence Band',
-                subtext: 'Example in MetricsGraphics.js',
-                left: 'center'
-            },
+            // title: {
+            //     text: 'Confidence Band',
+            //     subtext: 'Example in MetricsGraphics.js',
+            //     left: 'center'
+            // },
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -69,7 +69,12 @@ class confidenceBandChart extends Component {
                 splitLine: {
                     show: false
                 },
-                boundaryGap: false
+                boundaryGap: false,
+                axisLine: {
+                    lineStyle: {
+                        color: 'white'
+                    }
+                }
             },
             yAxis: {
                 axisLabel: {
@@ -87,6 +92,11 @@ class confidenceBandChart extends Component {
                 splitNumber: 3,
                 splitLine: {
                     show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: 'white'
+                    }
                 }
             },
             series: [{
