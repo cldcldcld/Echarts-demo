@@ -24,9 +24,9 @@ class histogramChart extends Component {
     }
 
     myChart.setOption({
-      title: {
-          text: '柱状图动画延迟'
-      },
+      // title: {
+      //     text: '柱状图动画延迟'
+      // },
       legend: {
           data: ['bar', 'bar2'],
           align: 'left'

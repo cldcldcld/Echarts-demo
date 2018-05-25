@@ -34,8 +34,8 @@ ReactDOM.render((
      	<Route path="/stackLineChart" component={stackLineChart}/>
      	<Route path="/standardHistogramChart" component={standardHistogramChart}/>
      	<Route path="/gaugeChart" component={gaugeChart}/>
-        <Route path="/scatterChart" component={scatterChart}/>
-        <Route path="/AQIRadarChart" component={AQIRadarChart}/>
+      <Route path="/scatterChart" component={scatterChart}/>
+      <Route path="/AQIRadarChart" component={AQIRadarChart}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))
