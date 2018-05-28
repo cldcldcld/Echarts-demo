@@ -20,7 +20,7 @@ class App extends Component {
 
     var myChart = echarts.init(document.getElementById('main'));
 
-    axios.get('data/asset/data/hangzhou-tracks.json').then(function (data) {
+    axios.get('http://echarts.baidu.com/examples/data/asset/data/hangzhou-tracks.json').then(function (data) {
 
         var points = [].concat.apply([], data.data.map(function (track) {
             return track.map(function (seg) {
