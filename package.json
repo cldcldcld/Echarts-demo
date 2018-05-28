@@ -16,5 +16,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "data/asset/data/hangzhou-tracks.json": {
+      "target": "http://echarts.baidu.com/examples/",
+      "changeOrigin": true
+    },
+    "data/asset/data/confidence-band.json": {
+      "target": "http://echarts.baidu.com/examples/",
+      "changeOrigin": true
+    },
+    "data/asset/data/nutrients.json": {
+      "target": "http://echarts.baidu.com/examples/",
+      "changeOrigin": true
+    }   
   }
 }
