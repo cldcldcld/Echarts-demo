@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import echarts from 'echarts';
-import BMap from 'echarts/extension/bmap/bmap.js';
+import bMap from 'echarts/extension/bmap/bmap.js';
 
 class App extends Component {
   render() {
