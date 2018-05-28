@@ -18,6 +18,7 @@ class scatterChart extends Component {
     var option = {};
     var originData = [];
 
+    var originData = require('./scatter.json');
     var myChart = echarts.init(document.getElementById('scatterChart'));
 
     var indices = {
@@ -442,11 +443,16 @@ class scatterChart extends Component {
         }
     };
 
-    axios.get('data/asset/data/nutrients.json').then(function (originData) {
-        data = normalizeData(originData.data).slice(0, 1000);
+    // axios.get('data/asset/data/nutrients.json').then(function (originData) {
+    //     data = normalizeData(originData.data).slice(0, 1000);
 
-        myChart.setOption(option = getOption(data));
-    });
+    //     myChart.setOption(option = getOption(data));
+    // });
+
+
+    data = normalizeData(originData).slice(0, 1000);
+    myChart.setOption(option = getOption(data));
+
 
   }
 }
