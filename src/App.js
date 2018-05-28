@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import echarts from 'echarts';
-import bMap from 'echarts/extension/bmap/bmap.js';
+import bmap from 'echarts/extension/bmap/bmap.js';
 
 class App extends Component {
   render() {
@@ -15,6 +15,8 @@ class App extends Component {
   }
 
   componentDidMount() {
+
+    var BMap = window.BMap
 
     var data = require('./data.json')
     var myChart = echarts.init(document.getElementById('main'));
@@ -60,6 +62,7 @@ class App extends Component {
             return seg.coord.concat([1]);
         });
     }));
+
     myChart.setOption({
         animation: false,
         bmap: {
@@ -86,6 +89,10 @@ class App extends Component {
             blurSize: 6
         }]
     });
+
+    // var bmap = chart.getModel().getComponent('bmap').getBMap();
+    // bmap.addControl(new BMap.MapTypeControl());
+
 
   }
 
