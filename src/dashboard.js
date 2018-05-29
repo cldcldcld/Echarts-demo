@@ -6,11 +6,11 @@ import HistogramChart from './histogram/histogramChart';
 // import ConfidenceBandChart from './confidenceBand/confidenceBandChart';
 import HeatMapChart from './heatMap/heatMapChart';
 // import BaseLineChart from './baseLine/baseLineChart';
-import StackLineChart from './stackLine/stackLineChart';
-import StandardHistogramChart from './standardHistogram/standardHistogramChart';
+// import StackLineChart from './stackLine/stackLineChart';
+// import StandardHistogramChart from './standardHistogram/standardHistogramChart';
 import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
-import AQIRadarChart from './AQIRadar/AQIRadarChart';
+// import AQIRadarChart from './AQIRadar/AQIRadarChart';
 
 class dashboard extends Component {
 

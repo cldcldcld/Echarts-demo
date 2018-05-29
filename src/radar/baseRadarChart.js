@@ -15,7 +15,6 @@ class baseRadarChart extends Component {
 
     require('echarts/map/js/world.js');
     var myChart = echarts.init(document.getElementById('radar'));
-    var app = {};
     var option = null;
 
     var geoCoordMap = {
@@ -400,7 +399,7 @@ class baseRadarChart extends Component {
                 name: 'Prices and Earnings 2012',
                 type: 'scatter',
                 coordinateSystem: 'geo',
-                symbolSize: 8,
+                // symbolSize: 8,
                 data: makeMapData(rawData),
                 activeOpacity: 1,
                 label: {

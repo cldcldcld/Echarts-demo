@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import axios from 'axios';
+// import axios from 'axios';
 import './scatterChart.css';
 
 class scatterChart extends Component {
@@ -16,7 +16,6 @@ class scatterChart extends Component {
 
     var app = {};
     var option = {};
-    var originData = [];
 
     var originData = require('./scatter.json');
     var myChart = echarts.init(document.getElementById('scatterChart'));
