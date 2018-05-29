@@ -19,7 +19,7 @@ class dashboard extends Component {
       	<div className="dashboard">
             <div className="left">
                 <div className="map">
-                    <App></App>
+
                 </div>
                 <div className="heat-table">
                     <HeatMapChart></HeatMapChart>
