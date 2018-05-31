@@ -17,7 +17,6 @@ class App extends Component {
 
   componentDidMount() {
     var data = require('./data.json')
-
     MP('e6yiGBqNtg6jlVwRXEa54zLiMfI9xBZk').then(BMap => {
 
 
@@ -69,8 +68,8 @@ class App extends Component {
         myChart.setOption({
             animation: false,
             bmap: {
-                center: [120.13066322374, 30.240018034923],
-                zoom: 14,
+                center: [111.297145,23.48632],
+                zoom: 13,
                 roam: true
             },
             visualMap: {
