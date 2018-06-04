@@ -2,47 +2,75 @@
   	height: 100%;
   	width: 100%;
   	background: #454545;
+  	/*overflow:hidden;*/
+}
+
+
+.left {
+	display: inline-block;
+	width: 25%;
+	height: 90%;
+	float: left;
+	margin: 4vh 2vw 4vh 4vw;
 }
 
 .map {
 	width: 100%;
 	height: 60%;
-}
-
-.radar-chart {
-	width: 44.8%;
-	height: 40%;
-	float: left;
-	margin-left: 0.2%;
+	margin-bottom: 2vh;
 }
 
 .heat-table {
-	width: 55%;
+	width: 100%;
 	height: 40%;
-	float: left;
 }
 
-.left {
-	width: 49.5%;
-	height: 100%;
+.right {
+	display: inline-block;
+	width: 64%;
+	height: 88%;
+	float: left;
+	margin: 4vh 4vw 4vh 0;
+}
+
+.gaugeList {
+	width: 100%;
+	height: 20%;
+	margin-bottom: 2vh;
+	display: inline-block;
 	float: left;
 }
 
 .gauge {
-	width: 24.8%;
-	height: 20%;
+	width: 16.66%;
+	height: 100%;
 	display: inline-block;
-	margin-left: 0.2%;
 }
 
 .histogram-chart {
-	width: 50%;
-	height: 20%;
+	width: 100%;
+	height: 40%;
+	float: left;
 	display: inline-block;
+	margin-bottom: 2vh;
+}
+
+.radarAndScatter {
+	width: 100%;
+	height: 40%;
+}
+
+.radar-chart {
+	width: 48%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	padding-right: 4%;
 }
 
 .scatter-chart {
-	width: 50%;
-	height: 38.5%;
+	width: 48%;
+	height: 100%;
+	display: inline-block;
 	float: left;
 }

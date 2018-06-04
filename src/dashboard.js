@@ -24,27 +24,39 @@ class dashboard extends Component {
                 <div className="heat-table">
                     <HeatMapChart></HeatMapChart>
                 </div>
-                <div className="radar-chart">
-                    <RadarChart></RadarChart>
+            </div>
+            <div className="right">
+                <div className="gaugeList">
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge1'}></GaugeChart>
+                    </div>
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge2'}></GaugeChart>
+                    </div>
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge3'}></GaugeChart>
+                    </div>
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge4'}></GaugeChart>
+                    </div>
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge5'}></GaugeChart>
+                    </div>
+                    <div className="gauge">
+                        <GaugeChart idName={'gauge6'}></GaugeChart>
+                    </div>
                 </div>
-            </div>
-            <div className="gauge">
-                <GaugeChart idName={'gauge1'}></GaugeChart>
-            </div>
-            <div className="gauge">
-                <GaugeChart idName={'gauge2'}></GaugeChart>
-            </div>
-            <div className="gauge">
-                <GaugeChart idName={'gauge3'}></GaugeChart>
-            </div>
-            <div className="gauge">
-                <GaugeChart idName={'gauge4'}></GaugeChart>
-            </div>
-            <div className="histogram-chart">
-                <HistogramChart></HistogramChart>
-            </div>
-            <div className="scatter-chart">
-                <ScatterChart></ScatterChart>
+                <div className="histogram-chart">
+                    <HistogramChart></HistogramChart>
+                </div>
+                <div className="radarAndScatter">
+                    <div className="radar-chart">
+                        <AQIRadarChart></AQIRadarChart>
+                    </div>
+                    <div className="scatter-chart">
+                        <ScatterChart></ScatterChart>
+                    </div>
+                </div>
             </div>
         	{/*<div className="twenty-percent">
         		<RadarChart></RadarChart>

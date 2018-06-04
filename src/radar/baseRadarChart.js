@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './baseRadarChart.css'
+import './baseRadarChart.css';
+
 
 class baseRadarChart extends Component {
   render() {
     return (
       <div className='baseRadarChart'>
+{/*        <div className='mapImg'>
+          <img className='imgContent' src={require('./example.jpg')}></img>
+        </div>*/}
         <div id='radar'></div>
       </div>
     );
@@ -195,7 +199,7 @@ class baseRadarChart extends Component {
             top: 0,
             height: 28,
             borderColor: 'transparent',
-            backgroundColor: '#404a59',
+            // backgroundColor: '#404a59',
             z: 199
         }],
         parallel: {
