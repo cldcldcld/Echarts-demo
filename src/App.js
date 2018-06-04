@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios';
+// import axios from 'axios';
 import echarts from 'echarts';
 import bmap from 'echarts/extension/bmap/bmap.js';
 import {MP} from './map.js';

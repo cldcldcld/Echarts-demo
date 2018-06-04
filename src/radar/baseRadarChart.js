@@ -21,7 +21,6 @@ class baseRadarChart extends Component {
     echarts.registerMap('wuzhou', wuzhouJSON);
     require('echarts/map/js/world.js');
     var myChart = echarts.init(document.getElementById('radar'));
-    var app = {};
     var option = null;
 
     var geoCoordMap = {
