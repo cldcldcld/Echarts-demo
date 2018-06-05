@@ -23,26 +23,18 @@ class scatterChart extends Component {
     var indices = {
         name: 0,
         group: 1,
-        id: 16
+        id: 8
     };
     var schema = [
         {name: 'name', index: 0},
         {name: 'group', index: 1},
-        {name: 'protein', index: 2},
-        {name: 'calcium', index: 3},
-        {name: 'sodium', index: 4},
-        {name: 'fiber', index: 5},
-        {name: 'vitaminc', index: 6},
-        {name: 'potassium', index: 7},
-        {name: 'carbohydrate', index: 8},
-        {name: 'sugars', index: 9},
-        {name: 'fat', index: 10},
-        {name: 'water', index: 11},
-        {name: 'calories', index: 12},
-        {name: 'saturated', index: 13},
-        {name: 'monounsat', index: 14},
-        {name: 'polyunsat', index: 15},
-        {name: 'id', index: 16}
+        {name: 'PM2.5', index: 2},
+        {name: 'PM10', index: 3},
+        {name: 'SO2', index: 4},
+        {name: 'NO2', index: 5},
+        {name: 'CO', index: 6},
+        {name: 'O3', index: 7},
+        {name: 'id', index: 8}
     ];
 
     var fieldIndices = schema.reduce(function (obj, item) {
@@ -50,8 +42,8 @@ class scatterChart extends Component {
         return obj;
     }, {});
 
-    var groupCategories = [];
-    var groupColors = [];
+    // var groupCategories = [];
+    // var groupColors = [];
     var data;
 
     // zlevel 为 1 的层开启尾迹特效
@@ -59,7 +51,7 @@ class scatterChart extends Component {
         motionBlur: 0.5
     });
 
-    data = normalizeData(originData).slice(0, 1000);
+    data = normalizeData(originData).slice(0, 100);
     myChart.setOption(option = getOption(data));
 
     function normalizeData(originData) {
@@ -83,15 +75,15 @@ class scatterChart extends Component {
             });
         });
 
-        for (var groupName in groupMap) {
-            if (groupMap.hasOwnProperty(groupName)) {
-                groupCategories.push(groupName);
-            }
-        }
-        var hStep = Math.round(300 / (groupCategories.length - 1));
-        for (var i = 0; i < groupCategories.length; i++) {
-            groupColors.push(echarts.color.modifyHSL('#5A94DF', hStep * i));
-        }
+        // for (var groupName in groupMap) {
+        //     if (groupMap.hasOwnProperty(groupName)) {
+        //         groupCategories.push(groupName);
+        //     }
+        // }
+        // var hStep = Math.round(300 / (groupCategories.length - 1));
+        // for (var i = 0; i < groupCategories.length; i++) {
+        //     groupColors.push(echarts.color.modifyHSL('#5A94DF', hStep * i));
+        // }
 
         return originData;
     }
@@ -107,7 +99,7 @@ class scatterChart extends Component {
                 borderWidth: 1
             },
             xAxis: {
-                name: 'protein',
+                name: 'PM2.5',
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
@@ -126,7 +118,7 @@ class scatterChart extends Component {
                 }
             },
             yAxis: {
-                name: 'calcium',
+                name: 'PM10',
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
@@ -144,34 +136,34 @@ class scatterChart extends Component {
                     }
                 }
             },
-            visualMap: [{
-                show: false,
-                type: 'piecewise',
-                categories: groupCategories,
-                dimension: 2,
-                inRange: {
-                    color: groupColors //['#d94e5d','#eac736','#50a3ba']
-                },
-                outOfRange: {
-                    color: ['#ccc'] //['#d94e5d','#eac736','#50a3ba']
-                },
-                top: 20,
-                textStyle: {
-                    color: '#fff'
-                },
-                realtime: false
-            }, {
-                show: false,
-                dimension: 3,
-                max: 1000,
-                inRange: {
-                    colorLightness: [0.15, 0.6]
-                }
-            }],
+            // visualMap: [{
+            //     show: false,
+            //     type: 'piecewise',
+            //     categories: groupCategories,
+            //     dimension: 2,
+            //     inRange: {
+            //         color: groupColors //['#d94e5d','#eac736','#50a3ba']
+            //     },
+            //     outOfRange: {
+            //         color: ['#ccc'] //['#d94e5d','#eac736','#50a3ba']
+            //     },
+            //     top: 20,
+            //     textStyle: {
+            //         color: '#fff'
+            //     },
+            //     realtime: false
+            // }, {
+            //     show: false,
+            //     dimension: 3,
+            //     max: 1000,
+            //     inRange: {
+            //         colorLightness: [0.15, 0.6]
+            //     }
+            // }],
             series: [
                 {
                     zlevel: 1,
-                    name: 'nutrients',
+                    name: 'AQI',
                     type: 'scatter',
                     data: data.map(function (item, idx) {
                         return [item[2], item[3], item[1], idx];
@@ -190,8 +182,8 @@ class scatterChart extends Component {
     }).slice(2);
 
     app.config = {
-        xAxis: 'protein',
-        yAxis: 'calcium',
+        xAxis: 'PM2.5',
+        yAxis: 'PM10',
         onChange: function () {
             if (data) {
                 myChart.setOption({

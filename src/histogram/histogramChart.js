@@ -17,10 +17,10 @@ class histogramChart extends Component {
     var xAxisData = [];
     var data1 = [];
     var data2 = [];
-    for (var i = 0; i < 100; i++) {
-        xAxisData.push('item' + i);
-        data1.push((Math.sin(i / 5) * (i / 5 -10) + i / 6) * 5);
-        data2.push((Math.cos(i / 5) * (i / 5 -10) + i / 6) * 5);
+    for (var i = 0; i < 31; i++) {
+        xAxisData.push(i);
+        data1.push((Math.sin(i / 9) * (i / 5) + i / 5) * 15);
+        data2.push((Math.cos(i / 6) * (i / 5) + i / 5) * 15);
     }
 
     myChart.setOption({
@@ -28,21 +28,24 @@ class histogramChart extends Component {
       //     text: '柱状图动画延迟'
       // },
       legend: {
-          data: ['bar', 'bar2'],
-          align: 'left'
-      },
-      toolbox: {
-          // y: 'bottom',
-          feature: {
-              magicType: {
-                  type: ['stack', 'tiled']
-              },
-              dataView: {},
-              saveAsImage: {
-                  pixelRatio: 2
-              }
+          data: ['PM2.5', 'PM10'],
+          align: 'left',
+          textStyle: {
+              color: 'white'
           }
       },
+      // toolbox: {
+      //     // y: 'bottom',
+      //     feature: {
+      //         magicType: {
+      //             type: ['stack', 'tiled']
+      //         },
+      //         dataView: {},
+      //         saveAsImage: {
+      //             pixelRatio: 2
+      //         }
+      //     }
+      // },
       tooltip: {},
       xAxis: {
           data: xAxisData,
@@ -64,14 +67,14 @@ class histogramChart extends Component {
           }
       },
       series: [{
-          name: 'bar',
+          name: 'PM2.5',
           type: 'bar',
           data: data1,
           animationDelay: function (idx) {
-              return idx * 10;
+              return idx * 20;
           }
       }, {
-          name: 'bar2',
+          name: 'PM10',
           type: 'bar',
           data: data2,
           animationDelay: function (idx) {
@@ -80,7 +83,7 @@ class histogramChart extends Component {
       }],
       animationEasing: 'elasticOut',
       animationDelayUpdate: function (idx) {
-          return idx * 5;
+          return idx * 15;
       }
     });
 

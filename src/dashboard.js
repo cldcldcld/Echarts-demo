@@ -3,11 +3,7 @@ import './dashboard.css';
 import App from './App'
 import RadarChart from './radarImage/radarChart';
 import HistogramChart from './histogram/histogramChart';
-// import ConfidenceBandChart from './confidenceBand/confidenceBandChart';
 import HeatMapChart from './heatMap/heatMapChart';
-// import BaseLineChart from './baseLine/baseLineChart';
-// import StackLineChart from './stackLine/stackLineChart';
-// import StandardHistogramChart from './standardHistogram/standardHistogramChart';
 import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
@@ -58,24 +54,6 @@ class dashboard extends Component {
                     </div>
                 </div>
             </div>
-        	{/*<div className="twenty-percent">
-        		<RadarChart></RadarChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<HistogramChart></HistogramChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<StackLineChart></StackLineChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<StandardHistogramChart></StandardHistogramChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<ScatterChart></ScatterChart>
-        	</div>
-        	<div className="twenty-percent">
-        		<AQIRadarChart></AQIRadarChart>
-        	</div>*/}
       	</div>
     );
   }
