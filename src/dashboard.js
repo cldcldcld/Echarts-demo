@@ -10,7 +10,7 @@ import HeatMapChart from './heatMap/heatMapChart';
 // import StandardHistogramChart from './standardHistogram/standardHistogramChart';
 import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
-// import AQIRadarChart from './AQIRadar/AQIRadarChart';
+import AQIRadarChart from './AQIRadar/AQIRadarChart';
 
 class dashboard extends Component {
 
