@@ -1,7 +1,12 @@
 .scatterChart {
   height: 100%;
+  border-radius: 5%;
 }
 
 #scatterChart {
   height: 100%;
+}
+
+#scatterChart div {
+  border-radius: 5%;
 }

@@ -38,12 +38,15 @@ class AQIRadarChart extends Component {
     };
 
     option = {
-        backgroundColor: '#161627',
+        backgroundColor: '#1E314B',
         title: {
-            // text: 'AQI - 雷达图',
-            left: 'center',
+            text: '主要污染物分析',
+            // left: 'left',
+            top: 20,
+            left: 20,
             textStyle: {
-                color: '#eee'
+                color: '#FFFFFF',
+                fontFamily: 'PingFangSC-Regular'
             }
         },
         // legend: {
@@ -57,26 +60,28 @@ class AQIRadarChart extends Component {
         //     selectedMode: 'single'
         // },
         radar: {
+            center: ['50%', '53%'],
             indicator: [
-                {name: 'AQI', max: 300},
-                {name: 'PM2.5', max: 250},
-                {name: 'PM10', max: 300},
-                {name: 'CO', max: 5},
-                {name: 'NO2', max: 200},
-                {name: 'SO2', max: 100}
+                {name: 'SO2', max: 150},
+                {name: 'NO2', max: 80},
+                {name: 'PM10', max: 150},
+                {name: 'CO', max: 4},
+                {name: 'O3', max: 200},
+                {name: 'PM2.5', max: 75}
             ],
             shape: 'circle',
             splitNumber: 5,
             name: {
                 textStyle: {
-                    color: 'rgb(238, 197, 102)'
+                    color: '#FFFFFF'
                 }
             },
             splitLine: {
                 lineStyle: {
                     color: [
-                        'rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)',
-                    ].reverse()
+                        '#FFFFFF', '#FFFFFF',
+                    ].reverse(),
+                    opacity: '0.3'
                 }
             },
             splitArea: {
@@ -84,7 +89,8 @@ class AQIRadarChart extends Component {
             },
             axisLine: {
                 lineStyle: {
-                    color: 'rgba(238, 197, 102, 0.5)'
+                    color: '#FFFFFF',
+                    opacity: '0.3'
                 }
             }
         },

@@ -91,7 +91,7 @@ class scatterChart extends Component {
     function getOption(data) {
 
         return {
-            backgroundColor: '#2c343c',
+            backgroundColor: '#1E314B',
             tooltip: {
                 // padding: 10,
                 backgroundColor: '#222',

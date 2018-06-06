@@ -1,8 +1,13 @@
 .AQIRadarChart {
   height: 100%;
-  background: black;
+  background: #1E314B;
+  border-radius: 5%;
 }
 
 #AQIRadarChart {
   height: 100%;
+}
+
+#AQIRadarChart div {
+  border-radius: 5%;
 }

@@ -170,10 +170,11 @@ class baseRadarChart extends Component {
                 }
             },
             itemStyle: {
-                normal: {
-                    borderWidth: 0.2,
-                    borderColor: '#404a59'
-                }
+                areaColor: '#8C8C8C'
+                // normal: {
+                //     borderWidth: 0.2,
+                //     borderColor: '#404a59'
+                // }
             },
             left: '2%',
             top: '10%',

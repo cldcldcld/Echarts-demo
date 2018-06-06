@@ -4,7 +4,7 @@ import App from './App'
 import RadarChart from './radarImage/radarChart';
 import HistogramChart from './histogram/histogramChart';
 import HeatMapChart from './heatMap/heatMapChart';
-import GaugeChart from './gauge/gaugeChart';
+// import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
 
@@ -22,7 +22,7 @@ class dashboard extends Component {
                 </div>
             </div>
             <div className="right">
-                <div className="gaugeList">
+{/*                <div className="gaugeList">
                     <div className="gauge">
                         <GaugeChart idName={'gauge1'}></GaugeChart>
                     </div>
@@ -41,11 +41,20 @@ class dashboard extends Component {
                     <div className="gauge">
                         <GaugeChart idName={'gauge6'}></GaugeChart>
                     </div>
+                </div>*/}
+                <div className="real-time-data">
+                    <div className="real-time-data-title">
+                        <span>各指标实时数据</span>
+                    </div>
+
                 </div>
                 <div className="histogram-chart">
                     <HistogramChart></HistogramChart>
                 </div>
                 <div className="radarAndScatter">
+                    <div className="weather-info">
+
+                    </div>
                     <div className="radar-chart">
                         <AQIRadarChart></AQIRadarChart>
                     </div>
