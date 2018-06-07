@@ -40,7 +40,8 @@ class heatMapChart extends Component {
         animation: false,
         grid: {
             height: '50%',
-            y: '10%'
+            y: '15%',
+            x: '15%'
         },
         xAxis: {
             type: 'category',
@@ -71,7 +72,7 @@ class heatMapChart extends Component {
             max: 100,
             calculable: true,
             orient: 'horizontal',
-            left: 'center',
+            left: 'right',
             bottom: '15%'
         },
         series: [{

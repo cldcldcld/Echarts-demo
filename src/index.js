@@ -15,6 +15,7 @@ import gaugeChart from './gauge/gaugeChart';
 import scatterChart from './scatter/scatterChart';
 import dashboard from './dashboard';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
+import SmoothLineChart from './smoothLine/smoothLineChart';
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter } from 'react-router-dom'
 
@@ -36,6 +37,7 @@ ReactDOM.render((
      	<Route path="/gaugeChart" component={gaugeChart}/>
       <Route path="/scatterChart" component={scatterChart}/>
       <Route path="/AQIRadarChart" component={AQIRadarChart}/>
+      <Route path="/SmoothLineChart" component={SmoothLineChart}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

@@ -8,26 +8,32 @@
 
 .left {
 	display: inline-block;
-	width: 25%;
+	width: 24%;
 	height: 90%;
 	float: left;
 	margin: 4vh 2vw 4vh 4vw;
 }
 
-.map {
+.weather-info {
 	width: 100%;
-	height: 60%;
+	height: 20%;
 	margin-bottom: 2vh;
 }
 
-.heat-table {
+.map {
 	width: 100%;
-	height: 40%;
+	height: 58%;
+	margin-bottom: 2vh;
+}
+
+.warning-info {
+	width: 100%;
+	height: 20%;
 }
 
 .right {
 	display: inline-block;
-	width: 64%;
+	width: 65%;
 	height: 88%;
 	float: left;
 	margin: 4vh 4vw 4vh 0;
@@ -58,14 +64,28 @@
 }
 
 .real-time-data-title {
-	height: 25%;
+	height: 20%;
 	width: 100%;
+	margin-top: 2%;
+	margin-left: 2%;
 }
 
 .real-time-data-title span {
 	font-family: PingFangSC-Regular;
 	font-size: 22px;
 	color: #FFFFFF;
+}
+
+.real-time-data-value {
+	height: 60%;
+	width: 100%;
+	/*margin-top: 2%;
+	margin-left: 2%;*/
+}
+
+.real-data {
+	display: inline-block;
+	margin-left: 11%;
 }
 
 .histogram-chart {
@@ -81,20 +101,20 @@
 	height: 40%;
 }
 
-.weather-info {
+.radar-chart {
 	width: 30%;
 	height: 100%;
 	display: inline-block;
 	float: left;
-	padding-right: 4%;
+	padding-right: 2%;
 }
 
-.radar-chart {
-	width: 31%;
+.heat-table {
+	width: 35%;
 	height: 100%;
 	display: inline-block;
 	float: left;
-	padding-right: 4%;
+	padding-right: 2%;
 }
 
 .scatter-chart {

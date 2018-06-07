@@ -2,6 +2,8 @@
   text-align: center;
   height: 100%;
   width: 100%;
+  background: #1E314B;
+  border-radius: 5%;
 }
 
 #main {
@@ -9,5 +11,8 @@
   height: 100%;
   /*position: absolute;*/
   /*z-index: 1;*/
-  background-color: gray;
+}
+
+#main div {
+  border-radius: 5%;	
 }

@@ -1,0 +1,31 @@
+.index-value {
+	text-align: center;
+}
+
+.index-value span {
+	font-family: PingFangSC-Medium;
+	font-size: 48px;
+	color: #FFFFFF;
+}
+
+.index-title {
+	text-align: center;
+}
+
+.index-title span {
+	opacity: 0.4;
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.index-description {
+	text-align: center;	
+}
+
+.index-description span {
+	opacity: 0.4;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #FFFFFF;
+}

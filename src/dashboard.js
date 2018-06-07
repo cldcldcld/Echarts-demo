@@ -2,23 +2,67 @@ import React, { Component } from 'react';
 import './dashboard.css';
 import App from './App'
 import RadarChart from './radarImage/radarChart';
-import HistogramChart from './histogram/histogramChart';
+// import HistogramChart from './histogram/histogramChart';
 import HeatMapChart from './heatMap/heatMapChart';
 // import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
+import RealData from './realData/realData';
+import SmoothLineChart from './smoothLine/smoothLineChart';
+import WeatherInfo from './weatherInfo/weatherInfo';
+import WarningInfo from './warningInfo/warningInfo';
 
 class dashboard extends Component {
 
   render() {
+    var realDataList = [
+        {   
+            value: 89,
+            title: 'PM2.5',
+            description: '细颗粒物'
+        },
+        {   
+            value: 89,
+            title: 'PM10',
+            description: '可吸入颗粒物'
+        },
+        {   
+            value: 89,
+            title: 'NO2',
+            description: '二氧化氮'
+        },
+        {   
+            value: 89,
+            title: 'SO2',
+            description: '二氧化硫'
+        },
+        {   
+            value: 89,
+            title: 'CO',
+            description: '一氧化碳'
+        },
+        {   
+            value: 89,
+            title: 'O3',
+            description: '臭氧'
+        }
+    ];
+    const realDataCompoent = realDataList.map((realData) =>
+        <div key={realData.title} className="real-data">
+            <RealData realData={realData}></RealData>
+        </div>
+    );
     return (
       	<div className="dashboard">
             <div className="left">
+                <div className="weather-info">
+                    <WeatherInfo></WeatherInfo>
+                </div>
                 <div className="map">
                     <App></App>
                 </div>
-                <div className="heat-table">
-                    <HeatMapChart></HeatMapChart>
+                <div className="warning-info">
+                    <WarningInfo></WarningInfo>
                 </div>
             </div>
             <div className="right">
@@ -46,17 +90,20 @@ class dashboard extends Component {
                     <div className="real-time-data-title">
                         <span>各指标实时数据</span>
                     </div>
+                    <div className="real-time-data-value">
+                        {realDataCompoent}
+                    </div>
 
                 </div>
                 <div className="histogram-chart">
-                    <HistogramChart></HistogramChart>
+                    <SmoothLineChart></SmoothLineChart>
                 </div>
                 <div className="radarAndScatter">
-                    <div className="weather-info">
-
-                    </div>
                     <div className="radar-chart">
                         <AQIRadarChart></AQIRadarChart>
+                    </div>
+                    <div className="heat-table">
+                        <HeatMapChart></HeatMapChart>
                     </div>
                     <div className="scatter-chart">
                         <ScatterChart></ScatterChart>
