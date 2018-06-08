@@ -1,5 +1,73 @@
-.warning-info {
+.warningInfo {
 	height: 100%;
 	background: #1E314B;
   	border-radius: 5%;
+}
+
+.warning-title {
+	height: 10%;
+	width: 100%;
+	padding-top: 3%;
+	padding-left: 5%;
+}
+
+.warning-image {
+	float: left;
+}
+
+.warning-title-details {
+	float: left;
+	width: 40%;
+	padding-top: 1%
+}
+
+.warning-title span {
+	font-family: PingFangSC-Regular;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.warning-content {
+	height: 70%;
+	width: 100%;
+	padding-left: 5%;
+	float: left;
+}
+
+.warning-content-img {
+	display: inline-block;
+	padding-left: 3%;
+	padding-top: 3%;
+}
+
+.warning-station {
+	display: inline-block;
+	padding-left: 3%;
+	padding-top: 3%;
+}
+
+.station-name {
+	opacity: 0.5;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.station-details {
+	opacity: 0.8;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.operation {
+	float: right;
+	padding-right: 15%;
+	padding-top: 6%;
+}
+
+.operation span {
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #22B5C8;
 }

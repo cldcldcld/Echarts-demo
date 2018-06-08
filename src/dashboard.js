@@ -19,32 +19,44 @@ class dashboard extends Component {
         {   
             value: 89,
             title: 'PM2.5',
-            description: '细颗粒物'
+            description: '细颗粒物',
+            trend: true,
+            warning: false
         },
         {   
-            value: 89,
+            value: 269,
             title: 'PM10',
-            description: '可吸入颗粒物'
+            description: '可吸入颗粒物',
+            trend: true,
+            warning: true
         },
         {   
             value: 89,
             title: 'NO2',
-            description: '二氧化氮'
+            description: '二氧化氮',
+            trend: true,
+            warning: false
         },
         {   
-            value: 89,
+            value: 23,
             title: 'SO2',
-            description: '二氧化硫'
+            description: '二氧化硫',
+            trend: false,
+            warning: false
         },
         {   
-            value: 89,
+            value: 66,
             title: 'CO',
-            description: '一氧化碳'
+            description: '一氧化碳',
+            trend: true,
+            warning: false
         },
         {   
-            value: 89,
+            value: 8,
             title: 'O3',
-            description: '臭氧'
+            description: '臭氧',
+            trend: false,
+            warning: false
         }
     ];
     const realDataCompoent = realDataList.map((realData) =>
@@ -54,6 +66,14 @@ class dashboard extends Component {
     );
     return (
       	<div className="dashboard">
+            <div className='host-button'>
+                <div className='button-image'>
+                    <img src={require('./image/主页.png')}></img>
+                </div>
+                <div>
+                    <span>返回主页</span>
+                </div>
+            </div>
             <div className="left">
                 <div className="weather-info">
                     <WeatherInfo></WeatherInfo>
@@ -88,7 +108,12 @@ class dashboard extends Component {
                 </div>*/}
                 <div className="real-time-data">
                     <div className="real-time-data-title">
-                        <span>各指标实时数据</span>
+                        <div className="real-time-data-image">
+                            <img src={require('./image/数据.png')}></img>
+                        </div>
+                        <div className="real-time-data-title-content">
+                            <span>各指标实时数据</span>
+                        </div>
                     </div>
                     <div className="real-time-data-value">
                         {realDataCompoent}

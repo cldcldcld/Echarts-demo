@@ -3,9 +3,8 @@
 }
 
 .index-value span {
-	font-family: PingFangSC-Medium;
-	font-size: 48px;
-	color: #FFFFFF;
+	font-family: PingFangSC-Light;
+	font-size: 60px;
 }
 
 .index-title {
@@ -28,4 +27,12 @@
 	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #FFFFFF;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.red {
+	color: #B94E4E;
 }

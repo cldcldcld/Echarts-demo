@@ -5,34 +5,38 @@ import './warningInfo.css'
 class warningInfo extends Component {
   render() {
     return (
-      <div className='warning-info'>
+      <div className='warningInfo'>
         <div className='warning-title'>
-          <img></img>
-          <span>警报通知</span>
+          <div className='warning-image'>
+            <img src={require('../image/警报.png')}></img>
+          </div>
+          <div className='warning-title-details'>
+            <span>警报通知</span>
+          </div>
         </div>
         <div className='warning-content'>
-          <div>
-            <div>
-              <img></img>
+          <div className='warning-details'>
+            <div className='warning-content-img'>
+              <img src={require('../image/31铃铛.png')}></img>
             </div>
-            <div>
-              <span>市环保站点</span><br/>
-              <span>空气质量严重超标 待处理</span>
+            <div className='warning-station'>
+              <span className='station-name'>市环保站点</span><br/>
+              <span className='station-details'>空气质量严重超标 待处理</span>
             </div>
-            <div>
+            <div className='operation'>
               <img></img>
               <span>立即处理</span>
             </div>
           </div>
-          <div>
-            <div>
-              <img></img>
+          <div className='warning-details'>
+            <div className='warning-content-img'>
+              <img src={require('../image/31铃铛.png')}></img>
             </div>
-            <div>
-              <span>龙新站点</span><br/>
-              <span>仪器故障掉线 待处理</span>
+            <div className='warning-station'>
+              <span className='station-name'>龙新站点</span><br/>
+              <span className='station-details'>仪器故障掉线 待处理</span>
             </div>
-            <div>
+            <div className='operation'>
               <img></img>
               <span>查看详情</span>
             </div>

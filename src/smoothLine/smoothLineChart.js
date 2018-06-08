@@ -24,9 +24,31 @@ class smoothLineChart extends Component {
         data.push(date[parseInt(i/8)]);
         data1.push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
         data2.push((Math.cos(i / 5) * (i / 5 -7) + i / 9) * 3+30);
+        // data1.push((Math.sin(i / 5) * (i / 6 -4) + i / 8) * 3+35);
+        // data2.push((Math.cos(i / 4) * (i / 5 -8) + i / 9) * 3+30);
+        // data1.push((Math.sin(i / 6) * (i / 5 -4) + i / 7) * 3+35);
     }
 
     myChart.setOption({
+        title:{
+            text:'AQI趋势分析',
+            top: 10,
+            left: 20,
+            textStyle: {
+                // fontFamily: 'PingFangSC-Regular',
+                fontSize: 20,
+                color: '#FFFFFF'                
+            },
+            showTitle: true,
+            itemGap: 160,
+            subtext:'平均值',
+            subtextStyle:{
+                opacity: 0.67,
+                // fontFamily: 'PingFangSC-Regular',
+                fontSize: 16,
+                color: '#FFFFFF',
+            }
+        },
         xAxis: {
             type: 'category',
             boundaryGap: false,
