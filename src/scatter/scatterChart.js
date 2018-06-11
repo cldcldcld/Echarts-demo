@@ -93,7 +93,7 @@ class scatterChart extends Component {
         return {
             title: {
                 text: [
-                        '{titleImage|3}{titleContext|污染物相关性分析}'
+                        '{titleImage|}{titleContext|污染物相关性分析}'
                       ].join('\n'),
                 top: 15,
                 left: 15,
@@ -116,7 +116,9 @@ class scatterChart extends Component {
             },
             grid: {
                 height: '55%',
+                width: '70%',
                 y: '30%',
+                x: '15%'
             },
             backgroundColor: '#1E314B',
             tooltip: {
@@ -195,6 +197,9 @@ class scatterChart extends Component {
                     data: data.map(function (item, idx) {
                         return [item[2], item[3], item[1], idx];
                     }),
+                    itemStyle: {
+                        color: '#22B5C8'
+                    },
                     animationThreshold: 5000,
                     progressiveThreshold: 5000
                 }

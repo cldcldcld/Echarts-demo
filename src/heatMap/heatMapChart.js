@@ -36,7 +36,7 @@ class heatMapChart extends Component {
     myChart.setOption({
         title: {
             text: [
-                    '{titleImage|3}{titleContext|AQI热力图}'
+                    '{titleImage|}{titleContext|AQI热力图}'
                   ].join('\n'),
             // left: 'left',
             top: 15,

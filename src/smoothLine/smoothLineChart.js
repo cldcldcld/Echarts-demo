@@ -3,12 +3,34 @@ import echarts from 'echarts';
 import './smoothLineChart.css'
 
 class smoothLineChart extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.handleClick = this.handleClick.bind(this);
+  // }
+
   render() {
     return (
       <div className='smoothLineChart'>
+        <div className='button-list'>
+            <button className='clicked' name='PM2.5' onClick={this.handleClick.bind(this)}>PM2.5</button>
+            <button className='clicked' name='PM10' onClick={this.handleClick.bind(this)}>PM10</button>
+            <button name='SO2' onClick={this.handleClick.bind(this)}>SO2</button>
+            <button name='CO' onClick={this.handleClick.bind(this)}>CO</button>
+            <button name='O3' onClick={this.handleClick.bind(this)}>O3</button>
+            <button name='NO2' onClick={this.handleClick.bind(this)}>NO2</button>
+        </div>
         <div id='smoothLineChart'></div>
       </div>
     );
+  }
+
+  handleClick(event) {
+    if (event.target.className) {
+        event.target.className = '';
+    } else {
+        event.target.className = 'clicked';
+    }
   }
 
   componentDidMount() {
@@ -32,10 +54,10 @@ class smoothLineChart extends Component {
     myChart.setOption({
         title:{
             text: [
-                    '{titleImage|3}{titleContext|AQI趋势分析}'
+                    '{titleImage|}{titleContext|AQI趋势分析}'
                   ].join('\n'),
-            top: 15,
-            left: 15,
+            top: 20,
+            left: 20,
             textStyle: {
                 // fontFamily: 'PingFangSC-Regular',
                 fontSize: 20,
@@ -67,14 +89,16 @@ class smoothLineChart extends Component {
                         fontFamily: 'PingFangSC-Regular',
                         opacity: 0.67,
                         fontSize: 16,
-                        padding: [0,0,0,35]
+                        padding: [0,0,0,45]
                     }
                 } 
             }
         },
         grid: {
-            height: '70%',
-            y: '20%'
+            height: '65%',
+            width: '82%',
+            y: '25%',
+            x: '12%'
         },
         xAxis: {
             type: 'category',
@@ -105,6 +129,7 @@ class smoothLineChart extends Component {
                     color: 'white'
                 }
             },
+            splitNumber: 4,
             splitLine: {
                 lineStyle: {
                     opacity: 0.2,

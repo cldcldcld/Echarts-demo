@@ -14,8 +14,10 @@ import WarningInfo from './warningInfo/warningInfo';
 
 class dashboard extends Component {
 
-  render() {
-    var realDataList = [
+  constructor() {
+    super();
+    this.state = {change: true};
+    this.realDataList = [
         {   
             value: 89,
             title: 'PM2.5',
@@ -59,11 +61,15 @@ class dashboard extends Component {
             warning: false
         }
     ];
-    const realDataCompoent = realDataList.map((realData) =>
+  }
+
+  render() {
+    const realDataCompoent = this.realDataList.map((realData) =>
         <div key={realData.title} className="real-data">
             <RealData realData={realData}></RealData>
         </div>
     );
+
     return (
       	<div className="dashboard">
             <div className='host-button'>
@@ -138,6 +144,26 @@ class dashboard extends Component {
       	</div>
     );
   }
+
+
+  componentDidMount() {
+    var self = this;
+
+    setInterval(function () {
+        var tempValue;
+        for (var i = 0; i < self.realDataList.length; i++) {
+            tempValue = self.realDataList[i].value
+            self.realDataList[i].value = parseInt(Math.random()*200 + 10);
+            self.realDataList[i].trend = self.realDataList[i].value > tempValue ? true : false;
+            self.realDataList[i].warning = self.realDataList[i].value > 150 ? true : false;
+            self.setState ({
+                change: !self.setState.change
+            });
+        }
+    },2000);
+  }
+
+
 }
 
 export default dashboard;
