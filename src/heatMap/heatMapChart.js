@@ -34,13 +34,37 @@ class heatMapChart extends Component {
     });
 
     myChart.setOption({
+        title: {
+            text: [
+                    '{titleImage|3}{titleContext|AQI热力图}'
+                  ].join('\n'),
+            // left: 'left',
+            top: 15,
+            left: 15,
+            textStyle: {
+                rich: {
+                    titleImage: {
+                        backgroundColor: {
+                            image: require('../image/热力图-3.png')
+                        },
+                        height: 25
+                    },
+                    titleContext: {
+                        color: '#FFFFFF',
+                        fontFamily: 'PingFangSC-Regular',
+                        fontSize: 20,
+                        padding: [0,0,0,5]
+                    }
+                }
+            }
+        },
         tooltip: {
             position: 'top'
         },
         animation: false,
         grid: {
             height: '50%',
-            y: '15%',
+            y: '30%',
             x: '15%'
         },
         xAxis: {
@@ -73,7 +97,7 @@ class heatMapChart extends Component {
             calculable: true,
             orient: 'horizontal',
             left: 'right',
-            bottom: '15%'
+            top: '10%'
         },
         series: [{
             name: 'Punch Card',

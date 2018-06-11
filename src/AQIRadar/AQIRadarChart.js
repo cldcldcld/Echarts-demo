@@ -40,13 +40,27 @@ class AQIRadarChart extends Component {
     option = {
         backgroundColor: '#1E314B',
         title: {
-            text: '主要污染物分析',
+            text: [
+                    '{titleImage|3}{titleContext|主要污染物分析}'
+                  ].join('\n'),
             // left: 'left',
-            top: 20,
-            left: 20,
+            top: 15,
+            left: 15,
             textStyle: {
-                color: '#FFFFFF',
-                fontFamily: 'PingFangSC-Regular'
+                rich: {
+                    titleImage: {
+                        backgroundColor: {
+                            image: require('../image/数据分析-2.png')
+                        },
+                        height: 25
+                    },
+                    titleContext: {
+                        color: '#FFFFFF',
+                        fontFamily: 'PingFangSC-Regular',
+                        fontSize: 20,
+                        padding: [0,0,0,5]
+                    }
+                }
             }
         },
         // legend: {
@@ -60,7 +74,8 @@ class AQIRadarChart extends Component {
         //     selectedMode: 'single'
         // },
         radar: {
-            center: ['50%', '53%'],
+            center: ['50%', '55%'],
+            radius: '65%',
             indicator: [
                 {name: 'SO2', max: 150},
                 {name: 'NO2', max: 80},

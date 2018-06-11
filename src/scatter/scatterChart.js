@@ -91,6 +91,33 @@ class scatterChart extends Component {
     function getOption(data) {
 
         return {
+            title: {
+                text: [
+                        '{titleImage|3}{titleContext|污染物相关性分析}'
+                      ].join('\n'),
+                top: 15,
+                left: 15,
+                textStyle: {
+                    rich: {
+                        titleImage: {
+                            backgroundColor: {
+                                image: require('../image/散点图.png')
+                            },
+                            height: 25
+                        },
+                        titleContext: {
+                            color: '#FFFFFF',
+                            fontFamily: 'PingFangSC-Regular',
+                            fontSize: 20,
+                            padding: [0,0,0,5]
+                        }
+                    }
+                }
+            },
+            grid: {
+                height: '55%',
+                y: '30%',
+            },
             backgroundColor: '#1E314B',
             tooltip: {
                 // padding: 10,

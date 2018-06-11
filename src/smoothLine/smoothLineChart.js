@@ -31,23 +31,50 @@ class smoothLineChart extends Component {
 
     myChart.setOption({
         title:{
-            text:'AQI趋势分析',
-            top: 10,
-            left: 20,
+            text: [
+                    '{titleImage|3}{titleContext|AQI趋势分析}'
+                  ].join('\n'),
+            top: 15,
+            left: 15,
             textStyle: {
                 // fontFamily: 'PingFangSC-Regular',
                 fontSize: 20,
-                color: '#FFFFFF'                
+                color: '#FFFFFF',
+                rich: {
+                    titleImage: {
+                        backgroundColor: {
+                            image: require('../image/会员发展趋势.png')
+                        },
+                        height: 25
+                    },
+                    titleContext: {
+                        color: '#FFFFFF',
+                        fontFamily: 'PingFangSC-Regular',
+                        fontSize: 20,
+                        padding: [0,0,0,5]
+                    }
+                }        
             },
             showTitle: true,
-            itemGap: 160,
-            subtext:'平均值',
+            itemGap: 140,
+            subtext: [
+                        '{averageValue|平均值}'
+                     ].join('\n'),
             subtextStyle:{
-                opacity: 0.67,
-                // fontFamily: 'PingFangSC-Regular',
-                fontSize: 16,
-                color: '#FFFFFF',
+               rich: {
+                    averageValue: {
+                        color: '#FFFFFF',
+                        fontFamily: 'PingFangSC-Regular',
+                        opacity: 0.67,
+                        fontSize: 16,
+                        padding: [0,0,0,35]
+                    }
+                } 
             }
+        },
+        grid: {
+            height: '70%',
+            y: '20%'
         },
         xAxis: {
             type: 'category',
