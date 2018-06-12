@@ -6,7 +6,7 @@ class smoothLineChart extends Component {
   constructor(props) {
     super(props);
 
-    this.createOption.bind(this);
+    this.createOption = this.createOption.bind(this);
     this.option = {};
     this.AQIData = new Array();
     this.AQIData[0] = [];

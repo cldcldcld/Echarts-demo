@@ -8,13 +8,20 @@ import MenuItem from 'material-ui/MenuItem';
 class scatterChart extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+        refresh: true
+    }
 
     this.XTitle = 'PM2.5(μg/m3)';
     this.YTitle = 'PM10(μg/m3)';
-    this.openYMenu.bind(this);
-    this.closeYMenu.bind(this);
-    this.openXMenu.bind(this);
-    this.closeXMenu.bind(this);
+    this.XTitleWithoutUnit = 'PM2.5';
+    this.YTitleWithoutUnit = 'PM10';
+    this.data;
+    this.fieldIndices;
+    this.openYMenu = this.openYMenu.bind(this);
+    this.closeYMenu = this.closeYMenu.bind(this);
+    this.openXMenu = this.openXMenu.bind(this);
+    this.closeXMenu = this.closeXMenu.bind(this);
 
 
     this.menuList = ['PM2.5(μg/m3)','PM10(μg/m3)', 'SO2(μg/m3)', 'NO2(μg/m3)', 'CO(mg/m3)', 'O3(μg/m3)'];
@@ -38,7 +45,7 @@ class scatterChart extends Component {
     return (
       <div className='scatterChart'>
         <div className='Y-dropdown'>
-            <button onClick={this.openYMenu}>{this.XTitle}</button>
+            <button onClick={this.openYMenu}>{this.YTitle}</button>
             <div id='Y-menu' className='close'>
                 <Menu style={styles.YMenu}>
                     {YMenuItem}
@@ -46,7 +53,7 @@ class scatterChart extends Component {
             </div>
         </div>
         <div className='X-dropdown'>
-            <button onClick={this.openXMenu}>{this.YTitle}</button>
+            <button onClick={this.openXMenu}>{this.XTitle}</button>
             <div id='X-menu' className='close'>
                 <Menu style={styles.XMenu}>
                     {XMenuItem}
@@ -87,6 +94,7 @@ class scatterChart extends Component {
         return obj;
     }, {});
 
+    this.fieldIndices = fieldIndices;
     // var groupCategories = [];
     // var groupColors = [];
     var data;
@@ -97,7 +105,8 @@ class scatterChart extends Component {
     });
 
     data = normalizeData(originData).slice(0, 100);
-    myChart.setOption(option = getOption(data));
+    this.data = data
+    myChart.setOption(option = getOption(data, this));
 
     function normalizeData(originData) {
         var groupMap = {};
@@ -133,7 +142,7 @@ class scatterChart extends Component {
         return originData;
     }
 
-    function getOption(data) {
+    function getOption(data, self) {
 
         return {
             title: {
@@ -167,7 +176,6 @@ class scatterChart extends Component {
             },
             backgroundColor: '#1E314B',
             tooltip: {
-                // padding: 10,
                 backgroundColor: '#222',
                 borderColor: '#777',
                 borderWidth: 1
@@ -244,7 +252,12 @@ class scatterChart extends Component {
                     name: 'AQI',
                     type: 'scatter',
                     data: data.map(function (item, idx) {
-                        return [item[2], item[3], item[1], idx];
+                        return [
+                            item[fieldIndices[self.XTitleWithoutUnit]],
+                            item[fieldIndices[self.YTitleWithoutUnit]],
+                            item[1],
+                            idx
+                        ];
                     }),
                     itemStyle: {
                         color: '#22B5C8'
@@ -308,10 +321,15 @@ class scatterChart extends Component {
         var YSelectedItem;
         ev.nativeEvent.stopImmediatePropagation();
         document.getElementById('Y-menu').className = 'close';
-        if (ev.target.innerHtml) {
-            YSelectedItem = ev.target.innerHtml.substring(0, ev.target.innerHtml.indexOf('('))
+        if (ev.target.innerHTML) {
+            YSelectedItem = ev.target.innerHTML.substring(0, ev.target.innerHTML.indexOf('('))
         }
-        this.YTitle = YSelectedItem;
+        this.YTitle = ev.target.innerHTML;
+        this.YTitleWithoutUnit = YSelectedItem;
+        this.setState({
+            refresh: !this.state.refresh
+        });
+        this._renderScatterChart(this);
     };
 
     openXMenu(ev) {
@@ -320,9 +338,35 @@ class scatterChart extends Component {
     };
 
     closeXMenu(ev) {
+        var XSelectedItem;
         ev.nativeEvent.stopImmediatePropagation();
         document.getElementById('X-menu').className = 'close';
+        if (ev.target.innerHTML) {
+            XSelectedItem = ev.target.innerHTML.substring(0, ev.target.innerHTML.indexOf('('))
+        }
+        this.XTitle = ev.target.innerHTML;
+        this.XTitleWithoutUnit = XSelectedItem;
+        this.setState({
+            refresh: !this.state.refresh
+        });
+        this._renderScatterChart(this);
     };
+
+    _renderScatterChart(self) {
+        var myChart = echarts.init(document.getElementById('scatterChart'));
+        myChart.setOption({
+            series: {
+                data: self.data.map(function (item, idx) {
+                    return [
+                        item[self.fieldIndices[self.XTitleWithoutUnit]],
+                        item[self.fieldIndices[self.YTitleWithoutUnit]],
+                        item[1],
+                        idx
+                    ];
+                })
+            }
+        });
+    }
 
 }
 
