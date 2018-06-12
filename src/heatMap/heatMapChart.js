@@ -94,10 +94,15 @@ class heatMapChart extends Component {
         visualMap: {
             min: 30,
             max: 100,
-            calculable: true,
+            // calculable: true,
             orient: 'horizontal',
-            left: 'right',
-            top: '10%'
+            left: '61%',
+            top: '12%',
+            itemHeight: 120,
+            itemWidth: 12,
+            textStyle: {
+                color: 'white'
+            }
         },
         series: [{
             name: 'Punch Card',

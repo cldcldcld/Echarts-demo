@@ -3,55 +3,77 @@ import echarts from 'echarts';
 import './smoothLineChart.css'
 
 class smoothLineChart extends Component {
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
-  //   this.handleClick = this.handleClick.bind(this);
-  // }
+    this.createOption.bind(this);
+    this.option = {};
+    this.AQIData = new Array();
+    this.AQIData[0] = [];
+    this.AQIData[1] = [];
+    this.AQIData[2] = [];
+    this.AQIData[3] = [];
+    this.AQIData[4] = [];
+    this.AQIData[5] = [];
+
+    var data = [];
+
+    var date = ['1日', '2日', '3日', '4日', '5日', '6日', '7日', '8日', '9日', '10日', '11日', '12日', '13日', '14日', '15日'];
+    for (var i = 0; i < 120; i++) {
+        data.push(date[parseInt(i/8)]);
+        this.AQIData[0].push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
+        this.AQIData[1].push((Math.cos(i / 5) * (i / 5 -7) + i / 9) * 3+30);
+        this.AQIData[2].push((Math.sin(i / 5) * (i / 6 -4) + i / 8) * 3+35);
+        this.AQIData[3].push((Math.cos(i / 4) * (i / 5 -8) + i / 9) * 3+30);
+        this.AQIData[4].push((Math.sin(i / 6) * (i / 5 -4) + i / 7) * 3+35);
+        this.AQIData[5].push((Math.sin(i / 7) * (i / 6 -5) + i / 6) * 3+35);
+    }
+
+    this.createOption(date, data, this.AQIData)
+
+  }
 
   render() {
     return (
       <div className='smoothLineChart'>
         <div className='button-list'>
-            <button className='clicked' name='PM2.5' onClick={this.handleClick.bind(this)}>PM2.5</button>
-            <button className='clicked' name='PM10' onClick={this.handleClick.bind(this)}>PM10</button>
-            <button name='SO2' onClick={this.handleClick.bind(this)}>SO2</button>
-            <button name='CO' onClick={this.handleClick.bind(this)}>CO</button>
-            <button name='O3' onClick={this.handleClick.bind(this)}>O3</button>
-            <button name='NO2' onClick={this.handleClick.bind(this)}>NO2</button>
+            <button><span className='clicked color-0' onClick={this.handleClick.bind(this, 0)}>PM2.5</span></button>
+            <button><span className='clicked color-1' onClick={this.handleClick.bind(this, 1)}>PM10</span></button>
+            <button><span onClick={this.handleClick.bind(this, 2)}>SO2</span></button>
+            <button><span onClick={this.handleClick.bind(this, 3)}>CO</span></button>
+            <button><span onClick={this.handleClick.bind(this, 4)}>O3</span></button>
+            <button><span onClick={this.handleClick.bind(this, 5)}>NO2</span></button>
         </div>
         <div id='smoothLineChart'></div>
       </div>
     );
   }
 
-  handleClick(event) {
+  handleClick(index, event) {
+    var myChart = echarts.init(document.getElementById('smoothLineChart'));
     if (event.target.className) {
         event.target.className = '';
     } else {
-        event.target.className = 'clicked';
+        event.target.className = 'clicked ' + 'color-' + index;
     }
+
+    if (this.option.series[index].data && this.option.series[index].data.length > 0) {
+        this.option.series[index].data = []
+    } else {
+        this.option.series[index].data = this.AQIData[index]
+    }
+    myChart.setOption(this.option, true);
   }
 
   componentDidMount() {
 
     var myChart = echarts.init(document.getElementById('smoothLineChart'));
 
-    var data = [];
-    var data1 = [];
-    var data2 = [];
+    myChart.setOption(this.option);
+  }
 
-    var date = ['1日', '2日', '3日', '4日', '5日', '6日', '7日', '8日', '9日', '10日', '11日', '12日', '13日', '14日', '15日'];
-    for (var i = 0; i < 120; i++) {
-        data.push(date[parseInt(i/8)]);
-        data1.push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
-        data2.push((Math.cos(i / 5) * (i / 5 -7) + i / 9) * 3+30);
-        // data1.push((Math.sin(i / 5) * (i / 6 -4) + i / 8) * 3+35);
-        // data2.push((Math.cos(i / 4) * (i / 5 -8) + i / 9) * 3+30);
-        // data1.push((Math.sin(i / 6) * (i / 5 -4) + i / 7) * 3+35);
-    }
-
-    myChart.setOption({
+  createOption(date, data, AQIData) {
+    var option = {
         title:{
             text: [
                     '{titleImage|}{titleContext|AQI趋势分析}'
@@ -112,7 +134,7 @@ class smoothLineChart extends Component {
             },
             axisLine: {
                 lineStyle: {
-                    color: 'white'
+                    color: 'rgba(255, 255, 255, 0.5)'
                 }
             },
             axisLabel: {
@@ -126,7 +148,7 @@ class smoothLineChart extends Component {
             type: 'value',
             axisLine: {
                 lineStyle: {
-                    color: 'white'
+                    color: 'rgba(255, 255, 255, 0.5)'
                 }
             },
             splitNumber: 4,
@@ -146,7 +168,7 @@ class smoothLineChart extends Component {
             }
         },
         series: [{
-            data: data1,
+            data: this.AQIData[0],
             type: 'line',
             showSymbol: false,
             areaStyle: {
@@ -158,7 +180,7 @@ class smoothLineChart extends Component {
             }
         },
         {
-            data: data2,
+            data: this.AQIData[1],
             type: 'line',
             areaStyle: {
                 color: 'rgba(147,123,242,0.18)'
@@ -168,10 +190,59 @@ class smoothLineChart extends Component {
                 color: 'rgba(147,123,242)',
                 width: '3'
             }
+        },
+        {
+            data: [],
+            type: 'line',
+            areaStyle: {
+                color: 'rgba(240,217,156,0.18)'
+            },
+            showSymbol: false,
+            lineStyle: {
+                color: '#F0D99C',
+                width: '3'
+            }
+        },
+        {
+            data: [],
+            type: 'line',
+            areaStyle: {
+                color: 'rgba(222,152,125,0.18)'
+            },
+            showSymbol: false,
+            lineStyle: {
+                color: '#DE987D',
+                width: '3'
+            }
+        },
+        {
+            data: [],
+            type: 'line',
+            areaStyle: {
+                color: 'rgba(97,67,254,0.18)'
+            },
+            showSymbol: false,
+            lineStyle: {
+                color: '#6143FE',
+                width: '3'
+            }
+        },
+        {
+            data: [],
+            type: 'line',
+            areaStyle: {
+                color: 'rgba(255,255,255,0.18)'
+            },
+            showSymbol: false,
+            lineStyle: {
+                color: '#FFFFFF',
+                width: '3'
+            }
         }]
-    });
-
+    }
+    this.option = option;
   }
+
 }
 
 export default smoothLineChart;

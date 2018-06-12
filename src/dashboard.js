@@ -11,6 +11,7 @@ import RealData from './realData/realData';
 import SmoothLineChart from './smoothLine/smoothLineChart';
 import WeatherInfo from './weatherInfo/weatherInfo';
 import WarningInfo from './warningInfo/warningInfo';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class dashboard extends Component {
 
@@ -71,76 +72,79 @@ class dashboard extends Component {
     );
 
     return (
-      	<div className="dashboard">
-            <div className='host-button'>
-                <div className='button-image'>
-                    <img src={require('./image/主页.png')}></img>
-                </div>
-                <div>
-                    <span>返回主页</span>
-                </div>
-            </div>
-            <div className="left">
-                <div className="weather-info">
-                    <WeatherInfo></WeatherInfo>
-                </div>
-                <div className="map">
-                    <App></App>
-                </div>
-                <div className="warning-info">
-                    <WarningInfo></WarningInfo>
-                </div>
-            </div>
-            <div className="right">
-{/*                <div className="gaugeList">
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge1'}></GaugeChart>
-                    </div>
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge2'}></GaugeChart>
-                    </div>
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge3'}></GaugeChart>
-                    </div>
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge4'}></GaugeChart>
-                    </div>
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge5'}></GaugeChart>
-                    </div>
-                    <div className="gauge">
-                        <GaugeChart idName={'gauge6'}></GaugeChart>
-                    </div>
-                </div>*/}
-                <div className="real-time-data">
-                    <div className="real-time-data-title">
-                        <div className="real-time-data-image">
-                            <img src={require('./image/数据.png')}></img>
-                        </div>
-                        <div className="real-time-data-title-content">
-                            <span>各指标实时数据</span>
-                        </div>
-                    </div>
-                    <div className="real-time-data-value">
-                        {realDataCompoent}
-                    </div>
 
-                </div>
-                <div className="histogram-chart">
-                    <SmoothLineChart></SmoothLineChart>
-                </div>
-                <div className="radarAndScatter">
-                    <div className="radar-chart">
-                        <AQIRadarChart></AQIRadarChart>
+      	<div className="dashboard">
+            <MuiThemeProvider>
+                <div className='host-button'>
+                    <div className='button-image'>
+                        <img src={require('./image/主页.png')}></img>
                     </div>
-                    <div className="heat-table">
-                        <HeatMapChart></HeatMapChart>
-                    </div>
-                    <div className="scatter-chart">
-                        <ScatterChart></ScatterChart>
+                    <div>
+                        <span>返回主页</span>
                     </div>
                 </div>
-            </div>
+                <div className="left">
+                    <div className="weather-info">
+                        <WeatherInfo></WeatherInfo>
+                    </div>
+                    <div className="map">
+                        <App></App>
+                    </div>
+                    <div className="warning-info">
+                        <WarningInfo></WarningInfo>
+                    </div>
+                </div>
+                <div className="right">
+    {/*                <div className="gaugeList">
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge1'}></GaugeChart>
+                        </div>
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge2'}></GaugeChart>
+                        </div>
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge3'}></GaugeChart>
+                        </div>
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge4'}></GaugeChart>
+                        </div>
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge5'}></GaugeChart>
+                        </div>
+                        <div className="gauge">
+                            <GaugeChart idName={'gauge6'}></GaugeChart>
+                        </div>
+                    </div>*/}
+                    <div className="real-time-data">
+                        <div className="real-time-data-title">
+                            <div className="real-time-data-image">
+                                <img src={require('./image/数据.png')}></img>
+                            </div>
+                            <div className="real-time-data-title-content">
+                                <span>各指标实时数据</span>
+                            </div>
+                        </div>
+                        <div className="real-time-data-value">
+                            {realDataCompoent}
+                        </div>
+
+                    </div>
+                    <div className="histogram-chart">
+                        <SmoothLineChart></SmoothLineChart>
+                    </div>
+                    <div className="radarAndScatter">
+                        <div className="radar-chart">
+                            <AQIRadarChart></AQIRadarChart>
+                        </div>
+                        <div className="heat-table">
+                            <HeatMapChart></HeatMapChart>
+                        </div>
+                        <div className="scatter-chart">
+                            <ScatterChart></ScatterChart>
+                        </div>
+                    </div>
+                </div>
+            </MuiThemeProvider>
       	</div>
     );
   }

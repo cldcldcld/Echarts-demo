@@ -64,7 +64,7 @@
 }
 
 .real-time-data-title {
-	height: 20%;
+	height: 12%;
 	width: 100%;
 	margin-top: 2%;
 	margin-left: 2%;
@@ -97,7 +97,7 @@
 
 .real-data {
 	display: inline-block;
-	margin-left: 7%;
+	margin-left: 6.3%;
 }
 
 .histogram-chart {

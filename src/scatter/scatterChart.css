@@ -10,3 +10,47 @@
 #scatterChart div {
   border-radius: 5%;
 }
+
+.Y-dropdown {
+	position: absolute;
+	z-index: 2;
+	left: 78%;
+	top: 70%;
+}
+
+.Y-dropdown button {
+	background-color: transparent;
+	border-color: transparent;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+
+.Y-dropdown .close {
+	display: none;
+}
+
+.X-dropdown {
+	position: absolute;
+	z-index: 2;
+	left: 89%;
+	top: 88%;
+}
+
+.X-dropdown button {
+	background-color: transparent;
+	border-color: transparent;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+
+.X-dropdown .close {
+	display: none;
+}
+
+#X-menu {
+	margin-top: -150%;
+}

@@ -2,11 +2,57 @@ import React, { Component } from 'react';
 import echarts from 'echarts';
 // import axios from 'axios';
 import './scatterChart.css';
+import Menu from 'material-ui/Menu';
+import MenuItem from 'material-ui/MenuItem';
 
 class scatterChart extends Component {
+  constructor(props) {
+    super(props);
+
+    this.XTitle = 'PM2.5(μg/m3)';
+    this.YTitle = 'PM10(μg/m3)';
+    this.openYMenu.bind(this);
+    this.closeYMenu.bind(this);
+    this.openXMenu.bind(this);
+    this.closeXMenu.bind(this);
+
+
+    this.menuList = ['PM2.5(μg/m3)','PM10(μg/m3)', 'SO2(μg/m3)', 'NO2(μg/m3)', 'CO(mg/m3)', 'O3(μg/m3)'];
+
+    document.onclick = function() {
+        // if( e.target.id === 'Y-menu' || e.target.id === 'X-menu') {
+        //     return;
+        // }
+        document.getElementById('Y-menu').className = 'close';
+        document.getElementById('X-menu').className = 'close';
+    }
+  }
+
   render() {
+    const YMenuItem = this.menuList.map((menuItem) =>
+        <MenuItem style={styles.menuItem} key={menuItem} onClick={this.closeYMenu}>{menuItem}</MenuItem>
+    );
+    const XMenuItem = this.menuList.map((menuItem) =>
+        <MenuItem style={styles.menuItem} key={menuItem} onClick={this.closeXMenu}>{menuItem}</MenuItem>
+    );
     return (
       <div className='scatterChart'>
+        <div className='Y-dropdown'>
+            <button onClick={this.openYMenu}>{this.XTitle}</button>
+            <div id='Y-menu' className='close'>
+                <Menu style={styles.YMenu}>
+                    {YMenuItem}
+                </Menu>
+            </div>
+        </div>
+        <div className='X-dropdown'>
+            <button onClick={this.openXMenu}>{this.YTitle}</button>
+            <div id='X-menu' className='close'>
+                <Menu style={styles.XMenu}>
+                    {XMenuItem}
+                </Menu>
+            </div>
+        </div>
         <div id='scatterChart'></div>
       </div>
     );
@@ -14,7 +60,6 @@ class scatterChart extends Component {
 
   componentDidMount() {
 
-    var app = {};
     var option = {};
 
     var originData = require('./scatter.json');
@@ -128,40 +173,44 @@ class scatterChart extends Component {
                 borderWidth: 1
             },
             xAxis: {
-                name: 'PM2.5',
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
-                        color: '#fff'
+                        color: 'rgba(255, 255, 255, 0.5)'
                     }
                 },
                 axisLabel: {
                     textStyle: {
-                        color: '#fff'
+                        fontFamily: 'PingFangSC-Regular',
+                        fontSize: '12',
+                        color: 'rgba(255, 255, 255, 0.5)'
                     }
                 },
                 axisTick: {
                     lineStyle: {
-                        color: '#fff'
+                        color: 'rgba(255, 255, 255, 0.5)',
+                        inside: true
                     }
                 }
             },
             yAxis: {
-                name: 'PM10',
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
-                        color: '#fff'
+                        color: 'rgba(255, 255, 255, 0.5)'
                     }
                 },
                 axisLabel: {
                     textStyle: {
-                        color: '#fff'
+                        fontFamily: 'PingFangSC-Regular',
+                        fontSize: '12',
+                        color: 'rgba(255, 255, 255, 0.5)'
                     }
                 },
                 axisTick: {
                     lineStyle: {
-                        color: '#fff'
+                        color: 'rgba(255, 255, 255, 0.5)',
+                        inside: true
                     }
                 }
             },
@@ -213,44 +262,87 @@ class scatterChart extends Component {
         return item.name;
     }).slice(2);
 
-    app.config = {
-        xAxis: 'PM2.5',
-        yAxis: 'PM10',
-        onChange: function () {
-            if (data) {
-                myChart.setOption({
-                    xAxis: {
-                        name: app.config.xAxis
-                    },
-                    yAxis: {
-                        name: app.config.yAxis
-                    },
-                    series: {
-                        data: data.map(function (item, idx) {
-                            return [
-                                item[fieldIndices[app.config.xAxis]],
-                                item[fieldIndices[app.config.yAxis]],
-                                item[1],
-                                idx
-                            ];
-                        })
-                    }
-                });
-            }
-        }
+    // app.config = {
+    //     xAxis: 'PM2.5',
+    //     yAxis: 'PM10',
+    //     onChange: function () {
+    //         if (data) {
+    //             myChart.setOption({
+    //                 xAxis: {
+    //                     name: app.config.xAxis
+    //                 },
+    //                 yAxis: {
+    //                     name: app.config.yAxis
+    //                 },
+    //                 series: {
+    //                     data: data.map(function (item, idx) {
+    //                         return [
+    //                             item[fieldIndices[app.config.xAxis]],
+    //                             item[fieldIndices[app.config.yAxis]],
+    //                             item[1],
+    //                             idx
+    //                         ];
+    //                     })
+    //                 }
+    //             });
+    //         }
+    //     }
+    // };
+
+    // app.configParameters = {
+    //     xAxis: {
+    //         options: fieldNames
+    //     },
+    //     yAxis: {
+    //         options: fieldNames
+    //     }
+    // };
+   }
+
+    openYMenu(ev) {
+        ev.nativeEvent.stopImmediatePropagation();
+        document.getElementById('Y-menu').className = '';
     };
 
-    app.configParameters = {
-        xAxis: {
-            options: fieldNames
-        },
-        yAxis: {
-            options: fieldNames
+    closeYMenu(ev) {
+        var YSelectedItem;
+        ev.nativeEvent.stopImmediatePropagation();
+        document.getElementById('Y-menu').className = 'close';
+        if (ev.target.innerHtml) {
+            YSelectedItem = ev.target.innerHtml.substring(0, ev.target.innerHtml.indexOf('('))
         }
+        this.YTitle = YSelectedItem;
     };
 
+    openXMenu(ev) {
+        ev.nativeEvent.stopImmediatePropagation();
+        document.getElementById('X-menu').className = '';
+    };
 
-  }
+    closeXMenu(ev) {
+        ev.nativeEvent.stopImmediatePropagation();
+        document.getElementById('X-menu').className = 'close';
+    };
+
 }
+
+    const styles = {
+        menuItem: {
+            backgroundColor: 'transparent',
+            borderColor: 'transparent',
+            fontFamily: 'PingFangSC-Regular',
+            fontSize: '14px',
+            color: '#FFFFFF',
+            opacity: 0.8,
+            lineHeight: '20px',
+            minHeight: '10px'
+        },
+        YMenu: {
+            paddingTop: '0px'
+        },
+        XMenu: {
+            paddingBottom: '0px'
+        }
+    };
 
 export default scatterChart;

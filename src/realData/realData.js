@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import echarts from 'echarts';
 import './realData.css'
 
 class realData extends Component {
