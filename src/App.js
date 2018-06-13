@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     var data = require('./data.json')
-    MP('e6yiGBqNtg6jlVwRXEa54zLiMfI9xBZk').then(() => {
+    MP('e6yiGBqNtg6jlVwRXEa54zLiMfI9xBZk').then((BMap) => {
 
 
 
