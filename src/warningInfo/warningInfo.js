@@ -24,7 +24,7 @@ class warningInfo extends Component {
               <span className='station-details'>空气质量严重超标 待处理</span>
             </div>
             <div className='operation'>
-              <img></img>
+              <img src={require('../image/查看.png')}></img>
               <span>立即处理</span>
             </div>
           </div>
@@ -37,7 +37,7 @@ class warningInfo extends Component {
               <span className='station-details'>仪器故障掉线 待处理</span>
             </div>
             <div className='operation'>
-              <img></img>
+              <img src={require('../image/查看.png')}></img>
               <span>查看详情</span>
             </div>
           </div>

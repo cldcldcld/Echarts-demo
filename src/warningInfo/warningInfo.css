@@ -64,6 +64,11 @@
 	float: right;
 	padding-right: 15%;
 	padding-top: 6%;
+	width: 20%;
+}
+
+.operation img {
+	padding-right: 5%;
 }
 
 .operation span {
