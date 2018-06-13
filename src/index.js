@@ -16,6 +16,7 @@ import scatterChart from './scatter/scatterChart';
 import dashboard from './dashboard';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
 import SmoothLineChart from './smoothLine/smoothLineChart';
+import LandingPage from './landingPage/landingPage';
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter } from 'react-router-dom'
 
@@ -38,6 +39,7 @@ ReactDOM.render((
       <Route path="/scatterChart" component={scatterChart}/>
       <Route path="/AQIRadarChart" component={AQIRadarChart}/>
       <Route path="/SmoothLineChart" component={SmoothLineChart}/>
+      <Route path="/landingPage" component={LandingPage}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

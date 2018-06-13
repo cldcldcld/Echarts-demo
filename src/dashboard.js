@@ -22,42 +22,42 @@ class dashboard extends Component {
         {   
             value: 89,
             title: 'PM2.5',
-            description: '细颗粒物',
+            description: 'Fine Particles',
             trend: true,
             warning: false
         },
         {   
             value: 269,
             title: 'PM10',
-            description: '可吸入颗粒物',
+            description: 'Inhalable Particles',
             trend: true,
             warning: true
         },
         {   
             value: 89,
             title: 'NO2',
-            description: '二氧化氮',
+            description: 'Nitrogen Dioxide',
             trend: true,
             warning: false
         },
         {   
             value: 23,
             title: 'SO2',
-            description: '二氧化硫',
+            description: 'Sulfur Dioxide',
             trend: false,
             warning: false
         },
         {   
             value: 66,
             title: 'CO',
-            description: '一氧化碳',
+            description: 'Carbon Monoxide',
             trend: true,
             warning: false
         },
         {   
             value: 8,
             title: 'O3',
-            description: '臭氧',
+            description: 'Ozone',
             trend: false,
             warning: false
         }
@@ -80,7 +80,7 @@ class dashboard extends Component {
                         <img src={require('./image/主页.png')}></img>
                     </div>
                     <div>
-                        <span>返回主页</span>
+                        <span>Home Page</span>
                     </div>
                 </div>
                 <div className="left">
@@ -121,7 +121,7 @@ class dashboard extends Component {
                                 <img src={require('./image/数据.png')}></img>
                             </div>
                             <div className="real-time-data-title-content">
-                                <span>各指标实时数据</span>
+                                <span>Real-time Data</span>
                             </div>
                         </div>
                         <div className="real-time-data-value">

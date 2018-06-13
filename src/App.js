@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     var data = require('./data.json')
-    MP('e6yiGBqNtg6jlVwRXEa54zLiMfI9xBZk').then(BMap => {
+    MP('e6yiGBqNtg6jlVwRXEa54zLiMfI9xBZk').then(() => {
 
 
 
@@ -93,7 +93,7 @@ class App extends Component {
         });
 
         var bmap = myChart.getModel().getComponent('bmap').getBMap();
-        // bmap.addControl(new BMap.MapTypeControl());
+        bmap.addControl(new BMap.MapTypeControl());
 
 
     });

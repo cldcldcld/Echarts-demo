@@ -11,7 +11,7 @@ class weatherInfo extends Component {
             <img src={require('../image/天气.png')}></img>
           </div>
           <div className='weather-title-details'>
-            <span>气象信息</span>
+            <span>Weather Information</span>
           </div>
         </div>
         <div className='weather-content'>
@@ -19,13 +19,13 @@ class weatherInfo extends Component {
           <div className='temperature'>
             <span className='temperature-number'>31</span>
             <span className='temperature-degree'>°C</span><br/>
-            <span className='temperature-details'>晴转小雨</span>
+            <span className='temperature-details'>Clear to Light Rain</span>
           </div>
           <div className='weather-details'>
-            <span className='weather-date'>2017年6月15日</span><br/>
-            <span>湿度：69%</span><br/>
-            <span>空气质量指数：22优</span><br/>
-            <span>风向：北偏东1级</span>
+            <span className='weather-date'>June 21, 2018</span><br/>
+            <span>Humidity: 54%</span><br/>
+            <span>AQI: 70 Moderate</span><br/>
+            <span>Wind：S 11km/hr</span>
           </div>
         </div>
       </div>

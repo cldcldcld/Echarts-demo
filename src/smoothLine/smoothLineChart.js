@@ -18,7 +18,7 @@ class smoothLineChart extends Component {
 
     var data = [];
 
-    var date = ['1日', '2日', '3日', '4日', '5日', '6日', '7日', '8日', '9日', '10日', '11日', '12日', '13日', '14日', '15日'];
+    var date = ['June 1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
     for (var i = 0; i < 120; i++) {
         data.push(date[parseInt(i/8)]);
         this.AQIData[0].push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
@@ -76,7 +76,7 @@ class smoothLineChart extends Component {
     var option = {
         title:{
             text: [
-                    '{titleImage|}{titleContext|AQI趋势分析}'
+                    '{titleImage|}{titleContext|VOC Trend Analysis}'
                   ].join('\n'),
             top: 20,
             left: 20,
@@ -102,7 +102,7 @@ class smoothLineChart extends Component {
             showTitle: true,
             itemGap: 140,
             subtext: [
-                        '{averageValue|平均值}'
+                        '{averageValue|Avg Value}'
                      ].join('\n'),
             subtextStyle:{
                rich: {
@@ -111,7 +111,7 @@ class smoothLineChart extends Component {
                         fontFamily: 'PingFangSC-Regular',
                         opacity: 0.67,
                         fontSize: 16,
-                        padding: [0,0,0,45]
+                        padding: [0,0,0,32]
                     }
                 } 
             }

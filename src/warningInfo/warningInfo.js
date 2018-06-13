@@ -11,7 +11,7 @@ class warningInfo extends Component {
             <img src={require('../image/警报.png')}></img>
           </div>
           <div className='warning-title-details'>
-            <span>警报通知</span>
+            <span>Alarm Notification</span>
           </div>
         </div>
         <div className='warning-content'>
@@ -21,11 +21,11 @@ class warningInfo extends Component {
             </div>
             <div className='warning-station'>
               <span className='station-name'>市环保站点</span><br/>
-              <span className='station-details'>空气质量严重超标 待处理</span>
+              <span className='station-details'>Air Quality Exceeds Limit Pending</span>
             </div>
             <div className='operation'>
               <img src={require('../image/查看.png')}></img>
-              <span>立即处理</span>
+              <span>Process</span>
             </div>
           </div>
           <div className='warning-details'>
@@ -34,11 +34,11 @@ class warningInfo extends Component {
             </div>
             <div className='warning-station'>
               <span className='station-name'>龙新站点</span><br/>
-              <span className='station-details'>仪器故障掉线 待处理</span>
+              <span className='station-details'>Equipment Failure Pending</span>
             </div>
             <div className='operation'>
               <img src={require('../image/查看.png')}></img>
-              <span>查看详情</span>
+              <span>Details</span>
             </div>
           </div>
         </div>

@@ -17,8 +17,8 @@ class heatMapChart extends Component {
 
     var hours = ['12a', '2a', '4a', '6a', '8a', '10a', '12p',
             '2p', '4p', '6p','8p','10p'];
-    var days = ['周六', '周五', '周四',
-            '周三', '周二', '周一', '周日'];
+    var days = ['Sat', 'Fri', 'Thur',
+            'Wed', 'Tues', 'Mon', 'Sun'];
 
     var data = [
                 [0,0,41],[0,1,37],[0,2,35],[0,3,32],[0,4,30],[0,5,37],[0,6,45],[0,7,42],[0,8,41],[0,9,45],[0,10,42],[0,11,45],
@@ -36,7 +36,7 @@ class heatMapChart extends Component {
     myChart.setOption({
         title: {
             text: [
-                    '{titleImage|}{titleContext|AQI热力图}'
+                    '{titleImage|}{titleContext|AQI Heat Map}'
                   ].join('\n'),
             // left: 'left',
             top: 15,

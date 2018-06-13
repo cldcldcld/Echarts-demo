@@ -12,10 +12,8 @@ class scatterChart extends Component {
         refresh: true
     }
 
-    this.XTitle = 'PM2.5(μg/m3)';
-    this.YTitle = 'PM10(μg/m3)';
-    this.XTitleWithoutUnit = 'PM2.5';
-    this.YTitleWithoutUnit = 'PM10';
+    this.XTitle = 'PM2.5';
+    this.YTitle = 'PM10';
     this.data;
     this.fieldIndices;
     this.openYMenu = this.openYMenu.bind(this);
@@ -24,7 +22,7 @@ class scatterChart extends Component {
     this.closeXMenu = this.closeXMenu.bind(this);
 
 
-    this.menuList = ['PM2.5(μg/m3)','PM10(μg/m3)', 'SO2(μg/m3)', 'NO2(μg/m3)', 'CO(mg/m3)', 'O3(μg/m3)'];
+    this.menuList = ['PM2.5','PM10', 'SO2', 'NO2', 'CO', 'O3'];
 
     document.onclick = function() {
         // if( e.target.id === 'Y-menu' || e.target.id === 'X-menu') {
@@ -147,7 +145,7 @@ class scatterChart extends Component {
         return {
             title: {
                 text: [
-                        '{titleImage|}{titleContext|污染物相关性分析}'
+                        '{titleImage|}{titleContext|Pollutant Correlation Analysis}'
                       ].join('\n'),
                 top: 15,
                 left: 15,
@@ -253,8 +251,8 @@ class scatterChart extends Component {
                     type: 'scatter',
                     data: data.map(function (item, idx) {
                         return [
-                            item[fieldIndices[self.XTitleWithoutUnit]],
-                            item[fieldIndices[self.YTitleWithoutUnit]],
+                            item[fieldIndices[self.XTitle]],
+                            item[fieldIndices[self.YTitle]],
                             item[1],
                             idx
                         ];
@@ -318,14 +316,9 @@ class scatterChart extends Component {
     };
 
     closeYMenu(ev) {
-        var YSelectedItem;
         ev.nativeEvent.stopImmediatePropagation();
         document.getElementById('Y-menu').className = 'close';
-        if (ev.target.innerHTML) {
-            YSelectedItem = ev.target.innerHTML.substring(0, ev.target.innerHTML.indexOf('('))
-        }
         this.YTitle = ev.target.innerHTML;
-        this.YTitleWithoutUnit = YSelectedItem;
         this.setState({
             refresh: !this.state.refresh
         });
@@ -338,14 +331,9 @@ class scatterChart extends Component {
     };
 
     closeXMenu(ev) {
-        var XSelectedItem;
         ev.nativeEvent.stopImmediatePropagation();
         document.getElementById('X-menu').className = 'close';
-        if (ev.target.innerHTML) {
-            XSelectedItem = ev.target.innerHTML.substring(0, ev.target.innerHTML.indexOf('('))
-        }
         this.XTitle = ev.target.innerHTML;
-        this.XTitleWithoutUnit = XSelectedItem;
         this.setState({
             refresh: !this.state.refresh
         });
@@ -358,8 +346,8 @@ class scatterChart extends Component {
             series: {
                 data: self.data.map(function (item, idx) {
                     return [
-                        item[self.fieldIndices[self.XTitleWithoutUnit]],
-                        item[self.fieldIndices[self.YTitleWithoutUnit]],
+                        item[self.fieldIndices[self.XTitle]],
+                        item[self.fieldIndices[self.YTitle]],
                         item[1],
                         idx
                     ];
