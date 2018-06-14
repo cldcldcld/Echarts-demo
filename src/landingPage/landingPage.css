@@ -4,6 +4,6 @@
 }
 
 .point-pop-up {
-	/*position: absolute;*/
+	position: absolute;
 	z-index: 4;
 }

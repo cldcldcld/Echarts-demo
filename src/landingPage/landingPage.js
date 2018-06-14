@@ -7,6 +7,8 @@ class landingPage extends Component {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
+    // this.handleMouseOver = this.handleMouseOver.bind(this);
+    // this.handleMouseOut = this.handleMouseOut.bind(this);
     this.pointLocation = [
       {
           text: "",
@@ -21,8 +23,8 @@ class landingPage extends Component {
 
   render() {
 
-    const pointPopUpComponent = this.pointLocation.map((index) =>
-        <div key={index} className="point-pop-up">
+    const pointPopUpComponent = this.pointLocation.map((item, index) =>
+        <div key={index} id={'point-pop-up-' + index}>
             <span>123456677</span>
         </div>
     );
@@ -38,20 +40,17 @@ class landingPage extends Component {
                   multiple={false} 
                   autoViewport={false}
                   onClick={this.handleClick}
-                  onMouseOver={this.handleMouseOver}
+                  onMouseOver={handleMouseOver}
                   onMouseOut={this.handleMouseOut}
                 />
           </Map>
+          {pointPopUpComponent}
         </div>
     );
   }
 
   handleClick(number) {
     this.props.history.push('/dashboard');
-  }
-
-  handleMouseOver(number) {
-    console.log(number);
   }
 
   handleMouseOut(number) {
@@ -69,7 +68,7 @@ const styles = {
   mapContainer: {
     height: '100%',
     width: '100%',
-    position: 'relative',
+    position: 'fixed',
     zIndex: 0
   }
 }
@@ -339,5 +338,14 @@ const mapStyles = {
         }
       ]
 }
+
+  function handleMouseOver(number) {
+    var styles;
+    if (document.getElementById('point-pop-up-' + number)) {
+      styles = document.getElementById('point-pop-up-' + number).style;
+      styles.top = event.target.style.top;
+      // styles.left = event.target.style.left;
+    }
+  }
 
 export default landingPage;
