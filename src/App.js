@@ -92,8 +92,8 @@ class App extends Component {
             }]
         });
 
-        var bmap = myChart.getModel().getComponent('bmap').getBMap();
-        bmap.addControl(new BMap.MapTypeControl());
+        // var bmap = myChart.getModel().getComponent('bmap').getBMap();
+        // bmap.addControl(new BMap.MapTypeControl());
 
 
     });

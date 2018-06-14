@@ -24,7 +24,7 @@ import { Route, BrowserRouter } from 'react-router-dom'
 ReactDOM.render((
   <BrowserRouter>
   	<div style={{height: '100%'}}>
-  		<Route path="/" exact component={dashboard}/>
+  		<Route path="/dashboard" exact component={dashboard}/>
      	<Route path="/map" component={App}/>
      	<Route path="/baseRadarChart" component={baseRadarChart}/>
      	<Route path="/radarChart" component={radarChart}/>
@@ -39,7 +39,7 @@ ReactDOM.render((
       <Route path="/scatterChart" component={scatterChart}/>
       <Route path="/AQIRadarChart" component={AQIRadarChart}/>
       <Route path="/SmoothLineChart" component={SmoothLineChart}/>
-      <Route path="/landingPage" component={LandingPage}/>
+      <Route path="/" component={LandingPage}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

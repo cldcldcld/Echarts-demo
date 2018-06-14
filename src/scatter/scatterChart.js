@@ -28,8 +28,10 @@ class scatterChart extends Component {
         // if( e.target.id === 'Y-menu' || e.target.id === 'X-menu') {
         //     return;
         // }
-        document.getElementById('Y-menu').className = 'close';
-        document.getElementById('X-menu').className = 'close';
+        if (document.getElementById('Y-menu') && document.getElementById('X-menu')) {
+            document.getElementById('Y-menu').className = 'close';
+            document.getElementById('X-menu').className = 'close';
+        }
     }
   }
 

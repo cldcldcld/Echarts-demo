@@ -62,6 +62,8 @@ class dashboard extends Component {
             warning: false
         }
     ];
+
+    this.backToHome = this.backToHome.bind(this);
   }
 
   render() {
@@ -75,7 +77,7 @@ class dashboard extends Component {
 
       	<div className="dashboard">
             <MuiThemeProvider>
-                <div className='host-button'>
+                <div className='host-button' onClick={this.backToHome}>
                     <div className='button-image'>
                         <img src={require('./image/主页.png')}></img>
                     </div>
@@ -167,6 +169,9 @@ class dashboard extends Component {
     },2000);
   }
 
+  backToHome() {
+    this.props.history.push('/');
+  }
 
 }
 
