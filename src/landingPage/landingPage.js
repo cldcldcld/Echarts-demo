@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './landingPage.css';
 import {Map, Circle , NavigationControl, InfoWindow, MarkerList} from 'react-bmap';
+import StationPopup from './popup/stationPopup'
 
 class landingPage extends Component {
 
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
-    // this.handleMouseOver = this.handleMouseOver.bind(this);
-    // this.handleMouseOut = this.handleMouseOut.bind(this);
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseOut = this.handleMouseOut.bind(this);
     this.pointLocation = [
       {
           text: "",
@@ -24,8 +25,8 @@ class landingPage extends Component {
   render() {
 
     const pointPopUpComponent = this.pointLocation.map((item, index) =>
-        <div key={index} id={'point-pop-up-' + index}>
-            <span>123456677</span>
+        <div key={index} className='point-pop-up' id={'index-' + index}>
+            <StationPopup></StationPopup>
         </div>
     );
 
@@ -40,7 +41,7 @@ class landingPage extends Component {
                   multiple={false} 
                   autoViewport={false}
                   onClick={this.handleClick}
-                  onMouseOver={handleMouseOver}
+                  onMouseOver={this.handleMouseOver}
                   onMouseOut={this.handleMouseOut}
                 />
           </Map>
@@ -51,6 +52,15 @@ class landingPage extends Component {
 
   handleClick(number) {
     this.props.history.push('/dashboard');
+  }
+
+  handleMouseOver(number) {
+    var styles;
+    if (document.getElementById('index-' + number)) {
+      styles = document.getElementById('index-' + number).style;
+      styles.top = event.target.offsetTop - 20 + "px";
+      styles.left = event.target.offsetLeft + 20 + "px";
+    }
   }
 
   handleMouseOut(number) {
@@ -338,14 +348,5 @@ const mapStyles = {
         }
       ]
 }
-
-  function handleMouseOver(number) {
-    var styles;
-    if (document.getElementById('point-pop-up-' + number)) {
-      styles = document.getElementById('point-pop-up-' + number).style;
-      styles.top = event.target.style.top;
-      // styles.left = event.target.style.left;
-    }
-  }
 
 export default landingPage;
