@@ -16,12 +16,12 @@
 
 .weather-title-details {
 	float: left;
-	width: 50%;
+	width: 60%;
 	padding-left: 2%;
 }
 
 .weather-title span {
-	font-family: PingFangSC-Regular;
+	/*font-family: Helvetica;*/
 	font-size: 20px;
 	color: #FFFFFF;
 }
@@ -37,19 +37,19 @@
 }
 
 .temperature-number{
-	font-family: PingFangSC-Light;
+	/*font-family: PingFangSC-Light;*/
 	font-size: 64px;
 	color: #FFFFFF;
 }
 
 .temperature-degree {
-	font-family: PingFangSC-Thin;
+	/*font-family: PingFangSC-Thin;*/
 	font-size: 36px;
 	color: #FFFFFF;
 }
 
 .temperature-details {
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 }
@@ -62,7 +62,7 @@
 
 .weather-date {
 	opacity: 0.8;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 18px;
 	color: #FFFFFF;
 	line-height: 1.6;
@@ -70,7 +70,7 @@
 
 .weather-details span:not(:first-child) {
 	opacity: 0.6;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 	line-height: 1.6;

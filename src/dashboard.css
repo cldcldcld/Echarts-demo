@@ -82,7 +82,7 @@
 }
 
 .real-time-data-title span {
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 22px;
 	color: #FFFFFF;
 	padding-left: 1%;
@@ -97,7 +97,7 @@
 
 .real-data {
 	display: inline-block;
-	margin-left: 6.3%;
+	margin-left: 5.5%;
 }
 
 .histogram-chart {
@@ -154,7 +154,7 @@
 }
 
 .host-button span {
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 25%;

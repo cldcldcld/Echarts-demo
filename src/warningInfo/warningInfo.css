@@ -22,7 +22,7 @@
 }
 
 .warning-title span {
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 20px;
 	color: #FFFFFF;
 }
@@ -48,14 +48,14 @@
 
 .station-name {
 	opacity: 0.5;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 }
 
 .station-details {
 	opacity: 0.8;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #FFFFFF;
 }
@@ -72,7 +72,7 @@
 }
 
 .operation span {
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #22B5C8;
 }

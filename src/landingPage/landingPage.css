@@ -6,4 +6,10 @@
 .point-pop-up {
 	position: absolute;
 	z-index: 4;
+	height: 300px;
+	width: 800px;
+}
+
+.hide {
+	display: none;
 }

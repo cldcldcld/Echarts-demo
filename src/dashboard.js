@@ -166,7 +166,7 @@ class dashboard extends Component {
                 change: !self.setState.change
             });
         }
-    },2000);
+    },5000);
   }
 
   backToHome() {

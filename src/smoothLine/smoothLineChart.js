@@ -93,7 +93,7 @@ class smoothLineChart extends Component {
                     },
                     titleContext: {
                         color: '#FFFFFF',
-                        fontFamily: 'PingFangSC-Regular',
+                        fontFamily: 'Helvetica',
                         fontSize: 20,
                         padding: [0,0,0,5]
                     }
@@ -108,7 +108,7 @@ class smoothLineChart extends Component {
                rich: {
                     averageValue: {
                         color: '#FFFFFF',
-                        fontFamily: 'PingFangSC-Regular',
+                        fontFamily: 'Helvetica',
                         opacity: 0.67,
                         fontSize: 16,
                         padding: [0,0,0,32]
@@ -162,7 +162,7 @@ class smoothLineChart extends Component {
             },
             nameTextStyle: {
                 // opacity: 0.4,
-                fontFamily: 'PingFangSC-Regular',
+                fontFamily: 'Helvetica',
                 fontSize: '14px',
                 color: '#FFFFFF'                
             }

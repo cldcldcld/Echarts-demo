@@ -161,7 +161,7 @@ class scatterChart extends Component {
                         },
                         titleContext: {
                             color: '#FFFFFF',
-                            fontFamily: 'PingFangSC-Regular',
+                            fontFamily: 'Helvetica',
                             fontSize: 20,
                             padding: [0,0,0,5]
                         }
@@ -189,7 +189,7 @@ class scatterChart extends Component {
                 },
                 axisLabel: {
                     textStyle: {
-                        fontFamily: 'PingFangSC-Regular',
+                        fontFamily: 'Helvetica',
                         fontSize: '12',
                         color: 'rgba(255, 255, 255, 0.5)'
                     }
@@ -210,7 +210,7 @@ class scatterChart extends Component {
                 },
                 axisLabel: {
                     textStyle: {
-                        fontFamily: 'PingFangSC-Regular',
+                        fontFamily: 'Helvetica',
                         fontSize: '12',
                         color: 'rgba(255, 255, 255, 0.5)'
                     }

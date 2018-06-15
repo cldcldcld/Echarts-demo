@@ -51,7 +51,7 @@ class heatMapChart extends Component {
                     },
                     titleContext: {
                         color: '#FFFFFF',
-                        fontFamily: 'PingFangSC-Regular',
+                        fontFamily: 'Helvetica',
                         fontSize: 20,
                         padding: [0,0,0,5]
                     }

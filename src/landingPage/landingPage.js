@@ -14,10 +14,6 @@ class landingPage extends Component {
       {
           text: "",
           location: "120.193601,30.283677"
-      },
-      {
-          text: "",
-          location: "120.293601,30.283677"
       }
     ]
   }  
@@ -26,7 +22,7 @@ class landingPage extends Component {
 
     const pointPopUpComponent = this.pointLocation.map((item, index) =>
         <div key={index} className='point-pop-up' id={'index-' + index}>
-            <StationPopup></StationPopup>
+            <StationPopup index={index}></StationPopup>
         </div>
     );
 
@@ -58,18 +54,21 @@ class landingPage extends Component {
     var styles;
     if (document.getElementById('index-' + number)) {
       styles = document.getElementById('index-' + number).style;
-      styles.top = event.target.offsetTop - 20 + "px";
-      styles.left = event.target.offsetLeft + 20 + "px";
+      styles.top = event.target.offsetTop - 300 + "px";
+      styles.left = event.target.offsetLeft + 30 + "px";
+      document.getElementById('index-' + number).className = 'point-pop-up';
     }
   }
 
   handleMouseOut(number) {
-    console.log(number);
+    if (document.getElementById('index-' + number)) {
+      document.getElementById('index-' + number).className = 'hide point-pop-up';
+    }
   }
 
-  componentDidMount() {
+  // componentDidMount() {
 
-  }
+  // }
 
 
 }

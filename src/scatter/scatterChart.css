@@ -21,7 +21,7 @@
 .Y-dropdown button {
 	background-color: transparent;
 	border-color: transparent;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #FFFFFF;
 	opacity: 0.8;
@@ -41,7 +41,7 @@
 .X-dropdown button {
 	background-color: transparent;
 	border-color: transparent;
-	font-family: PingFangSC-Regular;
+	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #FFFFFF;
 	opacity: 0.8;

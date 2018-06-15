@@ -1,3 +1,53 @@
 .station-popup {
-	
+	height: 100%;
+	width: 100%;
+	background-color: #1C2A3E;
+}
+
+.popup-title {
+	height: 25%;
+}
+
+.station-title {
+	display: inline-block;
+	width: 40%;
+}
+
+.station-number {
+	font-size: 32px;
+	color: #FFFFFF;
+	padding-left: 10%;
+}
+
+.station-name {
+	font-size: 28px;
+	color: #FFFFFF;
+}
+
+.station-details {
+	display: inline-block;
+}
+
+.station-details span {
+	opacity: 0.6;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.weather-details {
+	display: inline-block;
+}
+
+.popup-content {
+	height: 75%;
+	width: 100%;
+}
+
+.station-AQI-data {
+	height: 100%;
+	width: 60%;
+}
+
+.AQITrend {
+  height: 100%;
 }
