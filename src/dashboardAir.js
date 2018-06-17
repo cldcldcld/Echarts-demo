@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './dashboard.css';
+import './dashboardAir.css';
 import App from './App'
-import RadarChart from './radarImage/radarChart';
+// import RadarChart from './radarImage/radarChart';
 // import HistogramChart from './histogram/histogramChart';
 import HeatMapChart from './heatMap/heatMapChart';
 // import GaugeChart from './gauge/gaugeChart';
@@ -13,7 +13,7 @@ import WeatherInfo from './weatherInfo/weatherInfo';
 import WarningInfo from './warningInfo/warningInfo';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-class dashboard extends Component {
+class dashboardAir extends Component {
 
   constructor() {
     super();
@@ -74,12 +74,11 @@ class dashboard extends Component {
     );
 
     return (
-
-      	<div className="dashboard">
-            <MuiThemeProvider>
+        <MuiThemeProvider>
+      	    <div className="dashboardAir">
                 <div className='host-button' onClick={this.backToHome}>
                     <div className='button-image'>
-                        <img src={require('./image/主页.png')}></img>
+                        <img src={require('./image/主页.png')} alt='Home Page'></img>
                     </div>
                     <div>
                         <span>Home Page</span>
@@ -120,7 +119,7 @@ class dashboard extends Component {
                     <div className="real-time-data">
                         <div className="real-time-data-title">
                             <div className="real-time-data-image">
-                                <img src={require('./image/数据.png')}></img>
+                                <img src={require('./image/数据.png')} alt='Data'></img>
                             </div>
                             <div className="real-time-data-title-content">
                                 <span>Real-time Data</span>
@@ -146,8 +145,8 @@ class dashboard extends Component {
                         </div>
                     </div>
                 </div>
-            </MuiThemeProvider>
-      	</div>
+      	    </div>
+        </MuiThemeProvider>
     );
   }
 
@@ -158,8 +157,8 @@ class dashboard extends Component {
     setInterval(function () {
         var tempValue;
         for (var i = 0; i < self.realDataList.length; i++) {
-            tempValue = self.realDataList[i].value
-            self.realDataList[i].value = parseInt(Math.random()*200 + 10);
+            tempValue = self.realDataList[i].value;
+            self.realDataList[i].value = parseInt(Math.random()*200 + 10, 10);
             self.realDataList[i].trend = self.realDataList[i].value > tempValue ? true : false;
             self.realDataList[i].warning = self.realDataList[i].value > 150 ? true : false;
             self.setState ({
@@ -175,4 +174,4 @@ class dashboard extends Component {
 
 }
 
-export default dashboard;
+export default dashboardAir;

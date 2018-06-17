@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import echarts from 'echarts';
 import './weatherInfo.css'
 
 class weatherInfo extends Component {
@@ -8,14 +7,14 @@ class weatherInfo extends Component {
       <div className='weatherInfo'>
         <div className='weather-title'>
           <div className='weather-image'>
-            <img src={require('../image/天气.png')}></img>
+            <img src={require('../image/天气.png')} alt='Weather'></img>
           </div>
           <div className='weather-title-details'>
             <span>Weather Information</span>
           </div>
         </div>
         <div className='weather-content'>
-           <img src={require('../image/晴转小雨.png')}></img>
+           <img src={require('../image/晴转小雨.png')} alt='Clear to Light Rain'></img>
           <div className='temperature'>
             <span className='temperature-number'>31</span>
             <span className='temperature-degree'>°C</span><br/>

@@ -1,6 +1,7 @@
 .map-container {
 	height: 100%;
 	width: 100%;
+	background: #2A3C55;
 }
 
 .point-pop-up {
@@ -12,4 +13,76 @@
 
 .hide {
 	display: none;
+}
+
+.navigation-button {
+	position: absolute;
+	background-color: rgba(28,42,62,1);
+	width: 8%;
+	height: 45%;
+	margin-top: 3%;
+	margin-left: 3%;
+	z-index: 3;
+	border-radius: 100px;
+}
+
+.air-button {
+	height: 30%;
+	border-radius: 100px;
+	border: 0px solid rgba(34,181,200,0.60);
+	opacity: 0.4;
+}
+
+.air-button img {
+	padding-top: 18%;
+	padding-left: 28%;
+}
+
+.air-button span {
+	padding-left: 20%;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.water-button {
+	margin-top: 8%;
+	height: 30%;
+	border: 0px solid rgba(152,133,254,1);
+	border-radius: 100px;
+	opacity: 0.4;
+}
+
+.water-button img {
+	padding-top: 20%;
+	padding-left: 28%;
+}
+
+.water-button span {
+	padding-left: 15%;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.soil-button {
+	margin-top: 8%; 
+	height: 30%;
+	border: 0px solid rgba(255,162,41,1);
+	border-radius: 100px;
+	opacity: 0.4;
+}
+
+.soil-button img {
+	padding-top: 24%;
+	padding-left: 22%;
+}
+
+.soil-button span {
+	padding-left: 17%;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.selected {
+	border-width: 4px;
+	opacity: 1;
 }

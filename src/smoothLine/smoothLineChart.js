@@ -8,7 +8,7 @@ class smoothLineChart extends Component {
 
     this.createOption = this.createOption.bind(this);
     this.option = {};
-    this.AQIData = new Array();
+    this.AQIData = [];
     this.AQIData[0] = [];
     this.AQIData[1] = [];
     this.AQIData[2] = [];
@@ -20,7 +20,7 @@ class smoothLineChart extends Component {
 
     var date = ['June 1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
     for (var i = 0; i < 120; i++) {
-        data.push(date[parseInt(i/8)]);
+        data.push(date[parseInt(i/8, 10)]);
         this.AQIData[0].push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
         this.AQIData[1].push((Math.cos(i / 5) * (i / 5 -7) + i / 9) * 3+30);
         this.AQIData[2].push((Math.sin(i / 5) * (i / 6 -4) + i / 8) * 3+35);
@@ -54,7 +54,7 @@ class smoothLineChart extends Component {
     if (event.target.className) {
         event.target.className = '';
     } else {
-        event.target.className = 'clicked ' + 'color-' + index;
+        event.target.className = 'clicked color-' + index;
     }
 
     if (this.option.series[index].data && this.option.series[index].data.length > 0) {

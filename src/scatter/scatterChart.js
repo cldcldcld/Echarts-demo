@@ -14,8 +14,8 @@ class scatterChart extends Component {
 
     this.XTitle = 'PM2.5';
     this.YTitle = 'PM10';
-    this.data;
-    this.fieldIndices;
+    this.data = [];
+    this.fieldIndices = {};
     this.openYMenu = this.openYMenu.bind(this);
     this.closeYMenu = this.closeYMenu.bind(this);
     this.openXMenu = this.openXMenu.bind(this);
@@ -67,8 +67,6 @@ class scatterChart extends Component {
 
   componentDidMount() {
 
-    var option = {};
-
     var originData = require('./scatter.json');
     var myChart = echarts.init(document.getElementById('scatterChart'));
 
@@ -106,7 +104,7 @@ class scatterChart extends Component {
 
     data = normalizeData(originData).slice(0, 100);
     this.data = data
-    myChart.setOption(option = getOption(data, this));
+    myChart.setOption(getOption(data, this));
 
     function normalizeData(originData) {
         var groupMap = {};
@@ -270,46 +268,6 @@ class scatterChart extends Component {
             animationDurationUpdate: 2000
         };
     }
-
-    var fieldNames = schema.map(function (item) {
-        return item.name;
-    }).slice(2);
-
-    // app.config = {
-    //     xAxis: 'PM2.5',
-    //     yAxis: 'PM10',
-    //     onChange: function () {
-    //         if (data) {
-    //             myChart.setOption({
-    //                 xAxis: {
-    //                     name: app.config.xAxis
-    //                 },
-    //                 yAxis: {
-    //                     name: app.config.yAxis
-    //                 },
-    //                 series: {
-    //                     data: data.map(function (item, idx) {
-    //                         return [
-    //                             item[fieldIndices[app.config.xAxis]],
-    //                             item[fieldIndices[app.config.yAxis]],
-    //                             item[1],
-    //                             idx
-    //                         ];
-    //                     })
-    //                 }
-    //             });
-    //         }
-    //     }
-    // };
-
-    // app.configParameters = {
-    //     xAxis: {
-    //         options: fieldNames
-    //     },
-    //     yAxis: {
-    //         options: fieldNames
-    //     }
-    // };
    }
 
     openYMenu(ev) {

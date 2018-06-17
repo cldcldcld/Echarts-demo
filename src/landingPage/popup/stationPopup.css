@@ -5,27 +5,31 @@
 }
 
 .popup-title {
-	height: 25%;
+	height: 20%;
+	padding-top: 2%;
+	border-bottom: 1px solid rgba(255,255,255,0.12);
+	padding-left: 4%;
+	padding-right: 4%
 }
 
 .station-title {
-	display: inline-block;
-	width: 40%;
+	float: left;
+	padding-right: 2%;
 }
 
 .station-number {
-	font-size: 32px;
+	font-size: 40px;
 	color: #FFFFFF;
-	padding-left: 10%;
 }
 
 .station-name {
-	font-size: 28px;
+	font-size: 36px;
 	color: #FFFFFF;
+	padding-left: 10px;
 }
 
 .station-details {
-	display: inline-block;
+	float: left;
 }
 
 .station-details span {
@@ -34,13 +38,57 @@
 	color: #FFFFFF;
 }
 
-.weather-details {
-	display: inline-block;
+.station-weather {
+	float: right;
+	width: 10%
+}
+
+.station-weather img {
+	width: 70%;
+}
+
+.station-temperature-number {
+	float: left;
+	width: 45%;
+	padding-top: 16px;
+}
+
+.station-temperature-number span {
+	font-size: 32px;
+	color: #FFFFFF;
+}
+
+.station-temperature {
+	float: left;
+	width: 55%;
+}
+
+.station-temperature-degree {
+	font-size: 20px;
+	color: #FFFFFF;
+	opacity: 0.6;
 }
 
 .popup-content {
 	height: 75%;
 	width: 100%;
+	padding-left: 4%;
+	padding-right: 4%
+}
+
+.station-img {
+	width: 35%;
+	float: left;
+}
+
+.station-img img {
+	padding: 10% 10% 10% 0;
+	width: 50%
+}
+
+.station-AQI-data {
+	width: 65%;
+	float: left;
 }
 
 .station-AQI-data {

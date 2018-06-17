@@ -13,7 +13,9 @@ import stackLineChart from './stackLine/stackLineChart';
 import standardHistogramChart from './standardHistogram/standardHistogramChart';
 import gaugeChart from './gauge/gaugeChart';
 import scatterChart from './scatter/scatterChart';
-import dashboard from './dashboard';
+import dashboardAir from './dashboardAir';
+import dashboardWater from './dashboardWater';
+import dashboardSoil from './dashboardSoil';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
 import SmoothLineChart from './smoothLine/smoothLineChart';
 import LandingPage from './landingPage/landingPage';
@@ -25,7 +27,9 @@ ReactDOM.render((
   <BrowserRouter>
   	<div style={{height: '100%'}}>
       <Route path="/" exact component={LandingPage}/>
-  		<Route path="/dashboard" component={dashboard}/>
+  		<Route path="/dashboardAir" component={dashboardAir}/>
+      <Route path="/dashboardWater" component={dashboardWater}/>
+      <Route path="/dashboardSoil" component={dashboardSoil}/>
      	<Route path="/map" component={App}/>
      	<Route path="/baseRadarChart" component={baseRadarChart}/>
      	<Route path="/radarChart" component={radarChart}/>
