@@ -20,27 +20,36 @@ class landingPage extends Component {
           stationLatitude: 'Latitude: 30.283677 °N',
           stationLongitude: 'Longitude: 120.193601 °E',
           stationspecialty: 'Elevation: 9 m',
-          stationTemperature: '31'
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
         }
       ],
       'Water': [
         {
-          stationNumber: '01',
+          stationNumber: '13',
           stationName: 'Fuchun River Reservoir',
           stationLatitude: 'Latitude: 30.233677 °N',
           stationLongitude: 'Longitude: 120.163601 °E',
           stationspecialty: 'Water Level: 22.42 m',
-          stationTemperature: '31'
+          stationTemperature: '31',
+          image: require('../image/waterStation1.png'),
+          month: 'July 1st',
+          year: '2018'
         }
       ],
       'Soil': [
         {
-          stationNumber: '01',
-          stationName: 'Fuchun River Reservoir',
+          stationNumber: '12',
+          stationName: 'West Lake',
           stationLatitude: 'Latitude: 30.253677 °N',
           stationLongitude: 'Longitude: 120.133601 °E',
-          stationspecialty: 'Water Level: 22.42 m',
-          stationTemperature: '31'
+          stationspecialty: 'Soil Moisture: 16.8% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/soilStation1.png'),
+          month: 'June 1st',
+          year: '2018'
         }
       ]     
     }
@@ -85,8 +94,8 @@ class landingPage extends Component {
     const color = this.colorObj[this.state.type];
 
     const pointPopUpComponent = stationInfo.map((item, index) =>
-        <div key={index} className='hide point-pop-up' id={'index-' + index}>
-            <StationPopup stationInfo={item} index={index}></StationPopup>
+        <div key={index} className='point-pop-up' id={'index-' + index}>
+            <StationPopup type={this.state.type} stationInfo={item} index={index}></StationPopup>
         </div>
     );
 

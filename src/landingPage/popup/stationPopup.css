@@ -76,26 +76,35 @@
 	padding-right: 4%
 }
 
-.station-img {
+.popup-content .station-date {
+	position: absolute;
+	z-index: 3;
+	padding-top: 11%;
+	padding-left: 12%;
+	text-align: center;
+}
+
+.popup-content .station-date span {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.popup-content .station-img {
 	width: 35%;
 	float: left;
 }
 
-.station-img img {
-	padding: 10% 10% 10% 0;
-	width: 50%
+.popup-content .station-img img {
+	padding-top: 9%;
+	width: 95%
 }
 
-.station-AQI-data {
-	width: 65%;
+.popup-content .station-AQI-data {
+	height: 100%;
+	width: 60%;
 	float: left;
 }
 
-.station-AQI-data {
-	height: 100%;
-	width: 60%;
-}
-
-.AQITrend {
+.popup-content .station-AQI-data .AQITrend {
   height: 100%;
 }

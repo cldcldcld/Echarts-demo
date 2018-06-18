@@ -97,7 +97,8 @@
 
 .real-data {
 	display: inline-block;
-	margin-left: 5.5%;
+	margin-left: 3%;
+	width: 13.5%
 }
 
 .histogram-chart {
