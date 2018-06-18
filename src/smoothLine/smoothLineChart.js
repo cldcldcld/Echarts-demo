@@ -126,15 +126,9 @@ class smoothLineChart extends Component {
             type: 'category',
             boundaryGap: false,
             data: data,
-            nameTextStyle: {
-                // opacity: 0.4,
-                // fontFamily: 'PingFangSC-Regular',
-                // fontSize: '16px',
-                color: 'red'                
-            },
             axisLine: {
                 lineStyle: {
-                    color: 'rgba(255, 255, 255, 0.5)'
+                    color: 'rgba(255, 255, 255, 0.2)'
                 }
             },
             axisLabel: {
@@ -147,8 +141,9 @@ class smoothLineChart extends Component {
         yAxis: {
             type: 'value',
             axisLine: {
+                show: false,
                 lineStyle: {
-                    color: 'rgba(255, 255, 255, 0.5)'
+                    color: 'rgba(255, 255, 255, 0.2)'
                 }
             },
             splitNumber: 4,
@@ -159,12 +154,6 @@ class smoothLineChart extends Component {
             },
             axisTick: {
                 show: false
-            },
-            nameTextStyle: {
-                // opacity: 0.4,
-                fontFamily: 'Helvetica',
-                fontSize: '14px',
-                color: '#FFFFFF'                
             }
         },
         series: [{

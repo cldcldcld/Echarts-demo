@@ -75,8 +75,11 @@ class heatMapChart extends Component {
             },
             axisLine: {
                 lineStyle: {
-                    color: 'white'
+                    color: 'rgba(255, 255, 255, 0.4)'
                 }
+            },
+            axisTick: {
+                show: false
             }
         },
         yAxis: {
@@ -87,13 +90,16 @@ class heatMapChart extends Component {
             },
             axisLine: {
                 lineStyle: {
-                    color: 'white'
+                    color: 'rgba(255, 255, 255, 0.4)'
                 }
+            },
+            axisTick: {
+                show: false
             }
         },
         visualMap: {
             min: 30,
-            max: 100,
+            max: 60,
             // calculable: true,
             orient: 'horizontal',
             left: '61%',
@@ -101,7 +107,10 @@ class heatMapChart extends Component {
             itemHeight: 120,
             itemWidth: 12,
             textStyle: {
-                color: 'white'
+                color: 'rgba(255, 255, 255, 0.4)'
+            },
+            inRange: {
+                color: ['#F2DA9C', '#DE987D', '#CD6964', '#BF444C']
             }
         },
         series: [{
@@ -116,7 +125,7 @@ class heatMapChart extends Component {
             itemStyle: {
                 emphasis: {
                     shadowBlur: 10,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    shadowColor: 'rgba(255, 255, 255, 0.4)'
                 }
             }
         }]        

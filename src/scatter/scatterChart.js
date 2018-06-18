@@ -182,20 +182,20 @@ class scatterChart extends Component {
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.5)'
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 },
                 axisLabel: {
                     textStyle: {
                         fontFamily: 'Helvetica',
                         fontSize: '12',
-                        color: 'rgba(255, 255, 255, 0.5)'
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 },
                 axisTick: {
+                    inside: true,
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.5)',
-                        inside: true
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 }
             },
@@ -203,20 +203,20 @@ class scatterChart extends Component {
                 splitLine: {show: false},
                 axisLine: {
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.5)'
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 },
                 axisLabel: {
                     textStyle: {
                         fontFamily: 'Helvetica',
                         fontSize: '12',
-                        color: 'rgba(255, 255, 255, 0.5)'
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 },
                 axisTick: {
+                    inside: true,
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.5)',
-                        inside: true
+                        color: 'rgba(255, 255, 255, 0.4)'
                     }
                 }
             },
