@@ -258,7 +258,7 @@ class scatterChart extends Component {
                         ];
                     }),
                     itemStyle: {
-                        color: '#22B5C8'
+                        color: 'rgba(34,181,200,0.7)'
                     },
                     animationThreshold: 5000,
                     progressiveThreshold: 5000

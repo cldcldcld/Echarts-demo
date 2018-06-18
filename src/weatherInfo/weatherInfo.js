@@ -14,7 +14,7 @@ class weatherInfo extends Component {
           </div>
         </div>
         <div className='weather-content'>
-           <img src={require('../image/晴转小雨.png')} alt='Clear to Light Rain'></img>
+          <img src={require('../image/晴转小雨.png')} alt='Clear to Light Rain'></img>
           <div className='temperature'>
             <span className='temperature-number'>31</span>
             <span className='temperature-degree'>°C</span><br/>

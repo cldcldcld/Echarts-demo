@@ -9,30 +9,30 @@
 	padding-top: 2%;
 	border-bottom: 1px solid rgba(255,255,255,0.12);
 	padding-left: 4%;
-	padding-right: 4%
+	padding-right: 4%;
 }
 
-.station-title {
+.popup-title .station-title {
 	float: left;
 	padding-right: 2%;
 }
 
-.station-number {
+.popup-title .station-title .station-number {
 	font-size: 40px;
 	color: #FFFFFF;
 }
 
-.station-name {
+.popup-title .station-title .station-name {
 	font-size: 36px;
 	color: #FFFFFF;
 	padding-left: 10px;
 }
 
-.station-details {
+.popup-title .station-details {
 	float: left;
 }
 
-.station-details span {
+.popup-title .station-details span {
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
