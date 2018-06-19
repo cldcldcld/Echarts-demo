@@ -106,7 +106,7 @@ class waterTrend extends Component {
               },
               {
                   type:'bar',
-                  data:[5.6, 4.8, 2.4, 1.2, 3.2, 1.6],
+                  data:[5.6, 4.8, 2.4, 1.2, 4.2, 1.6],
                   stack: 'percent',
                   itemStyle: {
                       color: 'rgba(152,133,254,0.11)',

@@ -24,28 +24,127 @@ class landingPage extends Component {
           image: require('../image/airStation1.png'),
           month: 'May 1st',
           year: '2018'
+        },
+        {
+          stationNumber: '02',
+          stationName: 'Xinfeng Station',
+          stationLatitude: 'Latitude: 30.300891 °N',
+          stationLongitude: 'Longitude: 120.211423 °E',
+          stationspecialty: 'Elevation: 7 m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '03',
+          stationName: 'ZJU Station',
+          stationLatitude: 'Latitude: 30.28243 °N',
+          stationLongitude: 'Longitude: 120.148758 °E',
+          stationspecialty: 'Elevation: 14 m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
         }
       ],
       'Water': [
         {
-          stationNumber: '13',
-          stationName: 'Fuchun River Reservoir',
-          stationLatitude: 'Latitude: 30.233677 °N',
-          stationLongitude: 'Longitude: 120.163601 °E',
-          stationspecialty: 'Water Level: 22.42 m',
+          stationNumber: '01',
+          stationName: 'Fuchun River Fuyang District',
+          stationLatitude: 'Latitude: 30.06116 °N',
+          stationLongitude: 'Longitude: 119.984286 °E',
+          stationspecialty: 'Water Level: 20m',
           stationTemperature: '31',
           image: require('../image/waterStation1.png'),
           month: 'July 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '02',
+          stationName: 'Zhong River Ziyang Rd',
+          stationLatitude: 'Latitude: 30.238553 °N',
+          stationLongitude: 'Longitude: 120.167198 °E',
+          stationspecialty: 'Water Level: 6.3m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '03',
+          stationName: 'Xintang River Wangjiang Rd',
+          stationLatitude: 'Latitude: 30.238714 °N',
+          stationLongitude: 'Longitude: 120.199456 °E',
+          stationspecialty: 'Water Level: 4.2m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River Xiaoying Rd',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/airStation1.png'),
+          month: 'May 1st',
           year: '2018'
         }
       ],
       'Soil': [
         {
-          stationNumber: '12',
-          stationName: 'West Lake',
-          stationLatitude: 'Latitude: 30.253677 °N',
-          stationLongitude: 'Longitude: 120.133601 °E',
-          stationspecialty: 'Soil Moisture: 16.8% at 20 m',
+          stationNumber: '01',
+          stationName: 'Wushan Station',
+          stationLatitude: 'Latitude: 30.233516 °N',
+          stationLongitude: 'Longitude: 120.16773 °E',
+          stationspecialty: 'Soil Moisture: 16.5% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/soilStation1.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '02',
+          stationName: 'Daqingli Station',
+          stationLatitude: 'Latitude: 30.211048 °N',
+          stationLongitude: 'Longitude: 120.086667 °E',
+          stationspecialty: 'Soil Moisture: 20.3% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/soilStation1.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '03',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.280933 °N',
+          stationLongitude: 'Longitude: 120.075743 °E',
+          stationspecialty: 'Soil Moisture: 21.0% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/soilStation1.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
           stationTemperature: '31',
           image: require('../image/soilStation1.png'),
           month: 'June 1st',
@@ -59,18 +158,126 @@ class landingPage extends Component {
         {
           text: '',
           location: '120.193601,30.283677'
+        }, 
+        {
+          text: '',
+          location: '120.211423,30.300891'
+        },
+        {
+          text: '',
+          location: '120.148758,30.28243'
+        },
+        {
+          text: '',
+          location: '120.049872,30.270952'
+        },
+        {
+          text: '',
+          location: '120.157381,30.328326'
+        },
+        {
+          text: '',
+          location: '120.285013,30.326331'
+        },
+        {
+          text: '',
+          location: '120.116562,30.227525'
+        },
+        {
+          text: '',
+          location: '120.201075,30.236012'
+        },
+        {
+          text: '',
+          location: '120.038661,30.122622'
+        },
+        {
+          text: '',
+          location: '120.285587,30.227525'
         }
       ],
       'Water': [
         {
           text: '',
-          location: '120.163601,30.233677'
+          location: '119.984286,30.06116'
+        },
+        {
+          text: '',
+          location: '120.167198,30.238553'
+        },
+        {
+          text: '',
+          location: '120.199456,30.238714'
+        },
+        {
+          text: '',
+          location: '120.182942,30.257119'
+        },
+        {
+          text: '',
+          location: '120.1776462793,30.3084206024'
+        },
+        {
+          text: '',
+          location: '120.13442,30.316362'
+        },
+        {
+          text: '',
+          location: '120.201127,30.039091'
+        },
+        {
+          text: '',
+          location: '120.226914,30.217625'
+        },
+        {
+          text: '',
+          location: '120.2994732351,30.3069873184'
+        },
+        {
+          text: '',
+          location: '119.741787,30.273836'
         }
       ],
       'Soil': [
         {
           text: '',
-          location: '120.133601,30.253677'
+          location: '120.16773,30.233516'
+        },
+        {
+          text: '',
+          location: '120.086667,30.211048'
+        }, 
+        {
+          text: '',
+          location: '120.075743,30.280933'
+        },
+        {
+          text: '',
+          location: '120.226371,30.223531'
+        }, 
+        {
+          text: '',
+          location: '120.221772,30.324835'
+        },
+        {
+          text: '',
+          location: '120.16888,30.316854'
+        },
+        {
+          text: '',
+          location: '120.321807,30.268956'
+        },
+        {
+          text: '',
+          location: '120.031475,30.127369'
+        },
+        {
+          text: '',
+          location: '120.433916,30.183329'
+        },
+        {
+          text: '',
+          location: '120.243044,30.282929'
         }
       ]
     }
@@ -94,13 +301,13 @@ class landingPage extends Component {
     const color = this.colorObj[this.state.type];
 
     const pointPopUpComponent = stationInfo.map((item, index) =>
-        <div key={index} className='point-pop-up' id={'index-' + index}>
+        <div key={index} className='hide point-pop-up' id={'index-' + index}>
             <StationPopup type={this.state.type} stationInfo={item} index={index}></StationPopup>
         </div>
     );
 
     const markList = <MarkerList 
-                        data={pointLocation} 
+                        data={pointLocation}
                         fillStyle={color}
                         animation={true} 
                         isShowShadow={false} 
@@ -126,7 +333,7 @@ class landingPage extends Component {
               <span>Solid Quality</span>
             </div>
           </div>
-          <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.193601, lat: 30.283677}} zoom='12'>
+          <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}
           </Map>
           {pointPopUpComponent}
@@ -187,9 +394,9 @@ class landingPage extends Component {
 
 const styles = {
   mapContainer: {
-    height: '90%',
-    width: '94%',
-    padding: '3% 3% 3% 3%',
+    height: '100%',
+    width: '100%',
+    // padding: '3% 3% 3% 3%',
     position: 'fixed',
     zIndex: 0
   }

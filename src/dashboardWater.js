@@ -15,11 +15,20 @@ class dashboardWater extends Component {
 
     return (
 
+      <MuiThemeProvider>
       	<div className="dashboardWater">
-            <MuiThemeProvider>
- 
-            </MuiThemeProvider>
-      	</div>
+          <div className='host-button' onClick={this.backToHome}>
+            <div className='button-image'>
+              <img src={require('./image/主页.png')} alt='Home Page'></img>
+            </div>
+            <div>
+              <span>Home Page</span>
+            </div>
+          </div>
+          <img src={require('./image/air-dashboard.png')}></img>
+        </div>
+      </MuiThemeProvider>
+
     );
   }
 

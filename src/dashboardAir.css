@@ -137,7 +137,7 @@
 	float: left;
 }
 
-.host-button {
+.dashboardAir .host-button {
 	height: 120px;
 	width: 120px;
 	position: absolute;
@@ -149,14 +149,14 @@
 	left: 2%;
 }
 
-.button-image img {
+.dashboardAir .host-button .button-image img {
 	margin-left: 25%;
-	margin-top: 20%;
+	margin-top: 22%;
 }
 
-.host-button span {
+.dashboardAir .host-button span {
 	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
-	margin-left: 25%;
+	margin-left: 20%;
 }

@@ -19,7 +19,7 @@ class warningInfo extends Component {
               <img src={require('../image/31铃铛.png')} alt='Bell'></img>
             </div>
             <div className='warning-station'>
-              <span className='station-name'>市环保站点</span><br/>
+              <span className='station-name'>West Lake Station</span><br/>
               <span className='station-details'>Air Quality Exceeds Limit Pending</span>
             </div>
             <div className='operation'>
@@ -32,7 +32,7 @@ class warningInfo extends Component {
               <img src={require('../image/31铃铛.png')} alt='Bell'></img>
             </div>
             <div className='warning-station'>
-              <span className='station-name'>龙新站点</span><br/>
+              <span className='station-name'>Xixi Station</span><br/>
               <span className='station-details'>Equipment Failure Pending</span>
             </div>
             <div className='operation'>

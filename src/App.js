@@ -68,8 +68,8 @@ class App extends Component {
         myChart.setOption({
             animation: false,
             bmap: {
-                center: [111.297145,23.48632],
-                zoom: 13,
+                center: [120.13066322374, 30.240018034923],
+                zoom: 14,
                 roam: true
             },
             visualMap: {
@@ -87,8 +87,11 @@ class App extends Component {
                 type: 'heatmap',
                 coordinateSystem: 'bmap',
                 data: points,
-                pointSize: 5,
-                blurSize: 6
+                pointSize: 7,
+                blurSize: 5,
+                itemStyle: {
+                    borderColor: 'black'
+                }
             }]
         });
 

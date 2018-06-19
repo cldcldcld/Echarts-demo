@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import echarts from 'echarts';
 import './stationPopup.css';
 import AirTrend from './airTrend';
 import WaterTrend from './waterTrend';

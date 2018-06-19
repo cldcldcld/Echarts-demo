@@ -93,7 +93,8 @@ class airTrend extends Component {
                   type:'line',
                   data:[2.6, 2.9, 4.0, 4.4, 4.9, 5.7, 7.6, 8.2],
                   lineStyle: {
-                      color: 'rgba(19,190,255,1)'
+                      color: 'rgba(19,190,255,1)',
+                      width: '3'
                   }
               }
           ]      
