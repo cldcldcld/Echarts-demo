@@ -15,11 +15,20 @@ class dashboardSoil extends Component {
 
     return (
 
-      	<div className="dashboardSoil">
-            <MuiThemeProvider>
- 
-            </MuiThemeProvider>
-      	</div>
+      <MuiThemeProvider>
+        <div className="dashboardSoil">
+          <div className='host-button' onClick={this.backToHome}>
+            <div className='button-image'>
+              <img src={require('./image/主页.png')} alt='Home Page'></img>
+            </div>
+            <div>
+              <span>Home Page</span>
+            </div>
+          </div>
+          <img src={require('./image/soilDashboard.png')}></img>
+        </div>
+      </MuiThemeProvider>
+
     );
   }
 

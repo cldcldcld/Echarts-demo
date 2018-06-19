@@ -25,7 +25,7 @@ class dashboardWater extends Component {
               <span>Home Page</span>
             </div>
           </div>
-          <img src={require('./image/air-dashboard.png')}></img>
+          <img src={require('./image/waterDashboard.png')}></img>
         </div>
       </MuiThemeProvider>
 

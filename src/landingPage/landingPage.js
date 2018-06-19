@@ -78,7 +78,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.167198 °E',
           stationspecialty: 'Water Level: 6.3m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/waterStation1.png'),
           month: 'May 1st',
           year: '2018'
         },
@@ -89,7 +89,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.199456 °E',
           stationspecialty: 'Water Level: 4.2m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/waterStation1.png'),
           month: 'May 1st',
           year: '2018'
         },
@@ -100,7 +100,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.182942 °E',
           stationspecialty: 'Water Level: 10m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/waterStation1.png'),
           month: 'May 1st',
           year: '2018'
         }
