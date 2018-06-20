@@ -349,8 +349,8 @@ class landingPage extends Component {
     var styles;
     if (document.getElementById('index-' + number)) {
       styles = document.getElementById('index-' + number).style;
-      styles.top = event.target.offsetTop - 300 + document.body.offsetHeight * 0.03 + 'px';
-      styles.left = event.target.offsetLeft + 50 + document.body.offsetWidth * 0.03 + 'px';
+      styles.top = event.target.offsetTop - 330 + document.body.offsetHeight * 0.03 + 'px';
+      styles.left = event.target.offsetLeft -30 + document.body.offsetWidth * 0.03 + 'px';
       document.getElementById('index-' + number).className = 'point-pop-up';
     }
   }
