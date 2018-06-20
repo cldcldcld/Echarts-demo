@@ -96,26 +96,6 @@ class dashboardAir extends Component {
                     </div>
                 </div>
                 <div className="right">
-    {/*                <div className="gaugeList">
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge1'}></GaugeChart>
-                        </div>
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge2'}></GaugeChart>
-                        </div>
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge3'}></GaugeChart>
-                        </div>
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge4'}></GaugeChart>
-                        </div>
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge5'}></GaugeChart>
-                        </div>
-                        <div className="gauge">
-                            <GaugeChart idName={'gauge6'}></GaugeChart>
-                        </div>
-                    </div>*/}
                     <div className="real-time-data">
                         <div className="real-time-data-title">
                             <div className="real-time-data-image">

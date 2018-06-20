@@ -32,7 +32,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.211423 °E',
           stationspecialty: 'Elevation: 7 m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/air浙大.png'),
           month: 'May 1st',
           year: '2018'
         },
@@ -43,7 +43,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.148758 °E',
           stationspecialty: 'Elevation: 14 m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/air西溪.png'),
           month: 'May 1st',
           year: '2018'
         },
@@ -54,7 +54,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.049872 °E',
           stationspecialty: 'Elevation: 18 m',
           stationTemperature: '31',
-          image: require('../image/airStation1.png'),
+          image: require('../image/air西溪3.png'),
           month: 'May 1st',
           year: '2018'
         }
@@ -62,7 +62,7 @@ class landingPage extends Component {
       'Water': [
         {
           stationNumber: '01',
-          stationName: 'Fuchun River Fuyang District',
+          stationName: 'Fuchun River',
           stationLatitude: 'Latitude: 30.06116 °N',
           stationLongitude: 'Longitude: 119.984286 °E',
           stationspecialty: 'Water Level: 20m',
@@ -73,34 +73,34 @@ class landingPage extends Component {
         },
         {
           stationNumber: '02',
-          stationName: 'Zhong River Ziyang Rd',
+          stationName: 'Zhong River',
           stationLatitude: 'Latitude: 30.238553 °N',
           stationLongitude: 'Longitude: 120.167198 °E',
           stationspecialty: 'Water Level: 6.3m',
           stationTemperature: '31',
-          image: require('../image/waterStation1.png'),
+          image: require('../image/water富春江.png'),
           month: 'May 1st',
           year: '2018'
         },
         {
           stationNumber: '03',
-          stationName: 'Xintang River Wangjiang Rd',
+          stationName: 'Xintang River',
           stationLatitude: 'Latitude: 30.238714 °N',
           stationLongitude: 'Longitude: 120.199456 °E',
           stationspecialty: 'Water Level: 4.2m',
           stationTemperature: '31',
-          image: require('../image/waterStation1.png'),
+          image: require('../image/water富春江2.png'),
           month: 'May 1st',
           year: '2018'
         },
         {
           stationNumber: '04',
-          stationName: 'Tiesha River Xiaoying Rd',
+          stationName: 'Tiesha River',
           stationLatitude: 'Latitude: 30.257119 °N',
           stationLongitude: 'Longitude: 120.182942 °E',
           stationspecialty: 'Water Level: 10m',
           stationTemperature: '31',
-          image: require('../image/waterStation1.png'),
+          image: require('../image/Water西溪.png'),
           month: 'May 1st',
           year: '2018'
         }
@@ -124,7 +124,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.086667 °E',
           stationspecialty: 'Soil Moisture: 20.3% at 20 m',
           stationTemperature: '31',
-          image: require('../image/soilStation1.png'),
+          image: require('../image/soilXixi.png'),
           month: 'June 1st',
           year: '2018'
         },
@@ -135,7 +135,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.075743 °E',
           stationspecialty: 'Soil Moisture: 21.0% at 20 m',
           stationTemperature: '31',
-          image: require('../image/soilStation1.png'),
+          image: require('../image/soil吴山路.png'),
           month: 'June 1st',
           year: '2018'
         },
@@ -146,7 +146,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.226371 °E',
           stationspecialty: 'Soil Moisture: 16.2% at 20 m',
           stationTemperature: '31',
-          image: require('../image/soilStation1.png'),
+          image: require('../image/西溪soil.png'),
           month: 'June 1st',
           year: '2018'
         }

@@ -23,7 +23,7 @@
 	border-color: transparent;
 	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
-	color: #FFFFFF;
+	color: #55DDEE;
 	opacity: 0.8;
 }
 
@@ -43,7 +43,7 @@
 	border-color: transparent;
 	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
-	color: #FFFFFF;
+	color: #55DDEE;
 	opacity: 0.8;
 }
 
@@ -52,5 +52,5 @@
 }
 
 #X-menu {
-	margin-top: -150%;
+	margin-top: -180%;
 }
