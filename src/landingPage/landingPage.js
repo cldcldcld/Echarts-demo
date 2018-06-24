@@ -5,13 +5,13 @@ import StationPopup from './popup/stationPopup'
 
 class landingPage extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleClick = this.handleClick.bind(this);
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
     this.buttonClick = this.buttonClick.bind(this);
-
+    
     this.stationInfo = {
       'Air': [
         {
@@ -124,7 +124,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.086667 °E',
           stationspecialty: 'Soil Moisture: 20.3% at 20 m',
           stationTemperature: '31',
-          image: require('../image/soilXixi.png'),
+          image: require('../image/soil吴山路.png'),
           month: 'June 1st',
           year: '2018'
         },
@@ -135,7 +135,7 @@ class landingPage extends Component {
           stationLongitude: 'Longitude: 120.075743 °E',
           stationspecialty: 'Soil Moisture: 21.0% at 20 m',
           stationTemperature: '31',
-          image: require('../image/soil吴山路.png'),
+          image: require('../image/soilXixi.png'),
           month: 'June 1st',
           year: '2018'
         },
@@ -289,7 +289,7 @@ class landingPage extends Component {
     }
 
     this.state = {
-        type: 'Air'
+        type: this.props.match.params.type ? this.props.match.params.type : 'Air'
     }
 
   }  
@@ -385,9 +385,12 @@ class landingPage extends Component {
     })
   }
 
-  // componentDidMount() {
-
-  // }
+  componentDidMount() {
+    if (this.props.match.params.type) {
+      this.resetSelect();
+      document.getElementById(this.props.match.params.type).className += ' selected';
+    }
+  }
 
 
 }

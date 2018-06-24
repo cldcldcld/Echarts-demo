@@ -86,7 +86,8 @@ class soilTrend extends Component {
                   type:'line',
                   data:[4.6, 5.5, 2.6, 3.7, 5.9, 2.7, 3.6],
                   lineStyle: {
-                      color: 'rgba(254,161,40,1)'
+                      color: 'rgba(254,161,40,1)',
+                      width: 3
                   },
                   areaStyle: {
                       color: 'rgba(255,162,41,0.1)'

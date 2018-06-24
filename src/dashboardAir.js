@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './dashboardAir.css';
 import App from './App'
-// import RadarChart from './radarImage/radarChart';
-// import HistogramChart from './histogram/histogramChart';
 import HeatMapChart from './heatMap/heatMapChart';
-// import GaugeChart from './gauge/gaugeChart';
 import ScatterChart from './scatter/scatterChart';
 import AQIRadarChart from './AQIRadar/AQIRadarChart';
 import RealData from './realData/realData';
@@ -149,7 +146,7 @@ class dashboardAir extends Component {
   }
 
   backToHome() {
-    this.props.history.push('/');
+    this.props.history.push('/landingpage/Air');
   }
 
 }

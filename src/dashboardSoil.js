@@ -39,7 +39,7 @@ class dashboardSoil extends Component {
   }
 
   backToHome() {
-    this.props.history.push('/');
+    this.props.history.push('/landingpage/Soil');
   }
 
 }

@@ -27,6 +27,7 @@ ReactDOM.render((
   <BrowserRouter>
   	<div style={{height: '100%'}}>
       <Route path="/" exact component={LandingPage}/>
+      <Route path="/landingpage/:type" component={LandingPage}/>
   		<Route path="/dashboardAir" component={dashboardAir}/>
       <Route path="/dashboardWater" component={dashboardWater}/>
       <Route path="/dashboardSoil" component={dashboardSoil}/>
