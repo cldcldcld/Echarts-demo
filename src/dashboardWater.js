@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './dashboardWater.css';
-import BasicInfo from './waterComponent/basicInfo/basicInfo'
-import IndexDependency from './waterComponent/indexDependency/indexDependency'
+import BasicInfo from './waterComponent/basicInfo/basicInfo';
+import QualityInfo from './waterComponent/qualityInfo/qualityInfo';
+import IndexDependency from './waterComponent/indexDependency/indexDependency';
 
 class dashboardWater extends Component {
 
@@ -31,27 +32,27 @@ class dashboardWater extends Component {
               <BasicInfo></BasicInfo>
             </div>
             <div className="water-quality-info">
-              <BasicInfo></BasicInfo>
+              <QualityInfo></QualityInfo>
             </div>
             <div className="river-data-analysis">
-              <BasicInfo></BasicInfo>
+              {/*<BasicInfo></BasicInfo>*/}
             </div>
           </div>
           <div className="water-dashboard-right">
             <div className="real-time-data">
-              <BasicInfo></BasicInfo>
+              {/*<BasicInfo></BasicInfo>*/}
             </div>
             <div className="water-index-dependecies">
               <IndexDependency></IndexDependency>
             </div>
             <div className="warning-info">
-              <BasicInfo></BasicInfo>
+              {/*<BasicInfo></BasicInfo>*/}
             </div>
             <div className="excessive-index-analysis">
-              <BasicInfo></BasicInfo>
+              {/*<BasicInfo></BasicInfo>*/}
             </div>
             <div className="historic-data-analysis">
-              <BasicInfo></BasicInfo>
+              {/*<BasicInfo></BasicInfo>*/}
             </div>
           </div>
         </div>
