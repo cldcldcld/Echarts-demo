@@ -1,22 +1,23 @@
 .dashboardWater {
 	width: 100%;
 	height: 100%;
+  	background-color: #2A3C55;
 }
 
-.dashboardWater img {
+/*.dashboardWater img {
 	width: 100%;
-}
+}*/
 
 .dashboardWater .host-button {
-	height: 120px;
-	width: 120px;
+	height: 150px;
+	width: 150px;
 	position: absolute;
 	background: #1C2A3E;
 	border: 4px solid rgba(34,181,200,0.33);
 	box-shadow: 0 5px 4px 1px rgba(37,55,81,0.65);
 	border-radius: 50%;
-	top: 2%;
-	left: 2%;
+	top: 3%;
+	left: 3%;
 }
 
 .dashboardWater .host-button img {
@@ -29,4 +30,74 @@
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 20%;
+}
+
+.dashboardWater .water-dashboard-left {
+	display: inline-block;
+	width: 45%;
+	height: 90%;
+	float: left;
+	margin: 5vh 2vw 5vh 4vw;
+}
+
+.dashboardWater .water-dashboard-left .water-basic-info {
+	width: 49%;
+	height: 24%;
+	float: left;
+	margin-right: 2%;
+}
+
+.dashboardWater .water-dashboard-left .water-quality-info {
+	width: 49%;
+	height: 24%;
+	float: left;
+}
+
+.dashboardWater .water-dashboard-left .river-data-analysis {  
+	width: 100%;
+	height: 74%;
+	float: left;
+	margin-top: 2%;
+}
+
+.dashboardWater .water-dashboard-right {
+	display: inline-block;
+	width: 45%;
+	height: 90%;
+	float: left;
+	margin: 5vh 4vw 5vh 0;
+}
+
+.dashboardWater .water-dashboard-right .real-time-data {
+	width: 100%;
+	height: 24%;
+	float: left;
+	margin-bottom: 2%; 
+}
+
+.dashboardWater .water-dashboard-right .water-index-dependecies {
+	width: 57%;
+	height: 47%;
+	float: left;
+	margin-right: 2%;
+}
+
+.dashboardWater .water-dashboard-right .warning-info {
+	width: 39%;
+	height: 22.5%;
+	float: left;
+	margin-bottom: 2%; 
+}
+
+.dashboardWater .water-dashboard-right .excessive-index-analysis {
+	width: 39%;
+	height: 22.5%;
+	float: left;
+}
+
+.dashboardWater .water-dashboard-right .historic-data-analysis {
+	margin-top: 2%; 
+	width: 100%;
+	height: 25%;
+	float: left;
 }

@@ -45,7 +45,7 @@ class heatMapChart extends Component {
                 rich: {
                     titleImage: {
                         backgroundColor: {
-                            image: require('../image/热力图-3.png')
+                            image: require('../../image/热力图-3.png')
                         },
                         height: 25
                     },

@@ -153,7 +153,7 @@ class scatterChart extends Component {
                     rich: {
                         titleImage: {
                             backgroundColor: {
-                                image: require('../image/散点图.png')
+                                image: require('../../image/散点图.png')
                             },
                             height: 25
                         },

@@ -49,7 +49,7 @@ class AQIRadarChart extends Component {
                 rich: {
                     titleImage: {
                         backgroundColor: {
-                            image: require('../image/数据分析-2.png')
+                            image: require('../../image/数据分析-2.png')
                         },
                         height: 25
                     },

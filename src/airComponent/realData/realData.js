@@ -20,9 +20,9 @@ class realData extends Component {
   // }
 
   render() {
-    const trend = this.props.realData.trend ? (<img src={require('../image/图表上升趋势.png')} alt='Up'></img>
+    const trend = this.props.realData.trend ? (<img src={require('../../image/图表上升趋势.png')} alt='Up'></img>
         ) : (
-         <img src={require('../image/图表下降趋势.png')} alt='Down'></img>
+         <img src={require('../../image/图表下降趋势.png')} alt='Down'></img>
         );
     const isWarning = this.props.realData.warning;
     return (

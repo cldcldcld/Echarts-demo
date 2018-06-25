@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './dashboardAir.css';
 import App from './App'
-import HeatMapChart from './heatMap/heatMapChart';
-import ScatterChart from './scatter/scatterChart';
-import AQIRadarChart from './AQIRadar/AQIRadarChart';
-import RealData from './realData/realData';
-import SmoothLineChart from './smoothLine/smoothLineChart';
-import WeatherInfo from './weatherInfo/weatherInfo';
-import WarningInfo from './warningInfo/warningInfo';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import HeatMapChart from './airComponent/heatMap/heatMapChart';
+import ScatterChart from './airComponent/scatter/scatterChart';
+import AQIRadarChart from './airComponent/AQIRadar/AQIRadarChart';
+import RealData from './airComponent/realData/realData';
+import SmoothLineChart from './airComponent/smoothLine/smoothLineChart';
+import WeatherInfo from './airComponent/weatherInfo/weatherInfo';
+import WarningInfo from './airComponent/warningInfo/warningInfo';
 
 class dashboardAir extends Component {
 
@@ -71,59 +70,57 @@ class dashboardAir extends Component {
     );
 
     return (
-        <MuiThemeProvider>
-      	    <div className="dashboardAir">
-                <div className='host-button' onClick={this.backToHome}>
-                    <div className='button-image'>
-                        <img src={require('./image/主页.png')} alt='Home Page'></img>
-                    </div>
-                    <div>
-                        <span>Home Page</span>
-                    </div>
+  	    <div className="dashboardAir">
+            <div className='host-button' onClick={this.backToHome}>
+                <div className='button-image'>
+                    <img src={require('./image/主页.png')} alt='Home Page'></img>
                 </div>
-                <div className="left">
-                    <div className="weather-info">
-                        <WeatherInfo></WeatherInfo>
-                    </div>
-                    <div className="map">
-                        <App></App>
-                    </div>
-                    <div className="warning-info">
-                        <WarningInfo></WarningInfo>
-                    </div>
+                <div>
+                    <span>Home Page</span>
                 </div>
-                <div className="right">
-                    <div className="real-time-data">
-                        <div className="real-time-data-title">
-                            <div className="real-time-data-image">
-                                <img src={require('./image/数据.png')} alt='Data'></img>
-                            </div>
-                            <div className="real-time-data-title-content">
-                                <span>Real-time Data</span>
-                            </div>
+            </div>
+            <div className="left">
+                <div className="weather-info">
+                    <WeatherInfo></WeatherInfo>
+                </div>
+                <div className="map">
+                    <App></App>
+                </div>
+                <div className="warning-info">
+                    <WarningInfo></WarningInfo>
+                </div>
+            </div>
+            <div className="right">
+                <div className="real-time-data">
+                    <div className="real-time-data-title">
+                        <div className="real-time-data-image">
+                            <img src={require('./image/数据.png')} alt='Data'></img>
                         </div>
-                        <div className="real-time-data-value">
-                            {realDataCompoent}
+                        <div className="real-time-data-title-content">
+                            <span>Real-time Data</span>
                         </div>
+                    </div>
+                    <div className="real-time-data-value">
+                        {realDataCompoent}
+                    </div>
 
+                </div>
+                <div className="histogram-chart">
+                    <SmoothLineChart></SmoothLineChart>
+                </div>
+                <div className="radarAndScatter">
+                    <div className="radar-chart">
+                        <AQIRadarChart></AQIRadarChart>
                     </div>
-                    <div className="histogram-chart">
-                        <SmoothLineChart></SmoothLineChart>
+                    <div className="heat-table">
+                        <HeatMapChart></HeatMapChart>
                     </div>
-                    <div className="radarAndScatter">
-                        <div className="radar-chart">
-                            <AQIRadarChart></AQIRadarChart>
-                        </div>
-                        <div className="heat-table">
-                            <HeatMapChart></HeatMapChart>
-                        </div>
-                        <div className="scatter-chart">
-                            <ScatterChart></ScatterChart>
-                        </div>
+                    <div className="scatter-chart">
+                        <ScatterChart></ScatterChart>
                     </div>
                 </div>
-      	    </div>
-        </MuiThemeProvider>
+            </div>
+  	    </div>
     );
   }
 

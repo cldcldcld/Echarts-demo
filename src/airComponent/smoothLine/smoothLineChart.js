@@ -87,7 +87,7 @@ class smoothLineChart extends Component {
                 rich: {
                     titleImage: {
                         backgroundColor: {
-                            image: require('../image/会员发展趋势.png')
+                            image: require('../../image/会员发展趋势.png')
                         },
                         height: 25
                     },

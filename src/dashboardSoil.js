@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './dashboardSoil.css';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class dashboardSoil extends Component {
 
@@ -15,7 +14,6 @@ class dashboardSoil extends Component {
 
     return (
 
-      <MuiThemeProvider>
         <div className="dashboardSoil">
           <div className='host-button' onClick={this.backToHome}>
             <div className='button-image'>
@@ -25,9 +23,8 @@ class dashboardSoil extends Component {
               <span>Home Page</span>
             </div>
           </div>
-          <img src={require('./image/soilDashboard.png')}></img>
+          <img src={require('./image/soilDashboard.png')} alt='Soil Dashoard'></img>
         </div>
-      </MuiThemeProvider>
 
     );
   }
