@@ -130,16 +130,16 @@
 	margin-right: 2%;
 }
 
-.dashboardWater .water-dashboard-right .warning-info {
+.dashboardWater .water-dashboard-right .alarm-info {
 	width: 39%;
-	height: 22.5%;
+	height: 17.5%;
 	float: left;
 	margin-bottom: 2%; 
 }
 
 .dashboardWater .water-dashboard-right .excessive-index-analysis {
 	width: 39%;
-	height: 22.5%;
+	height: 27.5%;
 	float: left;
 }
 

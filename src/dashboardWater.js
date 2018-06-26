@@ -5,6 +5,9 @@ import QualityInfo from './waterComponent/qualityInfo/qualityInfo';
 import IndexDependency from './waterComponent/indexDependency/indexDependency';
 import RealTimeData from './waterComponent/realTimeData/realTimeData';
 import RiverDataAnalysis from './waterComponent/riverDataAnalysis/riverDataAnalysis';
+import AlarmInfo from './waterComponent/alarmInfo/alarmInfo';
+import ExcessiveIndexAnalysis from './waterComponent/excessiveIndexAnalysis/excessiveIndexAnalysis';
+import HistoricDataAnalysis from './waterComponent/historicDataAnalysis/historicDataAnalysis';
 
 class dashboardWater extends Component {
 
@@ -107,14 +110,14 @@ class dashboardWater extends Component {
             <div className="water-index-dependecies">
               <IndexDependency></IndexDependency>
             </div>
-            <div className="warning-info">
-              {/*<BasicInfo></BasicInfo>*/}
+            <div className="alarm-info">
+              <AlarmInfo></AlarmInfo>
             </div>
             <div className="excessive-index-analysis">
-              {/*<BasicInfo></BasicInfo>*/}
+              <ExcessiveIndexAnalysis></ExcessiveIndexAnalysis>
             </div>
             <div className="historic-data-analysis">
-              {/*<BasicInfo></BasicInfo>*/}
+              <HistoricDataAnalysis></HistoricDataAnalysis>
             </div>
           </div>
         </div>
