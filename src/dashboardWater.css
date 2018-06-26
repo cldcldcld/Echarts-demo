@@ -68,11 +68,59 @@
 	margin: 5vh 4vw 5vh 0;
 }
 
-.dashboardWater .water-dashboard-right .real-time-data {
+.dashboardWater .water-dashboard-right .water-real-data {
 	width: 100%;
 	height: 24%;
 	float: left;
-	margin-bottom: 2%; 
+	margin-bottom: 2%;
+	background: #1E314B;
+	border-radius: 20px;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data {
+	width: 100%;
+	height: 24%;
+	margin-bottom: 2vh;
+	display: inline-block;
+	float: left;
+	background: #1E314B;
+	border-radius: 20px;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .water-real-data-title {
+	height: 12%;
+	width: 100%;
+	margin-top: 3%;
+	margin-left: 3%;
+	display: inline-block;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .water-real-data-image {
+	float: left;
+	padding-top: 1px;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .water-real-data-title-content {
+	float: left;
+	width: 50%;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .water-real-data-title span {
+	font-size: 22px;
+	color: #FFFFFF;
+	padding-left: 1%;
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .water-real-data-value {
+	height: 70%;
+	width: 100%;
+	margin-top: 2%; 
+}
+
+.dashboardWater .water-dashboard-right .water-real-data .real-time-data-item {
+	float: left;
+	margin-left: 3%;
+	width: 11%;
 }
 
 .dashboardWater .water-dashboard-right .water-index-dependecies {

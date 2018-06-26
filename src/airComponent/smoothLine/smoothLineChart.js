@@ -81,7 +81,6 @@ class smoothLineChart extends Component {
             top: 20,
             left: 20,
             textStyle: {
-                // fontFamily: 'PingFangSC-Regular',
                 fontSize: 20,
                 color: '#FFFFFF',
                 rich: {

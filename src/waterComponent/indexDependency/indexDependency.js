@@ -18,7 +18,28 @@ class indexDependency extends Component {
     myChart.hideLoading();
     myChart.setOption({
         title: {
-            // text: 'NPM Dependencies'
+            text: [
+                    '{titleImage|}{titleContext|Water Quality Index Dependencies}'
+                  ].join('\n'),
+            // left: 'left',
+            top: 15,
+            left: 15,
+            textStyle: {
+                rich: {
+                    titleImage: {
+                        backgroundColor: {
+                            image: require('../../image/数据分析-2.png')
+                        },
+                        height: 25
+                    },
+                    titleContext: {
+                        color: '#FFFFFF',
+                        fontFamily: 'Helvetica',
+                        fontSize: 20,
+                        padding: [0,0,0,5]
+                    }
+                }
+            }
         },
         animationDurationUpdate: 1500,
         animationEasingUpdate: 'quinticInOut',
