@@ -34,7 +34,7 @@
 
 .dashboardWater .water-dashboard-left {
 	display: inline-block;
-	width: 45%;
+	width: 44.5%;
 	height: 90%;
 	float: left;
 	margin: 5vh 2vw 5vh 4vw;
@@ -124,21 +124,21 @@
 }
 
 .dashboardWater .water-dashboard-right .water-index-dependecies {
-	width: 57%;
+	width: 52%;
 	height: 47%;
 	float: left;
 	margin-right: 2%;
 }
 
 .dashboardWater .water-dashboard-right .alarm-info {
-	width: 39%;
+	width: 45.5%;
 	height: 17.5%;
 	float: left;
 	margin-bottom: 2%; 
 }
 
 .dashboardWater .water-dashboard-right .excessive-index-analysis {
-	width: 39%;
+	width: 45.5%;
 	height: 27.5%;
 	float: left;
 }

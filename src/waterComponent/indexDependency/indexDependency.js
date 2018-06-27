@@ -22,7 +22,7 @@ class indexDependency extends Component {
                     '{titleImage|}{titleContext|Water Quality Index Dependencies}'
                   ].join('\n'),
             // left: 'left',
-            top: 15,
+            top: 10,
             left: 15,
             textStyle: {
                 rich: {
@@ -47,6 +47,7 @@ class indexDependency extends Component {
             {
                 type: 'graph',
                 layout: 'none',
+                top: 65,
                 // progressiveThreshold: 700,
                 data: json.nodes.map(function (node) {
                     return {
