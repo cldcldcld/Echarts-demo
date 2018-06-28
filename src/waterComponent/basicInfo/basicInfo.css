@@ -5,7 +5,7 @@
 }
 
 .basicInfo .info-title {
-	padding-left: 38%;
+	padding-left: 35%;
 	padding-top: 6%;
 	height: 10%;
 }
@@ -18,11 +18,17 @@
 
 .basicInfo .info-content {
 	padding-left: 5%;
-	padding-top: 12%;
+	padding-top: 11%;
 }
 
-.basicInfo .info-content img {
-	width: 12%;
+.basicInfo .info-content .info-location-image {
+	padding-left: 1%;
+	width: 10%;
+	display: inline-block;
+}
+
+.basicInfo .info-content .info-location-image img{
+	width: 65%;
 }
 
 .basicInfo .info-content .address {
@@ -37,7 +43,7 @@
 
 .basicInfo .info-content .info-details {
 	width: 60%;
-	padding-left: 4%;
+	padding-left: 3%;
 	display: inline-block;
 }
 

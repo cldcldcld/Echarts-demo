@@ -80,8 +80,8 @@ class indexDependency extends Component {
                 lineStyle: {
                     normal: {
                         width: 0.5,
-                        curveness: 0.3,
-                        opacity: 0.7
+                        curveness: 0.4,
+                        opacity: 0.4
                     }
                 }
             }

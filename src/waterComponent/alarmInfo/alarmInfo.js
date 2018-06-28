@@ -20,7 +20,7 @@ class alarmInfo extends Component {
               <span className='station-details'>KMnO4 Exceeds limit Pending</span>
             </div>
             <div className='alarm-operation'>
-              <img src={require('../../image/查看.png')} alt='Details'></img>
+              <img src={require('../../image/bell.png')} alt='Details'></img>
               <span>Process</span>
             </div>
           </div>
@@ -30,7 +30,7 @@ class alarmInfo extends Component {
               <span className='station-details'>Equipment Failure Pending</span>
             </div>
             <div className='alarm-operation'>
-              <img src={require('../../image/查看.png')} alt='Details'></img>
+              <img src={require('../../image/notice.png')} alt='Details'></img>
               <span>Details</span>
             </div>
           </div>

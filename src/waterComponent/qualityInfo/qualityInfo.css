@@ -13,15 +13,16 @@
 .qualityInfo .quality-title span {
 	font-size: 20px;
 	color: #FFFFFF;
+	padding-left: 5px;
 }
 
 .qualityInfo .quality-content {
 	padding-left: 10%;
-	padding-top: 8%;
+	padding-top: 6.5%;
 }
 
 .qualityInfo .quality-content .quality-details {
-	width: 70%;
+	width: 90%;
 }
 
 .qualityInfo .quality-content .quality-details div {
@@ -35,6 +36,10 @@
 	line-height: 20px;
 }
 
+.qualityInfo .quality-content .quality-details .surface-color {
+	width: 90%;
+}
+
 .qualityInfo .quality-content .quality-details .quality-grade {
 	padding-left: 2%;
 }
@@ -45,7 +50,11 @@
 	line-height: 20px;
 }
 
-.qualityInfo .quality-content .quality-details .surface-color {
+.qualityInfo .quality-content .quality-details .function-type {
+	padding-left: 2%;
+}
+
+.qualityInfo .quality-content .quality-details .green {
 	color: #22B5C8;
 	padding-left: 2%;
 }

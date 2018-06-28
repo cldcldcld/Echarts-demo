@@ -43,7 +43,7 @@
 }
 
 .alarmInfo .alarm-content .alarm-station {
-	display: inline-block;
+	float: left;
 	padding-left: 3%;
 	padding-top: 2%;
 }

@@ -9,7 +9,9 @@ class basicInfo extends Component {
           <span>Water Basic Information</span>
         </div>
         <div className='info-content'>
-          <img alt='Mark'></img>
+          <div className='info-location-image'>
+            <img src={require('../../image/location.png')} alt='Mark'></img>
+          </div>
           <div className='address'>
             <span>TongLu Country</span>
           </div>

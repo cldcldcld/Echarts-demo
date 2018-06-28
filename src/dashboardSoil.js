@@ -24,6 +24,28 @@ class dashboardSoil extends Component {
             </div>
           </div>
           <img src={require('./image/soilDashboard.png')} alt='Soil Dashoard'></img>
+          <div className='soil-left'>
+            <div className='soil-basic-info'>
+            </div>
+            <div className='soil-quality-info'>
+            </div>
+            <div className='alarm-notification'>
+            </div>
+            <div className='biogenic-element-analysis'>
+            </div>
+          </div>
+          <div className='soil-right'>
+            <div className='soil-real-data'>
+            </div>
+            <div className='analysis-details'>
+              <div className='chemical-pollutant'>
+              </div>
+              <div className='citywide-soil-quality'>
+              </div>
+            </div>
+            <div className='soil-microorganism-analysis'>
+            </div>
+          </div>
         </div>
 
     );

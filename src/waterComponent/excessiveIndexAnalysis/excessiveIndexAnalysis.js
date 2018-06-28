@@ -43,7 +43,7 @@ class excessiveIndexAnalysis extends Component {
       },
       grid: {
           left: '20%',
-          top: '35%',
+          top: '34%',
           height: '55%',
           width: '70%'
       },
@@ -83,7 +83,7 @@ class excessiveIndexAnalysis extends Component {
                   }
               },
               itemStyle: {
-                color: '#5A67DF',
+                color: '#9885FE',
                 barBorderRadius: 12
               },
               data: [1.14, 1.24, 1.28, 1.33, 1.42]
