@@ -2,7 +2,6 @@
   	height: 100%;
   	width: 100%;
   	background: #2A3C55;
-  	/*overflow:hidden;*/
 }
 
 
@@ -37,25 +36,10 @@
 	margin: 4vh 4vw 4vh 0;
 }
 
-/*.gaugeList {
-	width: 100%;
-	height: 20%;
-	margin-bottom: 2vh;
-	display: inline-block;
-	float: left;
-}
-
-.gauge {
-	width: 16.66%;
-	height: 100%;
-	display: inline-block;
-}*/
-
 .real-time-data {
 	width: 100%;
 	height: 20%;
 	margin-bottom: 2vh;
-	display: inline-block;
 	float: left;
 	background: #1E314B;
 	border-radius: 20px;
@@ -80,7 +64,6 @@
 }
 
 .real-time-data-title span {
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 22px;
 	color: #FFFFFF;
 	padding-left: 1%;
@@ -89,8 +72,6 @@
 .real-time-data-value {
 	height: 60%;
 	width: 100%;
-	/*margin-top: 2%;
-	margin-left: 2%;*/
 }
 
 .real-data {
@@ -103,7 +84,6 @@
 	width: 100%;
 	height: 40%;
 	float: left;
-	display: inline-block;
 	margin-bottom: 2vh;
 }
 
@@ -115,7 +95,6 @@
 .radar-chart {
 	width: 30%;
 	height: 100%;
-	display: inline-block;
 	float: left;
 	padding-right: 2%;
 }
@@ -123,7 +102,6 @@
 .heat-table {
 	width: 35%;
 	height: 100%;
-	display: inline-block;
 	float: left;
 	padding-right: 2%;
 }
@@ -131,7 +109,6 @@
 .scatter-chart {
 	width: 31%;
 	height: 100%;
-	display: inline-block;
 	float: left;
 }
 
@@ -153,7 +130,6 @@
 }
 
 .dashboardAir .host-button span {
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 20%;

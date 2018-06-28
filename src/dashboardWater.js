@@ -82,7 +82,6 @@ class dashboardWater extends Component {
               <span>Home Page</span>
             </div>
           </div>
-          {/*<img src={require('./image/waterDashboard.png')} alt='Water Dashoard'></img>*/}
           <div className="water-dashboard-left">
             <div className="water-basic-info">
               <BasicInfo></BasicInfo>

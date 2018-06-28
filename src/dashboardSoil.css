@@ -1,6 +1,7 @@
 .dashboardSoil {
 	width: 100%;
 	height: 100%;
+  	background-color: #2A3C55;
 }
 
 .dashboardSoil img {
@@ -29,4 +30,78 @@
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 25%;
+}
+
+.dashboardSoil .soil-left {
+	width: 26%;
+	height: 90%;
+	float: left;
+	margin: 5vh 1vw 5vh 4vw;
+}
+
+.dashboardSoil .soil-left .soil-basic-info {
+	width: 100%;
+	height: 24%;
+	float: left;
+}
+
+.dashboardSoil .soil-left .soil-quality-info {
+	width: 100%;
+	height: 10%;
+	margin-top: 4%;
+	float: left;
+}
+
+.dashboardSoil .soil-left .alarm-notification {
+	width: 100%;
+	height: 18%;
+	margin-top: 4%;
+	float: left;
+}
+
+.dashboardSoil .soil-left .biogenic-element-analysis {
+	width: 100%;
+	height: 42%;
+	margin-top: 4%;
+	float: left;
+}
+
+.dashboardSoil .soil-right {
+	width: 65%;
+	height: 90%;
+	float: left;
+	margin: 5vh 4vw 5vh 0;
+}
+
+.dashboardSoil .soil-right .soil-real-data {
+	width: 100%;
+	height: 24%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+.dashboardSoil .soil-right .analysis-details {
+	width: 68%;
+	height: 73%;
+	float: left;
+}
+
+.dashboardSoil .soil-right .analysis-details .chemical-pollutant {
+	width: 100%;
+	height: 59%;
+	float: left;
+	margin-bottom: 2%;
+}
+
+.dashboardSoil .soil-right .analysis-details .citywide-soil-quality {
+	width: 100%;
+	height: 39%;
+	float: left;
+}
+
+.dashboardSoil .soil-right .soil-microorganism-analysis {
+	width: 30%;
+	height: 73%;
+	margin-left: 2%;
+	float: left;
 }

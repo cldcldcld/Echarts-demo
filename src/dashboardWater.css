@@ -33,7 +33,6 @@
 }
 
 .dashboardWater .water-dashboard-left {
-	display: inline-block;
 	width: 44.5%;
 	height: 90%;
 	float: left;
@@ -61,7 +60,6 @@
 }
 
 .dashboardWater .water-dashboard-right {
-	display: inline-block;
 	width: 46%;
 	height: 90%;
 	float: left;
