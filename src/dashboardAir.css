@@ -9,18 +9,18 @@
 	width: 24%;
 	height: 90%;
 	float: left;
-	margin: 4vh 2vw 4vh 4vw;
+	margin: 4vh 1vw 4vh 4vw;
 }
 
 .weather-info {
 	width: 100%;
-	height: 20%;
+	height: 22%;
 	margin-bottom: 2vh;
 }
 
 .map {
 	width: 100%;
-	height: 58%;
+	height: 56%;
 	margin-bottom: 2vh;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .right {
-	width: 65%;
+	width: 66%;
 	height: 88%;
 	float: left;
 	margin: 4vh 4vw 4vh 0;
@@ -38,7 +38,7 @@
 
 .real-time-data {
 	width: 100%;
-	height: 20%;
+	height: 22.5%;
 	margin-bottom: 2vh;
 	float: left;
 	background: #1E314B;
@@ -72,17 +72,18 @@
 .real-time-data-value {
 	height: 60%;
 	width: 100%;
+	padding-top: 1.5%;
 }
 
 .real-data {
-	display: inline-block;
-	margin-left: 3%;
-	width: 13.5%
+	float: left;
+	margin-left: 2%;
+	width: 12%
 }
 
 .histogram-chart {
 	width: 100%;
-	height: 40%;
+	height: 37%;
 	float: left;
 	margin-bottom: 2vh;
 }

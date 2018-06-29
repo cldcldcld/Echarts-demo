@@ -56,6 +56,13 @@ class dashboardAir extends Component {
             description: 'Ozone',
             trend: false,
             warning: false
+        },
+        {   
+            value: 100,
+            title: 'TVOC',
+            description: 'Volatile Organic Compound',
+            trend: false,
+            warning: false
         }
     ];
 

@@ -41,9 +41,9 @@ class dashboardWater extends Component {
             warning: true
         },
         {   
-            value: 14,
+            value: 0.4,
             title: 'Grade I',
-            description: 'COD (mg/L)',
+            description: 'Total Nitrogen (mg/L)',
             warning: false
         },
         {   
@@ -53,9 +53,9 @@ class dashboardWater extends Component {
             warning: false
         },
         {   
-            value: 1880,
+            value: 6.8,
             title: 'Grade II',
-            description: 'Fecal Coliform (unit/L)',
+            description: 'pH (unit/L)',
             warning: false
         }
     ];
@@ -105,7 +105,8 @@ class dashboardWater extends Component {
               </div>
               <div className="water-real-data-value">
                   {realTimeDataComponent}
-              </div>            </div>
+              </div>            
+            </div>
             <div className="water-index-dependecies">
               <IndexDependency></IndexDependency>
             </div>

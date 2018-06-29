@@ -79,9 +79,9 @@ class indexDependency extends Component {
                 focusNodeAdjacency: true,
                 lineStyle: {
                     normal: {
-                        width: 0.5,
-                        curveness: 0.4,
-                        opacity: 0.4
+                        width: 0.3,
+                        curveness: 0.3,
+                        opacity: 0.3
                     }
                 }
             }

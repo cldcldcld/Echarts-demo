@@ -63,13 +63,13 @@
 	
 }
 
-.basicInfo .info-content .info-details .station-name {
+.qualityInfo .info-content .info-details .station-name {
 	opacity: 0.8;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
-.basicInfo .info-content .info-details span:not(:first-child) {
+.qualityInfo .info-content .info-details span:not(:first-child) {
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;

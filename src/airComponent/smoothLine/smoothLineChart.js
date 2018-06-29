@@ -76,7 +76,7 @@ class smoothLineChart extends Component {
     var option = {
         title:{
             text: [
-                    '{titleImage|}{titleContext|VOC Trend Analysis}'
+                    '{titleImage|}{titleContext|AQI Trend Analysis}'
                   ].join('\n'),
             top: 20,
             left: 20,
@@ -99,26 +99,25 @@ class smoothLineChart extends Component {
                 }        
             },
             showTitle: true,
-            itemGap: 140,
+            itemGap: 130,
             subtext: [
                         '{averageValue|Avg Value}'
                      ].join('\n'),
             subtextStyle:{
                rich: {
                     averageValue: {
-                        color: '#FFFFFF',
+                        color: 'rgba(255, 255, 255, 0.67)',
                         fontFamily: 'Helvetica',
-                        opacity: 0.67,
                         fontSize: 16,
-                        padding: [0,0,0,32]
+                        padding: [0,0,0,20]
                     }
                 } 
             }
         },
         grid: {
-            height: '65%',
+            height: '58%',
             width: '82%',
-            y: '25%',
+            y: '27%',
             x: '12%'
         },
         xAxis: {

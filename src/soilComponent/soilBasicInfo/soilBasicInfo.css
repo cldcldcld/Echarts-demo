@@ -3,3 +3,24 @@
 	background: #203758;
   	border-radius: 20px;
 }
+
+.soilBasicInfo .basic-info-title {
+	padding-left: 35%;
+	padding-top: 5%;
+}
+
+.soilBasicInfo .basic-info-title span {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content {
+	padding-left: 35%;
+	padding-top: 3%;
+}
+
+.soilBasicInfo .basic-info-content span {
+	opacity: 0.6;
+	font-size: 14px;
+	color: #FFFFFF;
+}

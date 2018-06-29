@@ -4,7 +4,7 @@
 
 .index-value span {
 	/*font-family: PingFangSC-Light;*/
-	font-size: 60px;
+	font-size: 48px;
 }
 
 .index-title {
@@ -14,7 +14,7 @@
 .index-title span {
 	opacity: 0.4;
 	/*font-family: PingFangSC-Regular;*/
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
 }
 

@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
-import './realTimeData.css'
+import './soilRealData.css'
 
-class realTimeData extends Component {
+class soilRealData extends Component {
 
   render() {
-    const isWarning = this.props.realData.warning;
     return (
-      <div className='realTimeData'>
+      <div className='soilRealData'>
         <div className='item-title'>
-            { !isWarning ? <span className='item-white'>{this.props.realData.title}</span>
-              : <span className='item-red'>{this.props.realData.title}</span>}
+          <span className='item-white'>{this.props.realData.title}</span>
         </div>
         <div className='item-value'>
-            { !isWarning ? <span className='item-white'>{this.props.realData.value}</span>
-              : <span className='item-red'>{this.props.realData.value}</span>}
-        </div>
-        <div className='item-description'>
-            <span>{this.props.realData.description}</span>
+          <span className='item-white'>{this.props.realData.value}</span>
         </div>        
       </div>
     );
@@ -29,4 +23,4 @@ class realTimeData extends Component {
 
 }
 
-export default realTimeData;
+export default soilRealData;

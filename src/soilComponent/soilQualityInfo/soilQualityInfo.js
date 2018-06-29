@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import './realTimeData.css'
+import './soilQualityInfo.css'
 
-class realTimeData extends Component {
+class soilQualityInfo extends Component {
 
   render() {
-    const isWarning = this.props.realData.warning;
     return (
-      <div className='realTimeData'>
-        <div className='item-title'>
-            { !isWarning ? <span className='item-white'>{this.props.realData.title}</span>
-              : <span className='item-red'>{this.props.realData.title}</span>}
+      <div className='soilQualityInfo'>
+        <div className='quality-info-title'>
+          <div className='quality-info-image'>
+            <img src={require('../../image/target.png')} alt='quality'></img>
+          </div>
+          <div className='quality-info-title-details'>
+            <span>Soil Quality Analysis</span>
+          </div>
         </div>
-        <div className='item-value'>
-            { !isWarning ? <span className='item-white'>{this.props.realData.value}</span>
-              : <span className='item-red'>{this.props.realData.value}</span>}
+        <div className='quality-info-content'>
+          <span>Function Type: Type II</span><br/>
+          <span>Grade: Grade II Exceed the standard</span>
         </div>
-        <div className='item-description'>
-            <span>{this.props.realData.description}</span>
-        </div>        
       </div>
     );
   }
@@ -29,4 +29,4 @@ class realTimeData extends Component {
 
 }
 
-export default realTimeData;
+export default soilQualityInfo;

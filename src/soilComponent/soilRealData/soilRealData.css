@@ -1,36 +1,21 @@
-.realTimeData .item-value {
+.soilRealData .item-value {
 	text-align: center;
 	padding-top: 5%;
 }
 
-.realTimeData .item-value span {
-	font-size: 36px;
+.soilRealData .item-value span {
+	font-size: 40px;
 }
 
-.realTimeData .item-title {
+.soilRealData .item-title {
 	text-align: center;
 }
 
-.realTimeData .item-title span {
+.soilRealData .item-title span {
 	opacity: 0.6;
-	font-size: 16px;
+	font-size: 24px;
 }
 
-.realTimeData .item-description {
-	text-align: center;
-	padding-top: 3%;
-}
-
-.realTimeData .item-description span {
-	opacity: 0.4;
-	font-size: 12px;
+.soilRealData .item-white {
 	color: #FFFFFF;
-}
-
-.realTimeData .item-white {
-	color: #FFFFFF;
-}
-
-.realTimeData .item-red {
-	color: #B94E4E;
 }

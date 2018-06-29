@@ -36,7 +36,7 @@ class heatMapChart extends Component {
     myChart.setOption({
         title: {
             text: [
-                    '{titleImage|}{titleContext|AQI Heat Map}'
+                    '{titleImage|}{titleContext|Pollution Calendar}'
                   ].join('\n'),
             // left: 'left',
             top: 15,
@@ -98,8 +98,8 @@ class heatMapChart extends Component {
             }
         },
         visualMap: {
-            min: 30,
-            max: 60,
+            min: 40,
+            max: 50,
             // calculable: true,
             orient: 'horizontal',
             left: '61%',
@@ -110,7 +110,8 @@ class heatMapChart extends Component {
                 color: 'rgba(255, 255, 255, 0.4)'
             },
             inRange: {
-                color: ['#F2DA9C', '#DE987D', '#CD6964', '#BF444C']
+                // color: ['#F2DA9C', '#DE987D', '#CD6964', '#BF444C']
+                color: ['#22C89C', '#F0C368', 'red']
             }
         },
         series: [{

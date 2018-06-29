@@ -399,7 +399,6 @@ const styles = {
   mapContainer: {
     height: '100%',
     width: '100%',
-    // padding: '3% 3% 3% 3%',
     position: 'fixed',
     zIndex: 0
   }

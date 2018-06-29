@@ -41,13 +41,13 @@
 
 .dashboardSoil .soil-left .soil-basic-info {
 	width: 100%;
-	height: 24%;
+	height: 23%;
 	float: left;
 }
 
 .dashboardSoil .soil-left .soil-quality-info {
 	width: 100%;
-	height: 10%;
+	height: 14%;
 	margin-top: 4%;
 	float: left;
 }
@@ -61,7 +61,7 @@
 
 .dashboardSoil .soil-left .biogenic-element-analysis {
 	width: 100%;
-	height: 42%;
+	height: 39%;
 	margin-top: 4%;
 	float: left;
 }
@@ -75,14 +75,53 @@
 
 .dashboardSoil .soil-right .soil-real-data {
 	width: 100%;
-	height: 24%;
-	margin-bottom: 2%;
+	height: 23%;
+	margin-bottom: 1.5%;
 	float: left;
+	background: #1E314B;
+	border-radius: 20px;
+}
+
+.dashboardSoil .soil-right .soil-real-data .soil-real-data-title {
+	height: 12%;
+	width: 100%;
+	margin-top: 3%;
+	margin-left: 3%;
+	display: inline-block;
+}
+
+.dashboardSoil .soil-right .soil-real-data .soil-real-data-image {
+	float: left;
+	padding-top: 1px;
+}
+
+.dashboardSoil .soil-right .soil-real-dataa .soil-real-data-title-content {
+	float: left;
+	width: 50%;
+}
+
+.dashboardSoil .soil-right .soil-real-data .soil-real-data-title span {
+	font-size: 22px;
+	color: #FFFFFF;
+	padding-left: 1%;
+}
+
+.dashboardSoil .soil-right .soil-real-data .soil-real-data-value {
+	height: 70%;
+	width: 100%;
+	margin-top: 2%; 
+	margin-left: 1%;
+}
+
+.dashboardSoil .soil-right .soil-real-data .real-time-data-item {
+	float: left;
+	margin-left: 3%;
+	width: 6.5%;
 }
 
 .dashboardSoil .soil-right .analysis-details {
 	width: 68%;
-	height: 73%;
+	height: 74.5%;
 	float: left;
 }
 
@@ -101,7 +140,7 @@
 
 .dashboardSoil .soil-right .soil-microorganism-analysis {
 	width: 30%;
-	height: 73%;
+	height: 74.5%;
 	margin-left: 2%;
 	float: left;
 }
