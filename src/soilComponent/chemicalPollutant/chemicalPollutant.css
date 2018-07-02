@@ -1,5 +1,10 @@
-.chemicalPollutant{
+.chemicalPollutant {
 	height: 100%;
-	background: #203758;
+	background: #1E314B;
   	border-radius: 20px;
+}
+
+#chemicalPollutant {
+	height: 100%;
+	width: 100%;
 }
