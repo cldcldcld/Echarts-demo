@@ -5,6 +5,10 @@ import ChemicalPollutant from './soilComponent/chemicalPollutant/chemicalPolluta
 import SoilQualityInfo from './soilComponent/soilQualityInfo/soilQualityInfo';
 import AlarmNotification from './soilComponent/alarmNotification/alarmNotification';
 import SoilRealData from './soilComponent/soilRealData/soilRealData';
+import BiogenicElementAnalysis from './soilComponent/biogenicElementAnalysis/biogenicElementAnalysis';
+import CitywideSoilQuality from './soilComponent/citywideSoilQuality/citywideSoilQuality';
+import SoilMicroorganismAnalysis from './soilComponent/soilMicroorganismAnalysis/soilMicroorganismAnalysis';
+
 
 class dashboardSoil extends Component {
 
@@ -89,7 +93,7 @@ class dashboardSoil extends Component {
               <AlarmNotification></AlarmNotification>
             </div>
             <div className='biogenic-element-analysis'>
-              <ChemicalPollutant></ChemicalPollutant>
+              <BiogenicElementAnalysis></BiogenicElementAnalysis>
             </div>
           </div>
           <div className='soil-right'>
@@ -111,11 +115,11 @@ class dashboardSoil extends Component {
                 <ChemicalPollutant></ChemicalPollutant>
               </div>
               <div className='citywide-soil-quality'>
-                <ChemicalPollutant></ChemicalPollutant>
+                <CitywideSoilQuality></CitywideSoilQuality>
               </div>
             </div>
             <div className='soil-microorganism-analysis'>
-              <ChemicalPollutant></ChemicalPollutant>
+              <SoilMicroorganismAnalysis></SoilMicroorganismAnalysis>
             </div>
           </div>
         </div>
