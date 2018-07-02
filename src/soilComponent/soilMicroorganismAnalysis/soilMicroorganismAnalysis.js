@@ -32,9 +32,12 @@ class soilMicroorganismAnalysis extends Component {
               radius : '55%',
               center: ['50%', '30%'],
               data:[
-                  {value:335},
-                  {value:310},
+                  {value:610},
+                  {value:333},
                   {value:274},
+                  {value:235},
+                  {value:400},
+                  {value:500},
                   {value:235},
                   {value:400}
               ],
@@ -60,45 +63,34 @@ class soilMicroorganismAnalysis extends Component {
               radius : '55%',
               center: ['50%', '75%'],
               data:[
-                  {value:335, name:'直接访问'},
-                  {value:310, name:'邮件营销'},
-                  {value:274, name:'联盟广告'},
-                  {value:235, name:'视频广告'},
-                  {value:400, name:'搜索引擎'}
+                  {value:510},
+                  {value:230},
+                  {value:274},
+                  {value:235},
+                  {value:400},
+                  {value:674},
+                  {value:235},
+                  {value:400}
               ],
               roseType: 'radius',
               label: {
                   normal: {
-                      textStyle: {
-                          color: 'rgba(255, 255, 255, 0.3)'
-                      }
+                      show: false
                   }
               },
-              labelLine: {
+              lableLine: {
                   normal: {
-                      lineStyle: {
-                          color: 'rgba(255, 255, 255, 0.3)'
-                      },
-                      smooth: 0.2,
-                      length: 10,
-                      length2: 20
+                      show: false
                   }
               },
-              itemStyle: {
-                  normal: {
-                      color: '#c23531',
-                      shadowBlur: 200,
-                      shadowColor: 'rgba(0, 0, 0, 0.5)'
-                  }
-              },
-
               animationType: 'scale',
               animationEasing: 'elasticOut',
               animationDelay: function (idx) {
                   return Math.random() * 200;
               }
           }
-      ]
+      ],
+      color: ['#CD6964', '#DE987D', '#F0D99C', '#6944DB', '#64CD64', '#E8A35E', '#5A67DF', '#5ABEDF']
     });
 
   }
