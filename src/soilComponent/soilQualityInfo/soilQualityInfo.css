@@ -17,9 +17,6 @@
 	float: left;
 }
 
-.soilQualityInfo .quality-info-title .quality-info-image img {
-}
-
 .soilQualityInfo .quality-info-title .quality-info-title-details {
 	float: left;
 	padding-left: 2%;
@@ -43,5 +40,5 @@
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
-	line-height: 20px;
+	line-height: 25px;
 }

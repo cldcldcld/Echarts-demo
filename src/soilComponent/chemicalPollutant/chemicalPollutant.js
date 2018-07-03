@@ -41,7 +41,7 @@ class chemicalPollutant extends Component {
 	        parallelAxisDefault: {
 	            type: 'value',
 	            nameLocation: 'start',
-	            nameGap: 30,
+	            nameGap: 40,
 	            splitNumber: 1,
 	            minInterval : 1000,
 	            nameTextStyle: {
@@ -74,14 +74,44 @@ class chemicalPollutant extends Component {
  var myChartParallel = echarts.init(document.getElementById('chemicalPollutantParallel'));
 
     myChartParallel.setOption({
-	      grid: {
-	          left: '4%',
-	          width: '90%'
-	      },
-	    legend: {
-	        data: ['line', 'bar'],
+		title:{
+	        text: [
+	                '{titleImage|}{titleContext|Chemical Pollutant Analysis}'
+	              ].join('\n'),
+	        top: 10,
+	        left: 20,
 	        textStyle: {
-	            color: '#fff'
+	            fontSize: 20,
+	            color: '#FFFFFF',
+	            rich: {
+	                titleImage: {
+	                    backgroundColor: {
+	                        image: require('../../image/histogram.png')
+	                    },
+	                    height: 25
+	                },
+	                titleContext: {
+	                    color: 'rgba(255, 255, 255, 0.6)',
+	                    fontFamily: 'Helvetica',
+	                    fontSize: 20,
+	                    padding: [0,0,5,10]
+	                }
+	            }
+	        }
+      	},
+	    grid: {
+	        left: '5%',
+	        width: '90%'
+	    },
+	    legend: {
+	    	top: 15,
+	        left: 650,
+	        itemHeight: 12,
+	        itemWidth: 40,
+	        data: ['Standard value'],
+	        textStyle: {
+	            color: 'rgba(255,255,255,0.4)',
+	            fontSize: 14
 	        }
 	    },
 	    xAxis: {
@@ -99,13 +129,16 @@ class chemicalPollutant extends Component {
 	        }
 	    },
 	    series: [{
-	        name: 'line',
+	        name: 'Standard value',
 	        type: 'line',
 	        smooth: true,
 	        showAllSymbol: true,
-	        symbol: 'emptyCircle',
-	        symbolSize: 15,
-	        data: []
+	        symbolSize: 10,
+	        itemStyle: {
+	        	color: '#5AA1DF',
+	        	width: 4
+	        },
+	        data: [4, 5, 12, 4, 6, 12, 6, 2, 9, 9]
 	    }, {
 	        type: 'bar',
 	        barWidth: 30,
@@ -123,38 +156,26 @@ class chemicalPollutant extends Component {
 	        },
 	        data: [5, 4, 5, 8, 5, 8, 5, 1, 10, 8]
 	    }, {
-	        name: 'line',
-	        type: 'bar',
-	        barGap: '-100%',
-	        barWidth: 10,
+	        type: 'pictorialBar',
+	        symbol: 'rect',
+	        barWidth: 30,
 	        itemStyle: {
 	            normal: {
-	                color: new echarts.graphic.LinearGradient(
-	                    0, 0, 0, 1,
+	            	barBorderRadius: 4,
+					color: new echarts.graphic.LinearGradient(
+	                    0, 0, 0, 5,
 	                    [
-	                        {offset: 0, color: 'rgba(20,200,212,0.5)'},
-	                        {offset: 0.2, color: 'rgba(20,200,212,0.2)'},
-	                        {offset: 1, color: 'rgba(20,200,212,0)'}
+	                        {offset: 0, color: 'rgba(231,188,142,0)'},
+	                        {offset: 1, color: 'rgba(212,127,111,1)'}
 	                    ]
 	                )
 	            }
 	        },
-	        z: -12,
-	        data: []
-	    }, {
-	        name: 'dotted',
-	        type: 'pictorialBar',
-	        symbol: 'rect',
-	        itemStyle: {
-	            normal: {
-	                color: '#0f375f'
-	            }
-	        },
 	        symbolRepeat: true,
-	        symbolSize: [12, 4],
+	        symbolSize: [30, 10],
 	        symbolMargin: 1,
 	        z: -10,
-	        data: []
+	        data: [4, 5, 12, 4, 6, 12, 6, 2, 9, 9]
 	    }]
     })
 
