@@ -90,8 +90,8 @@ class dashboardAir extends Component {
                 <div className="weather-info">
                     <WeatherInfo></WeatherInfo>
                 </div>
-                <div className="map">
-                    <App></App>
+                <div className="scatter-chart">
+                    <ScatterChart></ScatterChart>
                 </div>
                 <div className="warning-info">
                     <WarningInfo></WarningInfo>
@@ -122,8 +122,8 @@ class dashboardAir extends Component {
                     <div className="heat-table">
                         <HeatMapChart></HeatMapChart>
                     </div>
-                    <div className="scatter-chart">
-                        <ScatterChart></ScatterChart>
+                    <div className="map">
+                        <App></App>
                     </div>
                 </div>
             </div>

@@ -16,11 +16,90 @@
 
 .soilBasicInfo .basic-info-content {
 	padding-left: 35%;
-	padding-top: 5%;
+	padding-top: 7%;
 }
 
 .soilBasicInfo .basic-info-content span {
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info {
+	width: 30%;
+	float: left;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info .moisture-img {
+	width: 40%;
+	float: left;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info .moisture-content {
+	padding-left: 8%;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info .moisture-content .moisture-number {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info .moisture-content .moisture-label {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content .moisture-info .other-info {
+	padding-top: 15%;
+	float: left;
+}
+
+
+.soilBasicInfo .basic-info-content .moisture-info .other-info span {
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	line-height: 20px;
+}
+
+.soilBasicInfo .basic-info-content .density-info {
+	padding-left: 15%;
+	width: 40%;
+	float: left;
+}
+
+.soilBasicInfo .basic-info-content .density-info .density-img {
+	width: 15%;
+	float: left;
+}
+
+.soilBasicInfo .basic-info-content .density-info .density-content {
+	padding-left: 8%;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.soilBasicInfo .basic-info-content .density-info .density-content .density-number {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content .density-info .density-content .density-label {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.soilBasicInfo .basic-info-content .density-info .other-info {
+	padding-top: 10%;
+	float: left;
+}
+
+
+.soilBasicInfo .basic-info-content .density-info .other-info span {
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	line-height: 20px;
 }
