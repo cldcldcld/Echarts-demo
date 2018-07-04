@@ -67,7 +67,7 @@
 }
 
 .dashboardSoil .soil-right {
-	width: 65%;
+	width: 64.5%;
 	height: 90%;
 	float: left;
 	margin: 5vh 4vw 5vh 0;
@@ -109,14 +109,14 @@
 .dashboardSoil .soil-right .soil-real-data .soil-real-data-value {
 	height: 70%;
 	width: 100%;
-	margin-top: 3%; 
-	margin-left: 1%;
+	margin-top: 2.5%; 
+	margin-left: 2.5%;
 }
 
 .dashboardSoil .soil-right .soil-real-data .real-time-data-item {
 	float: left;
 	margin-left: 3%;
-	width: 6.5%;
+	width: 8.5%;
 }
 
 .dashboardSoil .soil-right .analysis-details {

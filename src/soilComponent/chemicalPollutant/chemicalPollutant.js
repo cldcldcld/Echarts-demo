@@ -76,7 +76,7 @@ class chemicalPollutant extends Component {
     myChartParallel.setOption({
 		title:{
 	        text: [
-	                '{titleImage|}{titleContext|Chemical Pollutant Analysis}'
+	                '{titleImage|}{titleContext|Soil Inorganic Element Analysis}'
 	              ].join('\n'),
 	        top: 10,
 	        left: 20,
@@ -157,23 +157,23 @@ class chemicalPollutant extends Component {
 	        data: [5, 4, 5, 8, 5, 8, 5, 1, 10, 8]
 	    }, {
 	        type: 'pictorialBar',
-	        symbol: 'rect',
+	        symbol: 'roundRect',
 	        barWidth: 30,
 	        itemStyle: {
 	            normal: {
-	            	barBorderRadius: 4,
+	            	barBorderRadius: 16,
 					color: new echarts.graphic.LinearGradient(
 	                    0, 0, 0, 5,
 	                    [
-	                        {offset: 0, color: 'rgba(231,188,142,0)'},
-	                        {offset: 1, color: 'rgba(212,127,111,1)'}
+	                        {offset: 0, color: 'rgba(212,127,111,0.1)'},
+	                        {offset: 1, color: 'rgba(231,188,142,1)'}
 	                    ]
 	                )
 	            }
 	        },
 	        symbolRepeat: true,
-	        symbolSize: [30, 10],
-	        symbolMargin: 1,
+	        symbolSize: [30, 8],
+	        symbolMargin: 2,
 	        z: -10,
 	        data: [4, 5, 12, 4, 6, 12, 6, 2, 9, 9]
 	    }]

@@ -48,14 +48,6 @@ class dashboardSoil extends Component {
         {   
             value: 35,
             title: 'Ni'
-        },
-        {   
-            value: 0.45,
-            title: 'C6H6CL6'
-        },
-        {   
-            value: 0.46,
-            title: 'DDT'
         }
     ];
 

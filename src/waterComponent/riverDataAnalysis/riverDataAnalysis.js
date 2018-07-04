@@ -22,21 +22,21 @@ class riverDataAnalysis extends Component {
     };
     var schema = [
         {name: 'name', index: 0},
-        {name: 'group', index: 1},
+        {name: 'BOD', index: 1},
         {name: 'protein', index: 2},
-        {name: 'calcium', index: 3},
-        {name: 'sodium', index: 4},
-        {name: 'fiber', index: 5},
-        {name: 'vitaminc', index: 6},
-        {name: 'potassium', index: 7},
-        {name: 'carbohydrate', index: 8},
-        {name: 'sugars', index: 9},
-        {name: 'fat', index: 10},
-        {name: 'water', index: 11},
-        {name: 'calories', index: 12},
-        {name: 'saturated', index: 13},
-        {name: 'monounsat', index: 14},
-        {name: 'polyunsat', index: 15},
+        {name: 'COD', index: 3},
+        {name: 'DO', index: 4},
+        {name: 'pH', index: 5},
+        {name: 'NH3-N', index: 6},
+        {name: 'KMnO4', index: 7},
+        {name: 'N', index: 8},
+        {name: 'P', index: 9},
+        {name: 'Cu', index: 10},
+        {name: 'Pb', index: 11},
+        {name: 'SO', index: 12},
+        {name: 'Cl', index: 13},
+        {name: 'Hg', index: 14},
+        {name: 'F', index: 15},
         {name: 'id', index: 16}
     ];
 
@@ -92,33 +92,31 @@ class riverDataAnalysis extends Component {
         };
 
         return {
-            backgroundColor: '#333',
-            tooltip: {
-                padding: 10,
-                backgroundColor: '#222',
-                borderColor: '#777',
-                borderWidth: 1,
-                formatter: function (obj) {
-                    var value = obj[0].value;
-                    return '<div style="border-bottom: 1px solid rgba(255,255,255,.3); font-size: 18px;padding-bottom: 7px;margin-bottom: 7px">'
-                        + schema[1].name + '：' + value[1] + '<br>'
-                        + schema[2].name + '：' + value[2] + '<br>'
-                        + schema[3].name + '：' + value[3] + '<br>'
-                        + schema[4].name + '：' + value[4] + '<br>'
-                        + schema[5].name + '：' + value[5] + '<br>'
-                        + schema[6].name + '：' + value[6] + '<br>';
-                }
-            },
-            title: [
-                {
-                    text: 'Groups',
-                    top: 0,
-                    left: 0,
-                    textStyle: {
-                        color: '#fff'
+            backgroundColor: '#1E314B',
+            title: {
+                text: [
+                        '{titleImage|}{titleContext|Fuchun River Big Data Analysis}'
+                      ].join('\n'),
+                // left: 'left',
+                top: 10,
+                left: 15,
+                textStyle: {
+                    rich: {
+                        titleImage: {
+                            backgroundColor: {
+                                image: require('../../image/parallelIcon.png')
+                            },
+                            height: 25
+                        },
+                        titleContext: {
+                            color: '#FFFFFF',
+                            fontFamily: 'Helvetica',
+                            fontSize: 20,
+                            padding: [0,0,0,5]
+                        }
                     }
                 }
-            ],
+            },
             visualMap: {
                 show: true,
                 type: 'piecewise',
@@ -130,9 +128,13 @@ class riverDataAnalysis extends Component {
                 outOfRange: {
                     color: ['#ccc'] //['#d94e5d','#eac736','#50a3ba']
                 },
-                top: 20,
+                height: '70%',
+                width: '85%',
+                top: 40,
+                left: 20,
                 textStyle: {
-                    color: '#fff'
+                    color: 'rgba(255,255,255,0.6)',
+                    fontSize: 14
                 },
                 realtime: false
             },
@@ -154,19 +156,17 @@ class riverDataAnalysis extends Component {
                 {dim: 15, name: schema[15].name, nameLocation: 'end'}
             ],
             parallel: {
-                left: 280,
-                top: 20,
-                // top: 150,
-                // height: 300,
+                left: 250,
+                top: 80,
                 width: 400,
                 layout: 'vertical',
                 parallelAxisDefault: {
                     type: 'value',
                     name: 'nutrients',
                     nameLocation: 'end',
-                    nameGap: 20,
+                    nameGap: 80,
                     nameTextStyle: {
-                        color: '#fff',
+                        color: 'rgba(255,255,255,0.6)',
                         fontSize: 14
                     },
                     axisLine: {
