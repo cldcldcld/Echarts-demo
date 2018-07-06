@@ -88,7 +88,11 @@ class radiationTrend extends Component {
                   lineStyle: {
                       color: '#55FFA5',
                       width: '3'
-                  }
+                  },
+                  itemStyle: {
+                      color: '#FFFFFF'
+                  },
+                  symbolSize: 8
               },
               {
                   type:'line',
@@ -96,7 +100,11 @@ class radiationTrend extends Component {
                   lineStyle: {
                       color: '#55FFA5',
                       width: '3'
-                  }
+                  },
+                  itemStyle: {
+                      color: '#FFFFFF'
+                  },
+                  symbolSize: 8
               },
               {
                   type:'line',
@@ -104,7 +112,11 @@ class radiationTrend extends Component {
                   lineStyle: {
                       color: '#55FFA5',
                       width: '3'
-                  }
+                  },
+                  itemStyle: {
+                      color: '#FFFFFF'
+                  },
+                  symbolSize: 8
               }
           ]      
     })

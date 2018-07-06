@@ -91,7 +91,11 @@ class soilTrend extends Component {
                   },
                   areaStyle: {
                       color: 'rgba(255,162,41,0.1)'
-                  }
+                  },
+                  itemStyle: {
+                      color: '#FFFFFF'
+                  },
+                  symbolSize: 8
               }
           ]      
     })

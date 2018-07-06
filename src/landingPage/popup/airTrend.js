@@ -95,7 +95,11 @@ class airTrend extends Component {
                   lineStyle: {
                       color: 'rgba(19,190,255,1)',
                       width: '3'
-                  }
+                  },
+                  itemStyle: {
+                      color: '#FFFFFF'
+                  },
+                  symbolSize: 8
               }
           ]      
     })
