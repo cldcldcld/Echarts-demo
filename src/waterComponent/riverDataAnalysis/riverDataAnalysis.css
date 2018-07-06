@@ -7,3 +7,7 @@
 #riverDataAnalysis {
 	height: 100%;
 }
+
+#riverDataAnalysis div {
+  border-radius: 20px;
+}

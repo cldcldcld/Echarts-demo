@@ -5,21 +5,21 @@ import echarts from 'echarts';
 class indexDependency extends Component {
   render() {
     return (
-      <div className='indexDependency'>
-        <div id='indexDependency'></div>
+      <div className='indexDependencyAir'>
+        <div id='indexDependencyAir'></div>
       </div>
     );
   }
 
   componentDidMount() {
-    var myChart = echarts.init(document.getElementById('indexDependency'));
+    var myChart = echarts.init(document.getElementById('indexDependencyAir'));
 
     var json = require('./indexData.json');
     myChart.hideLoading();
     myChart.setOption({
         title: {
             text: [
-                    '{titleImage|}{titleContext|Water Quality Index Dependencies}'
+                    '{titleImage|}{titleContext|Pollutant Correlation Analysis}'
                   ].join('\n'),
             // left: 'left',
             top: 10,
@@ -47,8 +47,7 @@ class indexDependency extends Component {
             {
                 type: 'graph',
                 layout: 'none',
-                top: 85,
-                height: '70%',
+                top: 100,
                 // progressiveThreshold: 700,
                 data: json.nodes.map(function (node) {
                     return {

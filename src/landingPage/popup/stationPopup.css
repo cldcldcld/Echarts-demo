@@ -13,8 +13,17 @@
 }
 
 .popup-title .station-title {
+	height: 100%;
 	float: left;
 	padding-right: 2%;
+}
+
+.popup-title .station-title .station-image {
+	float: left;
+}
+
+.popup-title .station-title .station-image img {
+	width: 90%;
 }
 
 .popup-title .station-title .station-number {

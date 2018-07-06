@@ -115,18 +115,24 @@ class heatMapChart extends Component {
             }
         },
         series: [{
-            name: 'Punch Card',
+            name: 'AQI(μg/m3)',
             type: 'heatmap',
             data: data,
             label: {
                 normal: {
-                    show: true
+                    show: true,
+                    align: 'center'
                 }
             },
             itemStyle: {
                 emphasis: {
                     shadowBlur: 10,
                     shadowColor: 'rgba(255, 255, 255, 0.4)'
+                }
+            },
+            tooltip: {
+                formatter: function (params) {
+                    return params.seriesName + '<br/>' + params.name + ': ' + params.value[2];
                 }
             }
         }]        

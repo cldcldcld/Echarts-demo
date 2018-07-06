@@ -264,9 +264,6 @@ class baseRadarChart extends Component {
                     }
                 },
                 symbolSize: 15,
-                // symbolSize: function (data) {
-                //     return Math.max(5, data[2] / 5);
-                // },
                 itemStyle: {
                     normal: {
                         borderColor: '#fff',
@@ -282,12 +279,7 @@ class baseRadarChart extends Component {
                     normal: {
                         color: '#22CCDC',
                         width: 1,
-                        opacity: 0.6,
-                        // border: '2px solid #22CCDC'
-                        // box-shadow: 6px 10px 8px 2px rgba(0,0,0,0.50);
-                        // shadowColor: 'rgba(0,0,0,0)',
-                        // shadowBlur: 5,
-                        // shadowOffsetY: 5,
+                        opacity: 0.6
                     }
                 },
                 z: 100,

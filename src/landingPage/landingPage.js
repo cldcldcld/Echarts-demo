@@ -12,6 +12,8 @@ class landingPage extends Component {
     this.handleMouseOut = this.handleMouseOut.bind(this);
     this.buttonClick = this.buttonClick.bind(this);
     
+    this.hasAnimation = true;
+
     this.stationInfo = {
       'Air': [
         {
@@ -150,6 +152,52 @@ class landingPage extends Component {
           month: 'June 1st',
           year: '2018'
         }
+      ],
+      'Radiation': [
+        {
+          stationNumber: '01',
+          stationName: 'Provincial Radiation',
+          stationLatitude: 'Latitude: 30.233516 °N',
+          stationLongitude: 'Longitude: 120.16773 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 104.2 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/provincialRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '02',
+          stationName: 'West Lake',
+          stationLatitude: 'Latitude: 30.211048 °N',
+          stationLongitude: 'Longitude: 120.086667 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 94.2 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/westLakeRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '03',
+          stationName: 'Xiaoshan Station',
+          stationLatitude: 'Latitude: 30.280933 °N',
+          stationLongitude: 'Longitude: 120.075743 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 72.8 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/xiaoshanRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        }
       ]     
     }
 
@@ -279,13 +327,78 @@ class landingPage extends Component {
           text: '',
           location: '120.243044,30.282929'
         }
+      ],
+      'Radiation': [
+        {
+          text: '',
+          location: '120.12708,30.294341'
+        },
+        {
+          text: '',
+          location: '120.24029,30.375995'
+        }, 
+        {
+          text: '',
+          location: '120.075743,30.280933'
+        },
+        {
+          text: '',
+          location: '120.287887,30.195566'
+        }, 
+        {
+          text: '',
+          location: '120.211423,30.300891'
+        },
+        {
+          text: '',
+          location: '120.285013,30.326331'
+        },
+        {
+          text: '',
+          location: '120.321807,30.268956'
+        },
+        {
+          text: '',
+          location: '120.031475,30.127369'
+        },
+        {
+          text: '',
+          location: '120.086667,30.211048'
+        },
+        {
+          text: '',
+          location: '120.243044,30.282929'
+        }
       ]
     }
+
+    this.warningList = [
+      {
+        text: '',
+        location: '120.165431,30.175946'
+      }
+    ]
+
+    this.warningStation = [
+      {
+        isWarning: true,
+        stationNumber: '01',
+        stationName: 'Binjiang Air Station',
+        stationLatitude: 'Latitude: 30.283677 °N',
+        stationLongitude: 'Longitude: 120.193601 °E',
+        stationspecialty: 'Elevation: 9 m',
+        stationTemperature: '31',
+        image: require('../image/airStation1.png'),
+        month: 'May 1st',
+        year: '2018'
+      }
+    ]
 
     this.colorObj = {
       'Air': '#55DDEE',
       'Water': '#9885FE',
-      'Soil': '#FFA229'
+      'Soil': '#FFA229',
+      'Radiation': '#55FFA5'
     }
 
     this.state = {
@@ -306,10 +419,16 @@ class landingPage extends Component {
         </div>
     );
 
+    const warningPopUpComponent = this.warningStation.map((item, index) =>
+        <div key={index} className='hide point-pop-up' id={'warningIndex-' + index}>
+            <StationPopup type={this.state.type} stationInfo={item} index={index}></StationPopup>
+        </div>
+    );
+
     const markList = <MarkerList 
                         data={pointLocation}
                         fillStyle={color}
-                        animation={true} 
+                        animation={this.hasAnimation} 
                         isShowShadow={false} 
                         multiple={false} 
                         autoViewport={false}
@@ -317,8 +436,21 @@ class landingPage extends Component {
                         onMouseOver={this.handleMouseOver}
                         onMouseOut={this.handleMouseOut}
                       />
+
+    const warningList = <MarkerList 
+                        data={this.warningList}
+                        fillStyle={'#FF2929'}
+                        animation={this.hasAnimation} 
+                        isShowShadow={false}
+                        multiple={false} 
+                        autoViewport={false}
+                        onClick={this.handleClick}
+                        onMouseOver={this.handleWarningMouseOver}
+                        onMouseOut={this.handleWarningMouseOut}
+                        />
+
     return (
-        <div className='map-container'>
+        <div id='map-container' className='map-container'>
           <div className='navigation-button'>
             <div onClick={this.buttonClick} className='air-button selected' id='Air' name='button-select'>
               <img src={require('../image/air.png')} alt='Air'></img><br/>
@@ -332,11 +464,17 @@ class landingPage extends Component {
               <img src={require('../image/soil.png')} alt='Soil'></img><br/>
               <span>Solid Quality</span>
             </div>
+            <div onClick={this.buttonClick} className='radiation-button' id='Radiation' name='button-select'>
+              <img src={require('../image/Radiation.png')} alt='Radiation'></img><br/>
+              <span>Radiation</span>
+            </div>
           </div>
           <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}
+            {warningList}
           </Map>
           {pointPopUpComponent}
+          {warningPopUpComponent}
         </div>
     );
   }
@@ -355,6 +493,22 @@ class landingPage extends Component {
     }
   }
 
+  handleWarningMouseOver(number) {
+    var styles;
+    if (document.getElementById('warningIndex-' + number)) {
+      styles = document.getElementById('warningIndex-' + number).style;
+      styles.top = event.target.offsetTop - 330 + document.body.offsetHeight * 0.03 + 'px';
+      styles.left = event.target.offsetLeft -30 + document.body.offsetWidth * 0.03 + 'px';
+      document.getElementById('warningIndex-' + number).className = 'point-pop-up';
+    }
+  }
+
+  handleWarningMouseOut(number) {
+    if (document.getElementById('warningIndex-' + number)) {
+      document.getElementById('warningIndex-' + number).className = 'hide point-pop-up';
+    }
+  }
+
   handleMouseOut(number) {
     if (document.getElementById('index-' + number)) {
       document.getElementById('index-' + number).className = 'hide point-pop-up';
@@ -363,6 +517,7 @@ class landingPage extends Component {
 
   buttonClick(e) {
     var element;
+    var id;
     if (e && e.target) {
       if (e.target.className) {
         element = e.target;
@@ -371,9 +526,9 @@ class landingPage extends Component {
       }
       this.resetSelect();
       element.className = element.className + ' selected';
-      this.setState({
-          type: element.id
-      });
+      document.getElementById('map-container').style.display = 'none';
+      this.props.history.push('/landingpage/' + element.id);
+      this.props.history.go();
     }
   }
 

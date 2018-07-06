@@ -118,7 +118,6 @@ class soilMicroorganismAnalysis extends Component {
               type:'pie',
               radius : [20, 100],
               center: ['50%', '34%'],
-              roseType : 'radius',
               data:[
                   {value:2},
                   {value:5},
@@ -148,7 +147,6 @@ class soilMicroorganismAnalysis extends Component {
               type:'pie',
               radius : [20, 100],
               center: ['50%', '74%'],
-              roseType : 'radius',
               data:[
                   {value:5},
                   {value:4},

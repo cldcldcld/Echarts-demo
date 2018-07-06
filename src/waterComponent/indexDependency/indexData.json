@@ -1,300 +1,1580 @@
 {
-"nodes": [
-	{"color": "#c71919","label": "KMnO4","attributes": {}, "y": -100,"x": 0,"id": "KMnO4","size": 78},
-	{"color": "#8419c7","label": "BOD","attributes": {}, "y": 120,"x": -230,"id": "BOD","size": 65},
-	{"color": "#1984c7","label": "COD","attributes": {}, "y": 200,"x": 250,"id": "COD","size": 56},
-	{"color": "#c79f19","label": "NH3-N","attributes": {}, "y": 360,"x": -466,"id": "NH3-N","size": 50},
-	{"color": "#c71969","label": "DO","attributes": {}, "y": 273,"x": 489,"id": "DO","size": 30},
-	{"color": "#c71919","label": "P","attributes": {}, "y": 0,"x": -413,"id": "P","size": 30},
-	{"color": "#c78419","label": "N","attributes": {}, "y": -300,"x": -293,"id": "N","size": 25},
-	{"color": "#8419c7","label": "Se","attributes": {}, "y": 271,"x": -61,"id": "Se","size": 24},
-	{"color": "#199fc7","label": "F","attributes": {}, "y": -160,"x": 297,"id": "F","size": 23},
-	{"color": "#1984c7","label": "Cl","attributes": {}, "y": 119,"x": -600,"id": "Cl","size": 18},
-	{"color": "#19c719","label": "Volatile Phenol","attributes": {}, "y": 405,"x": 180,"id": "Volatile Phenol","size": 17},
-	{"color": "#19c784","label": "CCl4","attributes": {}, "y": 555,"x": -92,"id": "CCl4","size": 14},
-	{"color": "#1919c7","label": "Cr","attributes": {}, "y": -436,"x": -271,"id": "Cr","size": 13},
-	{"color": "#b9c719","label": "C2HCl3","attributes": {}, "y": -1,"x": 419,"id": "C2HCl3","size": 13},
-	{"color": "#69c719","label": "CN","attributes": {}, "y": -438,"x": -180,"id": "CN","size": 12},
-	{"color": "#1969c7","label": "CHBr3","attributes": {}, "y": -339,"x": 90,"id": "CHBr3","size": 12},
-	{"color": "#c719b9","label": "Cu","attributes": {}, "y": -337,"x": -23,"id": "Cu","size": 10},
-	{"color": "#c71969","label": "Cd","attributes": {}, "y": -380,"x": 538,"id": "Cd","size": 10},
-	{"color": "#9f19c7","label": "CHCl3","attributes": {}, "y": -300,"x": -560,"id": "CHCl3","size": 10},
-	{"color": "#19c7b9","label": "Anionic Surfaceactive Agent","attributes": {}, "y": 632,"x": -361,"id": "Anionic Surfaceactive Agent","size": 9},
-	{"color": "#9fc719","label": "Sulfide","attributes": {}, "y": 193,"x": -350,"id": "Sulfide","size": 9},
-	{"color": "#8419c7","label": "C2H2Cl2","attributes": {}, "y": -392,"x": 227,"id": "C2H2Cl2","size": 9},
-	{"color": "#c7194f","label": "C2Cl4","attributes": {}, "y": 410,"x": 344,"id": "C2Cl4","size": 9},
-	{"color": "#c74f19","label": "Petroleum","attributes": {}, "y": -36,"x": 226,"id": "Petroleum","size": 8},
-	{"color": "#c71969","label": "C2H3Cl","attributes": {}, "y": 22,"x": -344,"id": "C2H3Cl","size": 8},
-	{"color": "#c78419","label": "SO4","attributes": {}, "y": 480,"x": 394,"id": "SO4","size": 7},
-	{"color": "#1934c7","label": "C3H5ClO","attributes": {}, "y": -121,"x": -48,"id": "C3H5ClO","size": 7},
-	{"color": "#34c719","label": "Mn","attributes": {}, "y": -145,"x": 123,"id": "Mn","size": 6},
-	{"color": "#4f19c7","label": "C2H4Cl2","attributes": {}, "y": 177,"x": 92,"id": "C2H4Cl2","size": 6},
-	{"color": "#b919c7","label": "C4Cl6","attributes": {}, "y": 88,"x": 517,"id": "C4Cl6","size": 6},
-	{"color": "#1984c7","label": "Pb","attributes": {}, "y": 644,"x": -249,"id": "Pb","size": 5},
-	{"color": "#9f19c7","label": "Hg","attributes": {}, "y": 500,"x": 120,"id": "Hg","size": 5},
-	{"color": "#19b9c7","label": "Fe","attributes": {}, "y": 600,"x": 435,"id": "Fe","size": 5},
-	{"color": "#9f19c7","label": "C4H5Cl","attributes": {}, "y": -42,"x": -271,"id": "C4H5Cl","size": 5},
-	{"color": "#4f19c7","label": "pH","attributes": {}, "y": -199,"x": -137,"id": "pH","size": 4.7252817},
-	{"color": "#c7b919","label": "Fecal Coliforms","attributes": {}, "y": -248,"x": -253,"id": "Fecal Coliforms","size": 4},
-	{"color": "#19c7b9","label": "C8H8","attributes": {}, "y": -350,"x": -423,"id": "C8H8","size": 4},
-	{"color": "#69c719","label": "SO","attributes": {}, "y": 10,"x": 574,"id": "SO","size": 3}
-],
-"edges":[
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "pH","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Cu","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Pb","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Hg","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "SO","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Cr","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Petroleum","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Anionic Surfaceactive Agent","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Sulfide","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Fecal Coliforms","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "SO4","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Fe","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "Mn","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "KMnO4","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Cu","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Pb","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Hg","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "pH","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Fecal Coliforms","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C2H4Cl2","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C4Cl6","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C3H5ClO","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "C2H2Cl2","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Pb","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Hg","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Mn","size": 1},
-	{"sourceID": "COD","attributes": {}, "targetID": "Fe","size": 1},
-	{"sourceID": "SO","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "SO","attributes": {}, "targetID": "Sulfide","size": 1},
-	{"sourceID": "pH","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "pH","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "C8H8","attributes": {}, "targetID": "C4H5Cl","size": 1},
-	{"sourceID": "C8H8","attributes": {}, "targetID": "C4Cl6","size": 1},
-	{"sourceID": "C4H5Cl","attributes": {}, "targetID": "C8H8","size": 1},
-	{"sourceID": "C4Cl6","attributes": {}, "targetID": "C8H8","size": 1},
-	{"sourceID": "Sulfide","attributes": {}, "targetID": "SO","size": 1},
-	{"sourceID": "Fecal Coliforms","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Fecal Coliforms","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "Sulfide","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Sulfide","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Sulfide","attributes": {}, "targetID": "SO4","size": 1},
-	{"sourceID": "SO4","attributes": {}, "targetID": "Sulfide","size": 1},
-	{"sourceID": "SO4","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "SO4","attributes": {}, "targetID": "Anionic Surfaceactive Agent","size": 1},
-	{"sourceID": "Anionic Surfaceactive Agent","attributes": {}, "targetID": "SO4","size": 1},
-	{"sourceID": "Anionic Surfaceactive Agent","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "Anionic Surfaceactive Agent","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "Anionic Surfaceactive Agent","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Petroleum","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Petroleum","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "Petroleum","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "Petroleum","attributes": {}, "targetID": "CHBr3","size": 1},
-	{"sourceID": "Fe","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Fe","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "Fe","attributes": {}, "targetID": "Mn","size": 1},
-	{"sourceID": "Mn","attributes": {}, "targetID": "Fe","size": 1},
-	{"sourceID": "Mn","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Mn","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C4H5Cl","attributes": {}, "targetID": "C4Cl6","size": 1},
-	{"sourceID": "C4H5Cl","attributes": {}, "targetID": "C3H5ClO","size": 1},
-	{"sourceID": "C4H5Cl","attributes": {}, "targetID": "C2H3Cl","size": 1},
-	{"sourceID": "C4H5Cl","attributes": {}, "targetID": "C2H2Cl2","size": 1},
-	{"sourceID": "C4Cl6","attributes": {}, "targetID": "C4H5Cl","size": 1},
-	{"sourceID": "C4Cl6","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C2Cl4","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C2Cl4","attributes": {}, "targetID": "C2H2Cl2","size": 1},
-	{"sourceID": "C2Cl4","attributes": {}, "targetID": "C2H3Cl","size": 1},
-	{"sourceID": "C2Cl4","attributes": {}, "targetID": "C2H4Cl2","size": 1},
-	{"sourceID": "C2H4Cl2","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "C2H4Cl2","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C2H4Cl2","attributes": {}, "targetID": "C2H3Cl","size": 1},
-	{"sourceID": "C2H3Cl","attributes": {}, "targetID": "C2H4Cl2","size": 1},
-	{"sourceID": "C2H3Cl","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "C2H3Cl","attributes": {}, "targetID": "C4H5Cl","size": 1},
-	{"sourceID": "C2H3Cl","attributes": {}, "targetID": "C2H2Cl2","size": 1},
-	{"sourceID": "C2H2Cl2","attributes": {}, "targetID": "C2H3Cl","size": 1},
-	{"sourceID": "C2H2Cl2","attributes": {}, "targetID": "C2Cl4","size": 1},
-	{"sourceID": "C2H2Cl2","attributes": {}, "targetID": "C4H5Cl","size": 1},
-	{"sourceID": "C2H2Cl2","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C3H5ClO","attributes": {}, "targetID": "C4H5Cl","size": 1},
-	{"sourceID": "C3H5ClO","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "C3H5ClO","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Pb","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Pb","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "Pb","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Hg","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Hg","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "Hg","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Pb","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Sulfide","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "C2HCl3","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Cu","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "C3H5ClO","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "Cr","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "CHBr3","size": 1},
-	{"sourceID": "BOD","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Anionic Surfaceactive Agent","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Hg","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Cr","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Cu","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "C2HCl3","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "CHBr3","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "NH3-N","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "CHBr3","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "CHCl3","size": 1},
-	{"sourceID": "C2HCl3","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "CHCl3","attributes": {}, "targetID": "C2HCl3","size": 1},
-	{"sourceID": "CHCl3","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "CHCl3","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "CHCl3","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "CHCl3","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "CHBr3","attributes": {}, "targetID": "C2HCl3","size": 1},
-	{"sourceID": "CHBr3","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "CHBr3","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "CHBr3","attributes": {}, "targetID": "Petroleum","size": 1},
-	{"sourceID": "CHBr3","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "CHBr3","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "Petroleum","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "CCl4","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "Volatile Phenol","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "Anionic Surfaceactive Agent","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "F","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "CCl4","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "Anionic Surfaceactive Agent","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "Cl","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "DO","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "C2HCl3","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "CN","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "CN","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "N","size": 1},
-	{"sourceID": "P","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "DO","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "F","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "Volatile Phenol","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "N","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Cu","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Cu","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Cu","attributes": {}, "targetID": "COD","size": 1},
-	{"sourceID": "Cu","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Cu","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "Cu","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "Cr","size": 1},
-	{"sourceID": "Cd","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "P","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "Cl","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "KMnO4","size": 1},
-	{"sourceID": "Se","attributes": {}, "targetID": "Cr","size": 1},
-	{"sourceID": "Cr","attributes": {}, "targetID": "Se","size": 1},
-	{"sourceID": "Cr","attributes": {}, "targetID": "Cd","size": 1},
-	{"sourceID": "Cr","attributes": {}, "targetID": "NH3-N","size": 1},
-	{"sourceID": "Cr","attributes": {}, "targetID": "BOD","size": 1},
-	{"sourceID": "Cr","attributes": {}, "targetID": "KMnO4","size": 1}]
+	"nodes": [
+		{"color": "#9885FE ","label": "KMnO4","attributes": {}, "y": -100,"x": 0,"id": "KMnO4","size": 78},
+		{"color": "#22B5C8","label": "BOD","attributes": {}, "y": 120,"x": -230,"id": "BOD","size": 65},
+		{"color": "#6944DB","label": "COD","attributes": {}, "y": 200,"x": 250,"id": "COD","size": 56},
+		{"color": "#BDB1F7","label": "NH3-N","attributes": {}, "y": 360,"x": -466,"id": "NH3-N","size": 50},
+		{"color": "#F0D99C","label": "DO","attributes": {}, "y": 273,"x": 489,"id": "DO","size": 30},
+		{"color": "#c71919","label": "P","attributes": {}, "y": 0,"x": -413,"id": "P","size": 30},
+		{"color": "#c78419","label": "N","attributes": {}, "y": -300,"x": -293,"id": "N","size": 25},
+		{"color": "#8419c7","label": "Se","attributes": {}, "y": 271,"x": -61,"id": "Se","size": 24},
+		{"color": "#199fc7","label": "F","attributes": {}, "y": -160,"x": 297,"id": "F","size": 23},
+		{"color": "#1984c7","label": "Cl","attributes": {}, "y": 119,"x": -600,"id": "Cl","size": 18},
+		{"color": "#19c719","label": "Volatile Phenol","attributes": {}, "y": 405,"x": 180,"id": "Volatile Phenol","size": 17},
+		{"color": "#19c784","label": "CCl4","attributes": {}, "y": 555,"x": -92,"id": "CCl4","size": 14},
+		{"color": "#1919c7","label": "Cr","attributes": {}, "y": -436,"x": -271,"id": "Cr","size": 13},
+		{"color": "#b9c719","label": "C2HCl3","attributes": {}, "y": -1,"x": 419,"id": "C2HCl3","size": 13},
+		{"color": "#69c719","label": "CN","attributes": {}, "y": -438,"x": -180,"id": "CN","size": 12},
+		{"color": "#1969c7","label": "CHBr3","attributes": {}, "y": -339,"x": 90,"id": "CHBr3","size": 12},
+		{"color": "#c719b9","label": "Cu","attributes": {}, "y": -337,"x": -23,"id": "Cu","size": 10},
+		{"color": "#c71969","label": "Cd","attributes": {}, "y": -380,"x": 538,"id": "Cd","size": 10},
+		{"color": "#9f19c7","label": "CHCl3","attributes": {}, "y": -300,"x": -560,"id": "CHCl3","size": 10},
+		{"color": "#19c7b9","label": "Anionic Surfaceactive Agent","attributes": {}, "y": 632,"x": -361,"id": "Anionic Surfaceactive Agent","size": 9},
+		{"color": "#9fc719","label": "Sulfide","attributes": {}, "y": 193,"x": -350,"id": "Sulfide","size": 9},
+		{"color": "#8419c7","label": "C2H2Cl2","attributes": {}, "y": -392,"x": 227,"id": "C2H2Cl2","size": 9},
+		{"color": "#c7194f","label": "C2Cl4","attributes": {}, "y": 410,"x": 344,"id": "C2Cl4","size": 9},
+		{"color": "#c74f19","label": "Petroleum","attributes": {}, "y": -36,"x": 226,"id": "Petroleum","size": 8},
+		{"color": "#c71969","label": "C2H3Cl","attributes": {}, "y": 22,"x": -344,"id": "C2H3Cl","size": 8},
+		{"color": "#c78419","label": "SO4","attributes": {}, "y": 480,"x": 394,"id": "SO4","size": 7},
+		{"color": "#1934c7","label": "C3H5ClO","attributes": {}, "y": -121,"x": -48,"id": "C3H5ClO","size": 7},
+		{"color": "#34c719","label": "Mn","attributes": {}, "y": -145,"x": 123,"id": "Mn","size": 6},
+		{"color": "#4f19c7","label": "C2H4Cl2","attributes": {}, "y": 177,"x": 92,"id": "C2H4Cl2","size": 6},
+		{"color": "#b919c7","label": "C4Cl6","attributes": {}, "y": 88,"x": 517,"id": "C4Cl6","size": 6},
+		{"color": "#1984c7","label": "Pb","attributes": {}, "y": 644,"x": -249,"id": "Pb","size": 5},
+		{"color": "#9f19c7","label": "Hg","attributes": {}, "y": 500,"x": 120,"id": "Hg","size": 5},
+		{"color": "#19b9c7","label": "Fe","attributes": {}, "y": 600,"x": 435,"id": "Fe","size": 5},
+		{"color": "#9f19c7","label": "C4H5Cl","attributes": {}, "y": -42,"x": -271,"id": "C4H5Cl","size": 5},
+		{"color": "#4f19c7","label": "pH","attributes": {}, "y": -199,"x": -137,"id": "pH","size": 4.7252817},
+		{"color": "#c7b919","label": "Fecal Coliforms","attributes": {}, "y": -248,"x": -253,"id": "Fecal Coliforms","size": 4},
+		{"color": "#19c7b9","label": "C8H8","attributes": {}, "y": -350,"x": -423,"id": "C8H8","size": 4},
+		{"color": "#69c719","label": "SO","attributes": {}, "y": 10,"x": 574,"id": "SO","size": 3}
+	],
+	"edges": [
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "pH",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Pb",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Hg",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "SO",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Cr",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Petroleum",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Anionic Surfaceactive Agent",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Sulfide",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Fecal Coliforms",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "SO4",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Fe",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "Mn",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "KMnO4",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Pb",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Hg",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "pH",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Fecal Coliforms",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C2H4Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C4Cl6",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C3H5ClO",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "C2H2Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Pb",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Hg",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Mn",
+			"size": 1
+		},
+		{
+			"sourceID": "COD",
+			"attributes": {},
+			"targetID": "Fe",
+			"size": 1
+		},
+		{
+			"sourceID": "SO",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "SO",
+			"attributes": {},
+			"targetID": "Sulfide",
+			"size": 1
+		},
+		{
+			"sourceID": "pH",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "pH",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "C8H8",
+			"attributes": {},
+			"targetID": "C4H5Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C8H8",
+			"attributes": {},
+			"targetID": "C4Cl6",
+			"size": 1
+		},
+		{
+			"sourceID": "C4H5Cl",
+			"attributes": {},
+			"targetID": "C8H8",
+			"size": 1
+		},
+		{
+			"sourceID": "C4Cl6",
+			"attributes": {},
+			"targetID": "C8H8",
+			"size": 1
+		},
+		{
+			"sourceID": "Sulfide",
+			"attributes": {},
+			"targetID": "SO",
+			"size": 1
+		},
+		{
+			"sourceID": "Fecal Coliforms",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Fecal Coliforms",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "Sulfide",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Sulfide",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Sulfide",
+			"attributes": {},
+			"targetID": "SO4",
+			"size": 1
+		},
+		{
+			"sourceID": "SO4",
+			"attributes": {},
+			"targetID": "Sulfide",
+			"size": 1
+		},
+		{
+			"sourceID": "SO4",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "SO4",
+			"attributes": {},
+			"targetID": "Anionic Surfaceactive Agent",
+			"size": 1
+		},
+		{
+			"sourceID": "Anionic Surfaceactive Agent",
+			"attributes": {},
+			"targetID": "SO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Anionic Surfaceactive Agent",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "Anionic Surfaceactive Agent",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "Anionic Surfaceactive Agent",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Petroleum",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Petroleum",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "Petroleum",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "Petroleum",
+			"attributes": {},
+			"targetID": "CHBr3",
+			"size": 1
+		},
+		{
+			"sourceID": "Fe",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Fe",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "Fe",
+			"attributes": {},
+			"targetID": "Mn",
+			"size": 1
+		},
+		{
+			"sourceID": "Mn",
+			"attributes": {},
+			"targetID": "Fe",
+			"size": 1
+		},
+		{
+			"sourceID": "Mn",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Mn",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C4H5Cl",
+			"attributes": {},
+			"targetID": "C4Cl6",
+			"size": 1
+		},
+		{
+			"sourceID": "C4H5Cl",
+			"attributes": {},
+			"targetID": "C3H5ClO",
+			"size": 1
+		},
+		{
+			"sourceID": "C4H5Cl",
+			"attributes": {},
+			"targetID": "C2H3Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C4H5Cl",
+			"attributes": {},
+			"targetID": "C2H2Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "C4Cl6",
+			"attributes": {},
+			"targetID": "C4H5Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C4Cl6",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C2Cl4",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C2Cl4",
+			"attributes": {},
+			"targetID": "C2H2Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "C2Cl4",
+			"attributes": {},
+			"targetID": "C2H3Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C2Cl4",
+			"attributes": {},
+			"targetID": "C2H4Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H4Cl2",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H4Cl2",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H4Cl2",
+			"attributes": {},
+			"targetID": "C2H3Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H3Cl",
+			"attributes": {},
+			"targetID": "C2H4Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H3Cl",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H3Cl",
+			"attributes": {},
+			"targetID": "C4H5Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H3Cl",
+			"attributes": {},
+			"targetID": "C2H2Cl2",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H2Cl2",
+			"attributes": {},
+			"targetID": "C2H3Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H2Cl2",
+			"attributes": {},
+			"targetID": "C2Cl4",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H2Cl2",
+			"attributes": {},
+			"targetID": "C4H5Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C2H2Cl2",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C3H5ClO",
+			"attributes": {},
+			"targetID": "C4H5Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "C3H5ClO",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "C3H5ClO",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Pb",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Pb",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "Pb",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Hg",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Hg",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "Hg",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Pb",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Sulfide",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "C2HCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "C3H5ClO",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "Cr",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "CHBr3",
+			"size": 1
+		},
+		{
+			"sourceID": "BOD",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Anionic Surfaceactive Agent",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Hg",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Cr",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "C2HCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "CHBr3",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "NH3-N",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "CHBr3",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "CHCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "C2HCl3",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "CHCl3",
+			"attributes": {},
+			"targetID": "C2HCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "CHCl3",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "CHCl3",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "CHCl3",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "CHCl3",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "CHBr3",
+			"attributes": {},
+			"targetID": "C2HCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "CHBr3",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "CHBr3",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "CHBr3",
+			"attributes": {},
+			"targetID": "Petroleum",
+			"size": 1
+		},
+		{
+			"sourceID": "CHBr3",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "CHBr3",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "Petroleum",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "CCl4",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "Volatile Phenol",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "Anionic Surfaceactive Agent",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "F",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "CCl4",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "Anionic Surfaceactive Agent",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "Cl",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "DO",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "C2HCl3",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "CN",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "CN",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "N",
+			"size": 1
+		},
+		{
+			"sourceID": "P",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "DO",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "F",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "Volatile Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "N",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Cu",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Cu",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Cu",
+			"attributes": {},
+			"targetID": "COD",
+			"size": 1
+		},
+		{
+			"sourceID": "Cu",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Cu",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "Cr",
+			"size": 1
+		},
+		{
+			"sourceID": "Cd",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "P",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "Cl",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		},
+		{
+			"sourceID": "Se",
+			"attributes": {},
+			"targetID": "Cr",
+			"size": 1
+		},
+		{
+			"sourceID": "Cr",
+			"attributes": {},
+			"targetID": "Se",
+			"size": 1
+		},
+		{
+			"sourceID": "Cr",
+			"attributes": {},
+			"targetID": "Cd",
+			"size": 1
+		},
+		{
+			"sourceID": "Cr",
+			"attributes": {},
+			"targetID": "NH3-N",
+			"size": 1
+		},
+		{
+			"sourceID": "Cr",
+			"attributes": {},
+			"targetID": "BOD",
+			"size": 1
+		},
+		{
+			"sourceID": "Cr",
+			"attributes": {},
+			"targetID": "KMnO4",
+			"size": 1
+		}
+	]
 }
-

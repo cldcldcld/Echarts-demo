@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './dashboardAir.css';
 import App from './App'
 import HeatMapChart from './airComponent/heatMap/heatMapChart';
-import ScatterChart from './airComponent/scatter/scatterChart';
+// import ScatterChart from './airComponent/scatter/scatterChart';
 import AQIRadarChart from './airComponent/AQIRadar/AQIRadarChart';
 import RealData from './airComponent/realData/realData';
 import SmoothLineChart from './airComponent/smoothLine/smoothLineChart';
 import WeatherInfo from './airComponent/weatherInfo/weatherInfo';
 import WarningInfo from './airComponent/warningInfo/warningInfo';
+import IndexDependency from './airComponent/indexDependency/indexDependency';
 
 class dashboardAir extends Component {
 
@@ -91,7 +92,8 @@ class dashboardAir extends Component {
                     <WeatherInfo></WeatherInfo>
                 </div>
                 <div className="scatter-chart">
-                    <ScatterChart></ScatterChart>
+                    {/*<ScatterChart></ScatterChart>*/}
+                    <IndexDependency></IndexDependency>
                 </div>
                 <div className="warning-info">
                     <WarningInfo></WarningInfo>

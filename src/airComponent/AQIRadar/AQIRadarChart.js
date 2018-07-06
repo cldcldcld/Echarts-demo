@@ -117,12 +117,12 @@ class AQIRadarChart extends Component {
                 symbol: 'none',
                 itemStyle: {
                     normal: {
-                        color: '#F9713C'
+                        color: '#22B5C8'
                     }
                 },
                 areaStyle: {
                     normal: {
-                        opacity: 0.05
+                        opacity: 0.1
                     }
                 }
             }

@@ -14,7 +14,6 @@ class riverDataAnalysis extends Component {
   componentDidMount() {
     var myChart = echarts.init(document.getElementById('riverDataAnalysis'));
 
-    var json = require('./riverData.json');
     var indices = {
         name: 0,
         group: 1,
@@ -130,8 +129,8 @@ class riverDataAnalysis extends Component {
                 },
                 height: '70%',
                 width: '85%',
-                top: 40,
-                left: 20,
+                top: 80,
+                left: 40,
                 textStyle: {
                     color: 'rgba(255,255,255,0.6)',
                     fontSize: 14
@@ -162,7 +161,6 @@ class riverDataAnalysis extends Component {
                 layout: 'vertical',
                 parallelAxisDefault: {
                     type: 'value',
-                    name: 'nutrients',
                     nameLocation: 'end',
                     nameGap: 80,
                     nameTextStyle: {
@@ -193,7 +191,6 @@ class riverDataAnalysis extends Component {
             animation: false,
             series: [
                 {
-                    name: 'nutrients',
                     type: 'parallel',
                     lineStyle: lineStyle,
                     inactiveOpacity: 0,

@@ -1,0 +1,1884 @@
+{
+	"nodes": [
+		{
+			"color": "#22B5C8",
+			"label": "Benzene",
+			"attributes": {},
+			"y": 200,
+			"x": 250,
+			"id": "Benzene",
+			"size": 78
+		},
+		{
+			"color": "#A7F6FC",
+			"label": "Methanol",
+			"attributes": {},
+			"y": -100,
+			"x": 0,
+			"id": "Methanol",
+			"size": 65
+		},
+		{
+			"color": "#1C8A99",
+			"label": "Ethanol",
+			"attributes": {},
+			"y": 120,
+			"x": -230,
+			"id": "Ethanol",
+			"size": 56
+		},
+		{
+			"color": "#24ECF5",
+			"label": "Toluene",
+			"attributes": {},
+			"y": 360,
+			"x": -466,
+			"id": "Toluene",
+			"size": 50
+		},
+		{
+			"color": "#F0D99C",
+			"label": "Isophorone",
+			"attributes": {},
+			"y": 273,
+			"x": 489,
+			"id": "Isophorone",
+			"size": 30
+		},
+		{
+			"color": "#c71919",
+			"label": "Acetone",
+			"attributes": {},
+			"y": 0,
+			"x": -413,
+			"id": "Acetone",
+			"size": 30
+		},
+		{
+			"color": "#c78419",
+			"label": "n-Butanol",
+			"attributes": {},
+			"y": -300,
+			"x": -293,
+			"id": "n-Butanol",
+			"size": 25
+		},
+		{
+			"color": "#8419c7",
+			"label": "Ethyl Acetate",
+			"attributes": {},
+			"y": 271,
+			"x": -61,
+			"id": "Ethyl Acetate",
+			"size": 24
+		},
+		{
+			"color": "#199fc7",
+			"label": "Cyclohexanone",
+			"attributes": {},
+			"y": -160,
+			"x": 297,
+			"id": "Cyclohexanone",
+			"size": 23
+		},
+		{
+			"color": "#1984c7",
+			"label": "Phenol",
+			"attributes": {},
+			"y": 119,
+			"x": -600,
+			"id": "Phenol",
+			"size": 18
+		},
+		{
+			"color": "#19c719",
+			"label": "Chloroform",
+			"attributes": {},
+			"y": 405,
+			"x": 180,
+			"id": "Chloroform",
+			"size": 17
+		},
+		{
+			"color": "#19c784",
+			"label": "Xylene(m,p,o)",
+			"attributes": {},
+			"y": 555,
+			"x": -92,
+			"id": "Xylene(m,p,o)",
+			"size": 14
+		},
+		{
+			"color": "#1919c7",
+			"label": "Styrene",
+			"attributes": {},
+			"y": -436,
+			"x": -271,
+			"id": "Styrene",
+			"size": 13
+		},
+		{
+			"color": "#b9c719",
+			"label": "n-Butyl Acetate",
+			"attributes": {},
+			"y": -1,
+			"x": 419,
+			"id": "n-Butyl Acetate",
+			"size": 13
+		},
+		{
+			"color": "#69c719",
+			"label": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"y": -438,
+			"x": -180,
+			"id": "1,2-Dichlorobenzene",
+			"size": 12
+		},
+		{
+			"color": "#1969c7",
+			"label": "Iso-Propanol",
+			"attributes": {},
+			"y": -339,
+			"x": 90,
+			"id": "Iso-Propanol",
+			"size": 12
+		},
+		{
+			"color": "#c719b9",
+			"label": "Dichloromethane",
+			"attributes": {},
+			"y": -337,
+			"x": -23,
+			"id": "Dichloromethane",
+			"size": 10
+		},
+		{
+			"color": "#c71969",
+			"label": "MEK",
+			"attributes": {},
+			"y": -380,
+			"x": 538,
+			"id": "MEK",
+			"size": 10
+		},
+		{
+			"color": "#9f19c7",
+			"label": "MIBK",
+			"attributes": {},
+			"y": -300,
+			"x": -560,
+			"id": "MIBK",
+			"size": 10
+		},
+		{
+			"color": "#19c7b9",
+			"label": "Acetophenone",
+			"attributes": {},
+			"y": 632,
+			"x": -361,
+			"id": "Acetophenone",
+			"size": 9
+		},
+		{
+			"color": "#9fc719",
+			"label": "Trichloroethylene",
+			"attributes": {},
+			"y": 193,
+			"x": -350,
+			"id": "Trichloroethylene",
+			"size": 9
+		},
+		{
+			"color": "#8419c7",
+			"label": "Ethyl Benzene",
+			"attributes": {},
+			"y": -392,
+			"x": 227,
+			"id": "Ethyl Benzene",
+			"size": 9
+		},
+		{
+			"color": "#c7194f",
+			"label": "n-Hexane",
+			"attributes": {},
+			"y": 410,
+			"x": 344,
+			"id": "n-Hexane",
+			"size": 9
+		},
+		{
+			"color": "#c74f19",
+			"label": "2-Methoxylethyl Acetate",
+			"attributes": {},
+			"y": -36,
+			"x": 226,
+			"id": "2-Methoxylethyl Acetate",
+			"size": 8
+		},
+		{
+			"color": "#c71969",
+			"label": "Nitrobenzene",
+			"attributes": {},
+			"y": 22,
+			"x": -344,
+			"id": "Nitrobenzene",
+			"size": 8
+		},
+		{
+			"color": "#c78419",
+			"label": "Bis(2-Methyoxyethyl)ether",
+			"attributes": {},
+			"y": 480,
+			"x": 394,
+			"id": "Bis(2-Methyoxyethyl)ether",
+			"size": 7
+		},
+		{
+			"color": "#1934c7",
+			"label": "Mesitylene",
+			"attributes": {},
+			"y": -121,
+			"x": -48,
+			"id": "Mesitylene",
+			"size": 7
+		},
+		{
+			"color": "#34c719",
+			"label": "Dichlorodifluoromethane",
+			"attributes": {},
+			"y": -145,
+			"x": 123,
+			"id": "Dichlorodifluoromethane",
+			"size": 6
+		},
+		{
+			"color": "#4f19c7",
+			"label": "Chloromethane",
+			"attributes": {},
+			"y": 177,
+			"x": 92,
+			"id": "Chloromethane",
+			"size": 6
+		},
+		{
+			"color": "#b919c7",
+			"label": "Bromochloromethane",
+			"attributes": {},
+			"y": 88,
+			"x": 517,
+			"id": "Bromochloromethane",
+			"size": 6
+		},
+		{
+			"color": "#1984c7",
+			"label": "Bromoform",
+			"attributes": {},
+			"y": 644,
+			"x": -249,
+			"id": "Bromoform",
+			"size": 5
+		},
+		{
+			"color": "#9f19c7",
+			"label": "Vinyl Chloride",
+			"attributes": {},
+			"y": 500,
+			"x": 120,
+			"id": "Vinyl Chloride",
+			"size": 5
+		},
+		{
+			"color": "#19b9c7",
+			"label": "Bromomethane",
+			"attributes": {},
+			"y": 600,
+			"x": 435,
+			"id": "Bromomethane",
+			"size": 5
+		},
+		{
+			"color": "#9f19c7",
+			"label": "Chloroethane",
+			"attributes": {},
+			"y": -42,
+			"x": -271,
+			"id": "Chloroethane",
+			"size": 5
+		},
+		{
+			"color": "#4f19c7",
+			"label": "Trichlorofluoromethane",
+			"attributes": {},
+			"y": -199,
+			"x": -137,
+			"id": "Trichlorofluoromethane",
+			"size": 4.7252817
+		},
+		{
+			"color": "#c7b919",
+			"label": "Naphalene",
+			"attributes": {},
+			"y": -248,
+			"x": -253,
+			"id": "Naphalene",
+			"size": 4
+		},
+		{
+			"color": "#19c7b9",
+			"label": "Methylene Chloride",
+			"attributes": {},
+			"y": -350,
+			"x": -423,
+			"id": "Methylene Chloride",
+			"size": 4
+		},
+		{
+			"color": "#69c719",
+			"label": "2-Butanone",
+			"attributes": {},
+			"y": 10,
+			"x": 574,
+			"id": "2-Butanone",
+			"size": 3
+		}
+	],
+	"edges": [
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Trichlorofluoromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Dichloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Bromoform",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Vinyl Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "2-Butanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Styrene",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "2-Methoxylethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Acetophenone",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Trichloroethylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Naphalene",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Bis(2-Methyoxyethyl)ether",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Bromomethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Dichlorodifluoromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "Benzene",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Dichloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Bromoform",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Vinyl Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Trichlorofluoromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Naphalene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Chloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Bromochloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Mesitylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Ethyl Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Bromoform",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Vinyl Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Dichlorodifluoromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethanol",
+			"attributes": {},
+			"targetID": "Bromomethane",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Butanone",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Butanone",
+			"attributes": {},
+			"targetID": "Trichloroethylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichlorofluoromethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichlorofluoromethane",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methylene Chloride",
+			"attributes": {},
+			"targetID": "Chloroethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Methylene Chloride",
+			"attributes": {},
+			"targetID": "Bromochloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroethane",
+			"attributes": {},
+			"targetID": "Methylene Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromochloromethane",
+			"attributes": {},
+			"targetID": "Methylene Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichloroethylene",
+			"attributes": {},
+			"targetID": "2-Butanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Naphalene",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Naphalene",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichloroethylene",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichloroethylene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Trichloroethylene",
+			"attributes": {},
+			"targetID": "Bis(2-Methyoxyethyl)ether",
+			"size": 1
+		},
+		{
+			"sourceID": "Bis(2-Methyoxyethyl)ether",
+			"attributes": {},
+			"targetID": "Trichloroethylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Bis(2-Methyoxyethyl)ether",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Bis(2-Methyoxyethyl)ether",
+			"attributes": {},
+			"targetID": "Acetophenone",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetophenone",
+			"attributes": {},
+			"targetID": "Bis(2-Methyoxyethyl)ether",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetophenone",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetophenone",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetophenone",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Methoxylethyl Acetate",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Methoxylethyl Acetate",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Methoxylethyl Acetate",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "2-Methoxylethyl Acetate",
+			"attributes": {},
+			"targetID": "Iso-Propanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromomethane",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromomethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromomethane",
+			"attributes": {},
+			"targetID": "Dichlorodifluoromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichlorodifluoromethane",
+			"attributes": {},
+			"targetID": "Bromomethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichlorodifluoromethane",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichlorodifluoromethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroethane",
+			"attributes": {},
+			"targetID": "Bromochloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroethane",
+			"attributes": {},
+			"targetID": "Mesitylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroethane",
+			"attributes": {},
+			"targetID": "Nitrobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroethane",
+			"attributes": {},
+			"targetID": "Ethyl Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromochloromethane",
+			"attributes": {},
+			"targetID": "Chloroethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromochloromethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Hexane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Hexane",
+			"attributes": {},
+			"targetID": "Ethyl Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Hexane",
+			"attributes": {},
+			"targetID": "Nitrobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Hexane",
+			"attributes": {},
+			"targetID": "Chloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloromethane",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloromethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloromethane",
+			"attributes": {},
+			"targetID": "Nitrobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Nitrobenzene",
+			"attributes": {},
+			"targetID": "Chloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Nitrobenzene",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Nitrobenzene",
+			"attributes": {},
+			"targetID": "Chloroethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Nitrobenzene",
+			"attributes": {},
+			"targetID": "Ethyl Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Benzene",
+			"attributes": {},
+			"targetID": "Nitrobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Benzene",
+			"attributes": {},
+			"targetID": "n-Hexane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Benzene",
+			"attributes": {},
+			"targetID": "Chloroethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Benzene",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Mesitylene",
+			"attributes": {},
+			"targetID": "Chloroethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Mesitylene",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Mesitylene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromoform",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromoform",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Bromoform",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Vinyl Chloride",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Vinyl Chloride",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Vinyl Chloride",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Bromoform",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Trichloroethylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "n-Butyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Dichloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Mesitylene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Styrene",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "Iso-Propanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Methanol",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Acetophenone",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Vinyl Chloride",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Styrene",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Dichloromethane",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "n-Butyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "Iso-Propanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "Toluene",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "Iso-Propanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "MIBK",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butyl Acetate",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "MIBK",
+			"attributes": {},
+			"targetID": "n-Butyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "MIBK",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "MIBK",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "MIBK",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "MIBK",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Iso-Propanol",
+			"attributes": {},
+			"targetID": "n-Butyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Iso-Propanol",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Iso-Propanol",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Iso-Propanol",
+			"attributes": {},
+			"targetID": "2-Methoxylethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Iso-Propanol",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Iso-Propanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "2-Methoxylethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Xylene(m,p,o)",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Chloroform",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Acetophenone",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Cyclohexanone",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Xylene(m,p,o)",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Acetophenone",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Phenol",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Isophorone",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "n-Butyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "1,2-Dichlorobenzene",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "1,2-Dichlorobenzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "n-Butanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Acetone",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Isophorone",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Cyclohexanone",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Chloroform",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "n-Butanol",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichloromethane",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichloromethane",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichloromethane",
+			"attributes": {},
+			"targetID": "Ethanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichloromethane",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Dichloromethane",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Cu",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Styrene",
+			"size": 1
+		},
+		{
+			"sourceID": "MEK",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Acetone",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Phenol",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		},
+		{
+			"sourceID": "Ethyl Acetate",
+			"attributes": {},
+			"targetID": "Styrene",
+			"size": 1
+		},
+		{
+			"sourceID": "Styrene",
+			"attributes": {},
+			"targetID": "Ethyl Acetate",
+			"size": 1
+		},
+		{
+			"sourceID": "Styrene",
+			"attributes": {},
+			"targetID": "MEK",
+			"size": 1
+		},
+		{
+			"sourceID": "Styrene",
+			"attributes": {},
+			"targetID": "Toluene",
+			"size": 1
+		},
+		{
+			"sourceID": "Styrene",
+			"attributes": {},
+			"targetID": "Methanol",
+			"size": 1
+		},
+		{
+			"sourceID": "Styrene",
+			"attributes": {},
+			"targetID": "Benzene",
+			"size": 1
+		}
+	]
+}

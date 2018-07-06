@@ -3,32 +3,47 @@ import './stationPopup.css';
 import AirTrend from './airTrend';
 import WaterTrend from './waterTrend';
 import SoilTrend from './soilTrend';
+import RadiationTrend from './radiationTrend';
 
 class stationPopup extends Component {
   render() {
     const image = this.props.stationInfo.image;
 
-    let chart
+    let chart;
+    let index = this.props.index;
+
+    if (this.props.stationInfo.isWarning) {
+      index = this.props.index + 100;
+    }
     switch(this.props.type)
     {
       case 'Air':
-        chart = <AirTrend index={this.props.index}></AirTrend>
+        chart = <AirTrend index={index}></AirTrend>
         break;
       case 'Water':
-        chart = <WaterTrend index={this.props.index}></WaterTrend>
+        chart = <WaterTrend index={index}></WaterTrend>
         break;
       case 'Soil':
-        chart = <SoilTrend index={this.props.index}></SoilTrend>
+        chart = <SoilTrend index={index}></SoilTrend>
+        break;
+      case 'Radiation':
+        chart = <RadiationTrend index={index}></RadiationTrend>
         break;
       default:
         chart = <div></div>
-    }
+    } 
+
+    const popupImage = !this.props.stationInfo.isWarning ?
+     <span className='station-number'>{this.props.stationInfo.stationNumber}</span> : 
+     <div className='station-image'>
+        <img src={require('../../image/alarmNotice.png')} alt='AlarmNotice'></img>
+     </div>
 
     return (
       <div className='station-popup'>
         <div className='popup-title'>
           <div className='station-title'>
-            <span className='station-number'>{this.props.stationInfo.stationNumber}</span>
+            {popupImage}
             <span className='station-name'>{this.props.stationInfo.stationName}</span>
           </div>
           <div className='station-details'>

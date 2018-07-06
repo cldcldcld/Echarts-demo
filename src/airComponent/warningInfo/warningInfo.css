@@ -24,7 +24,6 @@
 }
 
 .warning-title span {
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 20px;
 	color: #F86B6B;
 	text-shadow: 0 4px 4px rgba(0,0,0,0.50);
@@ -44,30 +43,29 @@
 }
 
 .warning-station {
-	display: inline-block;
-	padding-left: 3%;
-	padding-top: 3%;
+	float: left;
+	padding-left: 8%;
+	padding-top: 2%;
 }
 
 .station-name {
 	opacity: 0.5;
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 14px;
 	color: #FFFFFF;
 }
 
 .station-details {
 	opacity: 0.8;
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #FFFFFF;
 }
 
 .operation {
 	float: right;
-	padding-right: 15%;
-	padding-top: 6%;
+	padding-right: 10%;
+	padding-top: 2%;
 	width: 20%;
+	text-align: center;
 }
 
 .operation img {
@@ -75,7 +73,6 @@
 }
 
 .operation span {
-	/*font-family: PingFangSC-Regular;*/
 	font-size: 16px;
 	color: #22B5C8;
 }
