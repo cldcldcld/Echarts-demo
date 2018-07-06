@@ -1,6 +1,7 @@
 .station-popup {
 	height: 100%;
 	width: 100%;
+	border-radius: 20px;
 	background-color: #1C2A3E;
 }
 

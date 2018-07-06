@@ -20,7 +20,7 @@
 	position: absolute;
 	background-color: rgba(28,42,62,1);
 	width: 7.8%;
-	height: 58%;
+	height: 53%;
 	margin-top: 3%;
 	margin-left: 3%;
 	z-index: 2;
@@ -54,11 +54,11 @@
 
 .water-button img {
 	padding-top: 19%;
-	padding-left: 27%;
+	padding-left: 25%;
 }
 
 .water-button span {
-	padding-left: 14%;
+	padding-left: 13%;
 	font-size: 18px;
 	color: #FFFFFF;
 }
