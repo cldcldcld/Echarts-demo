@@ -102,7 +102,7 @@ class soilMicroorganismAnalysis extends Component {
                   subTitleContextA: {
                       color: 'rgba(255,255,255,0.6)',
                       fontSize: 14,
-                      padding: [0,0,265,115]
+                      padding: [0,0,275,115]
                   },
                   subTitleContextB: {
                       color: 'rgba(255,255,255,0.6)',

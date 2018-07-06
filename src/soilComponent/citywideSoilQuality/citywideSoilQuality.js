@@ -34,7 +34,7 @@ class citywideSoilQuality extends Component {
                     height: 25
                 },
                 titleContext: {
-                    color: 'rgba(255, 255, 255, 0.6)',
+                    color: 'rgba(255, 255, 255)',
                     fontFamily: 'Helvetica',
                     fontSize: 20,
                     padding: [0,0,0,5],
@@ -45,12 +45,12 @@ class citywideSoilQuality extends Component {
       },
       grid: {
           left: '10%',
-          top: '34%',
+          top: '32%',
           height: '50%',
           width: '80%'
       },
       legend: {
-          top: 40,
+          top: 35,
           left: 550,
           textStyle: {
             fontSize: 14,
@@ -132,21 +132,7 @@ class citywideSoilQuality extends Component {
                   color: ' #CD6964',
                   barBorderRadius: [0, 12, 12, 0]
               },
-              data: [3, 4, 7]
-          },
-          {
-              type: 'bar',
-              stack: 'soilIndex',
-              label: {
-                  normal: {
-                      position: 'insideRight'
-                  }
-              },
-              itemStyle: {
-                  color: 'rgba(152,133,254,0.10',
-                  barBorderRadius: [0, 12, 12, 0]
-              },
-              data: [0, 2, 3]
+              data: [3, 6, 10]
           }
       ]
     });

@@ -91,10 +91,10 @@ class chemicalPollutant extends Component {
 	                    height: 25
 	                },
 	                titleContext: {
-	                    color: 'rgba(255, 255, 255, 0.6)',
+	                    color: 'rgba(255, 255, 255)',
 	                    fontFamily: 'Helvetica',
 	                    fontSize: 20,
-	                    padding: [0,0,5,10]
+	                    padding: [0,0,0,5]
 	                }
 	            }
 	        }
@@ -135,7 +135,9 @@ class chemicalPollutant extends Component {
 	        showAllSymbol: true,
 	        symbolSize: 10,
 	        itemStyle: {
-	        	color: '#5AA1DF',
+	        	color: '#5AA1DF'
+	        },
+	        lineStyle: {
 	        	width: 4
 	        },
 	        data: [4, 5, 12, 4, 6, 12, 6, 2, 9, 9]

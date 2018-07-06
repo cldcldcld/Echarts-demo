@@ -109,9 +109,6 @@ class baseRadarChart extends Component {
 
     option = {
         backgroundColor: new echarts.graphic.RadialGradient(0.5, 0.5, 0.4, [{
-        //     offset: 0,
-        //     color: '#4b5769'
-        // }, {
             offset: 1,
             color: '#2A3C55'
         }]),
@@ -171,10 +168,6 @@ class baseRadarChart extends Component {
             },
             itemStyle: {
                 areaColor: '#8C8C8C'
-                // normal: {
-                //     borderWidth: 0.2,
-                //     borderColor: '#404a59'
-                // }
             },
             left: '2%',
             top: '10%',

@@ -18,7 +18,10 @@
 
 .qualityInfo .quality-content {
 	padding-left: 10%;
-	padding-top: 6.5%;
+	padding-top: 8%;
+	line-height: 22px;
+	width: 60%;
+	float: left;
 }
 
 .qualityInfo .quality-content .quality-details {
@@ -33,7 +36,6 @@
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
-	line-height: 20px;
 }
 
 .qualityInfo .quality-content .quality-details .surface-color {
@@ -47,7 +49,6 @@
 .qualityInfo .quality-content .quality-details .quality-grade span {
 	font-size: 16px;
 	color: #B94E4E;
-	line-height: 20px;
 }
 
 .qualityInfo .quality-content .quality-details .function-type {
@@ -57,10 +58,6 @@
 .qualityInfo .quality-content .quality-details .green {
 	color: #22B5C8;
 	padding-left: 2%;
-}
-
-.qualityInfo .quality-content .quality-image {
-	
 }
 
 .qualityInfo .info-content .info-details .station-name {
@@ -73,5 +70,12 @@
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
-	line-height: 20px;
+}
+
+.qualityInfo .bottle-image {
+	padding-left: 1%;
+	padding-top: 6.5%;
+	width: 20%;
+	height: 80%;
+	float: left;
 }

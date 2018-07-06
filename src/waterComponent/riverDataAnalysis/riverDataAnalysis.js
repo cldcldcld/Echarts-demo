@@ -129,7 +129,7 @@ class riverDataAnalysis extends Component {
                 },
                 height: '70%',
                 width: '85%',
-                top: 80,
+                top: 105,
                 left: 40,
                 textStyle: {
                     color: 'rgba(255,255,255,0.6)',

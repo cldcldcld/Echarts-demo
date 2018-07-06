@@ -18,13 +18,15 @@
 
 .basicInfo .info-content {
 	padding-left: 5%;
-	padding-top: 11%;
+	padding-top: 5%;
 }
 
 .basicInfo .info-content .info-location-image {
 	padding-left: 1%;
 	width: 10%;
-	display: inline-block;
+	float: left;
+	padding-top: 18%;
+	text-align: center;
 }
 
 .basicInfo .info-content .info-location-image img{
@@ -33,7 +35,8 @@
 
 .basicInfo .info-content .address {
 	width: 18%;
-	display: inline-block;
+	padding-top: 18%;
+	float: left;
 }
 
 .basicInfo .info-content .address span {
@@ -44,18 +47,23 @@
 .basicInfo .info-content .info-details {
 	width: 60%;
 	padding-left: 3%;
-	display: inline-block;
+	float: left;
+	padding-top: 3%;
 }
 
-.basicInfo .info-content .info-details .station-name {
-	opacity: 0.8;
+.basicInfo .info-content .info-details .station-name span {
+	opacity: 0.7;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
-.basicInfo .info-content .info-details span:not(:first-child) {
+.basicInfo .info-content .info-details .water-detials-info {
 	opacity: 0.6;
 	font-size: 14px;
 	color: #FFFFFF;
 	line-height: 20px;
+}
+
+.basicInfo .info-content .info-details .water-detials-info {
+	padding-top: 6%;
 }

@@ -29,9 +29,9 @@ class dashboardWater extends Component {
             warning: false
         },
         {   
-            value: 0.159,
+            value: 10.0,
             title: 'Grade II',
-            description: 'Ammonia Nitrogen (mg/L)',
+            description: 'Transparency',
             warning: false
         },
         {   
@@ -47,9 +47,9 @@ class dashboardWater extends Component {
             warning: false
         },
         {   
-            value: 10.0,
+            value: 0.159,
             title: 'Grade II',
-            description: 'Transparency',
+            description: 'Ammonia Nitrogen (mg/L)',
             warning: false
         },
         {   

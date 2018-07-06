@@ -34,7 +34,7 @@ class biogenicElementAnalysis extends Component {
                     height: 25
                 },
                 titleContext: {
-                    color: 'rgba(255, 255, 255, 0.6)',
+                    color: 'rgba(255, 255, 255)',
                     fontFamily: 'Helvetica',
                     fontSize: 20,
                     padding: [0,0,5,10]
@@ -98,30 +98,31 @@ class biogenicElementAnalysis extends Component {
           {
               name:'N',
               type:'line',
-              symbolSize: 7,
+              symbolSize: 8,
               itemStyle: {
-                color: '#F0D99C',
-                width: 8
+                color: '#F0D99C'
               },
               lineStyle: {
                 shadowBlur: 16,
-                shadowColor: '#F0D99C',
-                shadowOffsetY: 8
+                shadowColor: 'rgba(240,217,156,0.8)',
+                shadowOffsetY: 10,
+                width: 4,
+                opacity: 0.6
               },
               data:[2200, 3800, 2600, 3100, 2500, 1400]
           },
           {
               name:'P',
               type:'line',
-              symbolSize: 7,
+              symbolSize: 8,
               itemStyle: {
                 color: '#FFA229',
-                width: 8
               },
               lineStyle: {
                 shadowBlur: 16,
-                shadowColor: '#FFA229',
-                shadowOffsetY: 8
+                shadowColor: 'rgba(255,162,41,0.8)',
+                shadowOffsetY: 10,
+                width: 4
               },
               data:[1300, 1700, 1800, 2000, 1400, 300]
           }

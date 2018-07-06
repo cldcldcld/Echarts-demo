@@ -86,7 +86,7 @@
 	height: 12%;
 	width: 100%;
 	margin-top: 2%;
-	margin-left: 3%;
+	margin-left: 2.5%;
 	display: inline-block;
 }
 
@@ -103,7 +103,7 @@
 .dashboardSoil .soil-right .soil-real-data .soil-real-data-title span {
 	font-size: 22px;
 	color: #FFFFFF;
-	padding-left: 1%;
+	padding-left: 0.6%;
 }
 
 .dashboardSoil .soil-right .soil-real-data .soil-real-data-value {
@@ -127,14 +127,14 @@
 
 .dashboardSoil .soil-right .analysis-details .chemical-pollutant {
 	width: 100%;
-	height: 59%;
+	height: 61%;
 	float: left;
 	margin-bottom: 2%;
 }
 
 .dashboardSoil .soil-right .analysis-details .citywide-soil-quality {
 	width: 100%;
-	height: 39%;
+	height: 37%;
 	float: left;
 }
 

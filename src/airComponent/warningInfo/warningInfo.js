@@ -16,7 +16,7 @@ class warningInfo extends Component {
         <div className='warning-content'>
           <div className='warning-details'>
             <div className='warning-station'>
-              <span className='station-name'>West Lake Station</span><br/>
+              <span className='air-station-name'>West Lake Station</span><br/>
               <span className='station-details'>Air Quality Exceeds Limit Pending</span>
             </div>
             <div className='operation'>
@@ -26,7 +26,7 @@ class warningInfo extends Component {
           </div>
           <div className='warning-details'>
             <div className='warning-station'>
-              <span className='station-name'>Xixi Station</span><br/>
+              <span className='air-station-name'>Xixi Station</span><br/>
               <span className='station-details'>Equipment Failure Pending</span>
             </div>
             <div className='operation'>

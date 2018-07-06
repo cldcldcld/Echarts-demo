@@ -69,6 +69,9 @@ class excessiveIndexAnalysis extends Component {
               lineStyle: {
                   color: 'rgba(255, 255, 255, 0.4)'
               }
+          },
+          axisTick: {
+              show: false
           }
       },
       series: [

@@ -15,24 +15,24 @@ class qualityInfo extends Component {
               <span>Grade: </span>
             </div>
             <div className='quality-grade'>
-              <span>Exceeds Grade II Light Pollution</span>
+              <span>Exceeds Grade II</span><br/>
+              <span>Light Pollution</span>
             </div>
-            <div className='surface-color'>
-              <span>Surface Color:</span>
-              <span className='green'>Green</span>
-            </div>
-            <div>
+{/*            <div>
               <span>Function Type:</span>
             </div>
             <div className='function-type'>
               <span>Type II Drinking Water Source Primary</span><br/>
               <span>Protection Area</span>
-            </div>
+            </div>*/}
             <div>
               <span>Nutritional State: Moderate Nutrition</span><br/>
               <span>Avg Water Temperature: 15°C</span>
             </div>
           </div>
+        </div>
+        <div className='bottle-image'>
+          <img src={require('../../image/bottleWater.png')} alt='bottleWater'></img>
         </div>
       </div>
     );

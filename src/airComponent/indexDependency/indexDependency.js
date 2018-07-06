@@ -22,7 +22,7 @@ class indexDependency extends Component {
                     '{titleImage|}{titleContext|Pollutant Correlation Analysis}'
                   ].join('\n'),
             // left: 'left',
-            top: 10,
+            top: 20,
             left: 15,
             textStyle: {
                 rich: {
@@ -47,7 +47,7 @@ class indexDependency extends Component {
             {
                 type: 'graph',
                 layout: 'none',
-                top: 100,
+                top: 120,
                 // progressiveThreshold: 700,
                 data: json.nodes.map(function (node) {
                     return {

@@ -7,7 +7,7 @@
 			"y": 200,
 			"x": 250,
 			"id": "Benzene",
-			"size": 78
+			"size": 108
 		},
 		{
 			"color": "#A7F6FC",
@@ -16,7 +16,7 @@
 			"y": -100,
 			"x": 0,
 			"id": "Methanol",
-			"size": 65
+			"size": 85
 		},
 		{
 			"color": "#1C8A99",
