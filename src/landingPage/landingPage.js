@@ -17,6 +17,9 @@ class landingPage extends Component {
     this.stationInfo = {
       'Air': [
         {
+
+        },
+        {
           stationNumber: '01',
           stationName: 'Binjiang Air Station',
           stationLatitude: 'Latitude: 30.283677 °N',
@@ -205,6 +208,10 @@ class landingPage extends Component {
       'Air': [
         {
           text: '',
+          location: ''
+        },
+        {
+          text: '',
           location: '120.193601,30.283677'
         }, 
         {
@@ -238,10 +245,6 @@ class landingPage extends Component {
         {
           text: '',
           location: '120.038661,30.122622'
-        },
-        {
-          text: '',
-          location: '120.285587,30.227525'
         }
       ],
       'Water': [
@@ -397,7 +400,7 @@ class landingPage extends Component {
     this.colorObj = {
       'Air': '#55DDEE',
       'Water': '#9885FE',
-      'Soil': '#FFA229',
+      'Soil': '#FFE08C',
       'Radiation': '#55FFA5'
     }
 
@@ -428,7 +431,7 @@ class landingPage extends Component {
     const markList = <MarkerList 
                         data={pointLocation}
                         fillStyle={color}
-                        animation={this.hasAnimation} 
+                        animation={this.hasAnimation}
                         isShowShadow={false} 
                         multiple={false} 
                         autoViewport={false}
@@ -437,7 +440,7 @@ class landingPage extends Component {
                         onMouseOut={this.handleMouseOut}
                       />
 
-    const warningList = <MarkerList 
+    const warningList = this.state.type === 'Air' ? <MarkerList 
                         data={this.warningList}
                         fillStyle={'#FF2929'}
                         animation={this.hasAnimation} 
@@ -447,7 +450,7 @@ class landingPage extends Component {
                         onClick={this.handleClick}
                         onMouseOver={this.handleWarningMouseOver}
                         onMouseOut={this.handleWarningMouseOut}
-                        />
+                        /> : <div></div>
 
     return (
         <div id='map-container' className='map-container'>
@@ -526,9 +529,12 @@ class landingPage extends Component {
       }
       this.resetSelect();
       element.className = element.className + ' selected';
-      document.getElementById('map-container').style.display = 'none';
+      this.setState({
+        type: element.id
+      });
+      // document.getElementById('map-container').style.display = 'none';
       this.props.history.push('/landingpage/' + element.id);
-      this.props.history.go();
+      // this.props.history.go();
     }
   }
 

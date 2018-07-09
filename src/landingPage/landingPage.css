@@ -65,7 +65,7 @@
 
 .soil-button {
 	height: 25%;
-	border: 4px hidden rgba(255,162,41,1);
+	border: 4px hidden #FFE08C;
 	border-radius: 100px;
 	opacity: 0.4;
 }

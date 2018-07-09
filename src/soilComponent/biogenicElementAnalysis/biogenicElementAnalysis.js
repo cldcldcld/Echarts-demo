@@ -57,10 +57,18 @@ class biogenicElementAnalysis extends Component {
       },
       grid: {
           height: '55%',
-          // width: '80%',
-          left: '5%',
+          width: '80%',
+          left: '7%',
           top: '35%',
           containLabel: true
+      },
+      tooltip: {
+          position: 'top',
+          formatter: function (params) {
+              return params.name + '<br/>' + params.seriesName + ' ' + params.value;
+          },
+          backgroundColor: 'rgba(255,255,255,0.40)',
+          extraCssText: 'text-align: center;'
       },
       xAxis: {
           type: 'category',
@@ -74,7 +82,11 @@ class biogenicElementAnalysis extends Component {
           },
           axisTick: {
             show: false
-          }
+          },
+          axisLabel: {
+            margin: 20
+          },
+          boundaryGap: ['10%', '10%']
       },
       yAxis: {
           splitNumber: 3,
@@ -84,6 +96,9 @@ class biogenicElementAnalysis extends Component {
             lineStyle: {
                 color: 'rgba(255, 255, 255, 0.4)'
             }
+          },
+          axisLabel: {
+            margin: 20
           },
           splitLine: {
               lineStyle: {
