@@ -103,7 +103,13 @@ class citywideSoilQuality extends Component {
                 color: '#F0D99C',
                 barBorderRadius: [12, 0, 0, 12]
               },
-              data: [18, 7, 10]
+              data: [18, 7, 10],
+              emphasis: {
+                itemStyle: {
+                  borderColor: '#F0D99C',
+                  borderWidth: 3
+                }
+              }
           },
           {
               name: 'Type II',
@@ -117,7 +123,13 @@ class citywideSoilQuality extends Component {
               itemStyle: {
                   color: '#DE987D'
               },
-              data: [9, 17, 10]
+              data: [9, 17, 10],
+              emphasis: {
+                itemStyle: {
+                  borderColor: '#DE987D',
+                  borderWidth: 3
+                }
+              }
           },
           {
               name: 'Type III',
@@ -132,7 +144,13 @@ class citywideSoilQuality extends Component {
                   color: ' #CD6964',
                   barBorderRadius: [0, 12, 12, 0]
               },
-              data: [3, 6, 10]
+              data: [3, 6, 10],
+              emphasis: {
+                itemStyle: {
+                  borderColor: '#CD6964',
+                  borderWidth: 3
+                }
+              }
           }
       ]
     });

@@ -114,26 +114,31 @@ class soilMicroorganismAnalysis extends Component {
       },
       series : [
           {
-              name:'访问来源',
               type:'pie',
               radius : [20, 100],
               center: ['50%', '34%'],
               data:[
-                  {value:2},
-                  {value:5},
-                  {value:4},
-                  {value:8},
-                  {value:7},
-                  {value:9}
+                  {value:4, name:'C6H6'},
+                  {value:5, name:'CHCl3'},
+                  {value:1, name:'C8H8'},
+                  {value:8, name:'C8H10'},
+                  {value:7, name:'C6H5Cl'},
+                  {value:9, name:'C7H8'}
               ],
               label: {
                   normal: {
                       show: false
+                  },
+                  emphasis: {
+                      show: true
                   }
               },
-              lableLine: {
+              labelLine: {
                   normal: {
                       show: false
+                  },
+                  emphasis: {
+                      show: true
                   }
               },
               roseType: 'radius',
@@ -148,22 +153,28 @@ class soilMicroorganismAnalysis extends Component {
               radius : [20, 100],
               center: ['50%', '74%'],
               data:[
-                  {value:5},
-                  {value:4},
-                  {value:8},
-                  {value:7},
-                  {value:8},
-                  {value:3}
+                  {value:5, name:'C6H6'},
+                  {value:4, name:'CHCl3'},
+                  {value:8, name:'C8H8'},
+                  {value:7, name:'C8H10'},
+                  {value:8, name:'C6H5Cl'},
+                  {value:3, name:'C7H8'}
               ],
               roseType: 'radius',
               label: {
                   normal: {
                       show: false
+                  },
+                  emphasis: {
+                      show: true
                   }
               },
-              lableLine: {
+              labelLine: {
                   normal: {
                       show: false
+                  },
+                  emphasis: {
+                      show: true
                   }
               },
               animationType: 'scale',

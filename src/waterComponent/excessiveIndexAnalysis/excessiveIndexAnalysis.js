@@ -42,10 +42,10 @@ class excessiveIndexAnalysis extends Component {
         }
       },
       grid: {
-          left: '20%',
-          top: '34%',
-          height: '55%',
-          width: '70%'
+          left: '22%',
+          top: '40%',
+          height: '50%',
+          width: '65%'
       },
       xAxis:  {
           type: 'value',
@@ -60,11 +60,19 @@ class excessiveIndexAnalysis extends Component {
               lineStyle: {
                   color: 'rgba(255, 255, 255, 0.2)'
               }
-          }
+          },
+          axisLabel: {
+              margin: 15
+          },
+          axisTick: {
+              show: false
+          },
+          min: 1,
+          max: 1.5
       },
       yAxis: {
           type: 'category',
-          data: ['KMnO4','N','BOD','NH3-N','P'],
+          data: ['P','NH3-N','BOD','N','KMnO4'],
           axisLine: {
               lineStyle: {
                   color: 'rgba(255, 255, 255, 0.4)'
@@ -72,6 +80,9 @@ class excessiveIndexAnalysis extends Component {
           },
           axisTick: {
               show: false
+          },
+          axisLabel: {
+              margin: 20
           }
       },
       series: [
@@ -79,27 +90,25 @@ class excessiveIndexAnalysis extends Component {
               type: 'bar',
               stack: 'waterIndex',
               barCategoryGap: '50%',
-              label: {
-                  normal: {
-                      // show: true,
-                      position: 'insideRight'
-                  }
-              },
               itemStyle: {
-                color: '#9885FE',
+                color: 'rgba(255,255,255, 0)',
                 barBorderRadius: 12
               },
-              data: [1.14, 1.24, 1.28, 1.33, 1.42]
+              data: [1, 1, 1, 1, 1]
           },
           {
               type: 'bar',
               stack: 'waterIndex',
-              label: {
-                  normal: {
-                      // show: true,
-                      position: 'insideRight'
-                  }
+              barCategoryGap: '50%',
+              itemStyle: {
+                color: '#9885FE',
+                barBorderRadius: 12
               },
+              data: [0.14, 0.24, 0.28, 0.33, 0.42]
+          },
+          {
+              type: 'bar',
+              stack: 'waterIndex',
               itemStyle: {
                   color: 'rgba(152,133,254,0.10)',
                   barBorderRadius: [0, 12, 12, 0]
