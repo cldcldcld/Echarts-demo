@@ -19,7 +19,7 @@ class indexDependency extends Component {
     myChart.setOption({
         title: {
             text: [
-                    '{titleImage|}{titleContext|Pollutant Correlation Analysis}'
+                    '{titleImage|}{titleContext|VOC Correlation Analysis}'
                   ].join('\n'),
             // left: 'left',
             top: 20,

@@ -23,7 +23,8 @@ class weatherInfo extends Component {
           <div className='weather-details'>
             <span className='weather-date'>June 21, 2018</span><br/>
             <span>Humidity: 54%</span><br/>
-            <span>AQI: 70 Moderate</span><br/>
+            <span>AQI: </span>
+            <span className='weather-AQI'>308 Moderate</span><br/>
             <span>Wind：S 11km/hr</span>
           </div>
         </div>

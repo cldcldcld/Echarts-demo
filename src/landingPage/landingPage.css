@@ -103,3 +103,11 @@
 	border-style: solid;
 	opacity: 1;
 }
+
+.station-add {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	float: right;
+	z-index: 2;
+}

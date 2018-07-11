@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './landingPage.css';
 import {Map, MarkerList} from 'react-bmap';
-import StationPopup from './popup/stationPopup'
+import StationPopup from './popup/stationPopup';
+import StationAdd from './popup/stationAdd';
 
 class landingPage extends Component {
 
@@ -471,6 +472,9 @@ class landingPage extends Component {
               <img src={require('../image/Radiation.png')} alt='Radiation'></img><br/>
               <span>Radiation</span>
             </div>
+          </div>
+          <div className='station-add'>
+            <StationAdd></StationAdd>
           </div>
           <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}
