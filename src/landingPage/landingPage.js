@@ -12,6 +12,7 @@ class landingPage extends Component {
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
     this.buttonClick = this.buttonClick.bind(this);
+    this.addMapPoint = this.addMapPoint.bind(this);
     
     this.hasAnimation = true;
 
@@ -50,6 +51,61 @@ class landingPage extends Component {
           stationspecialty: 'Elevation: 14 m',
           stationTemperature: '31',
           image: require('../image/air西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/air西溪3.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/air西溪3.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/air西溪3.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/air西溪3.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Xixi Station',
+          stationLatitude: 'Latitude: 30.270952 °N',
+          stationLongitude: 'Longitude: 120.049872 °E',
+          stationspecialty: 'Elevation: 18 m',
+          stationTemperature: '31',
+          image: require('../image/air西溪3.png'),
           month: 'May 1st',
           year: '2018'
         },
@@ -109,6 +165,72 @@ class landingPage extends Component {
           image: require('../image/Water西溪.png'),
           month: 'May 1st',
           year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Tiesha River',
+          stationLatitude: 'Latitude: 30.257119 °N',
+          stationLongitude: 'Longitude: 120.182942 °E',
+          stationspecialty: 'Water Level: 10m',
+          stationTemperature: '31',
+          image: require('../image/Water西溪.png'),
+          month: 'May 1st',
+          year: '2018'
         }
       ],
       'Soil': [
@@ -155,6 +277,72 @@ class landingPage extends Component {
           image: require('../image/西溪soil.png'),
           month: 'June 1st',
           year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Binsheng Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Soil Moisture: 16.2% at 20 m',
+          stationTemperature: '31',
+          image: require('../image/西溪soil.png'),
+          month: 'June 1st',
+          year: '2018'
         }
       ],
       'Radiation': [
@@ -188,6 +376,72 @@ class landingPage extends Component {
           stationspecialty: 'Air Absorbed Dose Rate: 72.8 nGy/h',
           stationTemperature: '31',
           image: require('../image/xiaoshanRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
+          month: 'June 1st',
+          year: '2018'
+        },
+        {
+          stationNumber: '04',
+          stationName: 'Sanyi Station',
+          stationLatitude: 'Latitude: 30.223531 °N',
+          stationLongitude: 'Longitude: 120.226371 °E',
+          stationspecialty: 'Air Absorbed Dose Rate: 113.5 nGy/h',
+          stationTemperature: '31',
+          image: require('../image/sanyiRadiation.jpg'),
           month: 'June 1st',
           year: '2018'
         },
@@ -406,16 +660,17 @@ class landingPage extends Component {
     }
 
     this.state = {
-        type: this.props.match.params.type ? this.props.match.params.type : 'Air'
+        type: this.props.match.params.type ? this.props.match.params.type : 'Air',
+        refresh: false
     }
 
   }  
 
   render() {
 
-    const stationInfo = this.stationInfo[this.state.type];
-    const pointLocation = this.stationLocation[this.state.type];
-    const color = this.colorObj[this.state.type];
+    const stationInfo = this.stationInfo[this.state.type].slice(0);
+    const pointLocation = this.stationLocation[this.state.type].slice(0);
+    const color = this.colorObj[this.state.type].slice(0);
 
     const pointPopUpComponent = stationInfo.map((item, index) =>
         <div key={index} className='hide point-pop-up' id={'index-' + index}>
@@ -435,7 +690,7 @@ class landingPage extends Component {
                         animation={this.hasAnimation}
                         isShowShadow={false} 
                         multiple={false} 
-                        autoViewport={false}
+                        autoViewport={false}  
                         onClick={this.handleClick}
                         onMouseOver={this.handleMouseOver}
                         onMouseOut={this.handleMouseOut}
@@ -474,7 +729,7 @@ class landingPage extends Component {
             </div>
           </div>
           <div className='station-add'>
-            <StationAdd></StationAdd>
+            <StationAdd addMapPoint={this.addMapPoint} type={this.state.type}></StationAdd>
           </div>
           <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}
@@ -484,6 +739,14 @@ class landingPage extends Component {
           {warningPopUpComponent}
         </div>
     );
+  }
+
+  addMapPoint(data) {
+    this.stationLocation[this.state.type].push(data.location);
+    this.stationInfo[this.state.type].push(data.locationDetails);
+    this.setState({
+      refresh: !this.state.refresh
+    });
   }
 
   handleClick(number) {

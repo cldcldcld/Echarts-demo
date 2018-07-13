@@ -18,7 +18,7 @@
 
 .navigation-button {
 	position: absolute;
-	background-color: rgba(28,42,62,1);
+	background-color: rgba(28,42,62,0.6);
 	width: 7.8%;
 	height: 53%;
 	margin-top: 3%;

@@ -6,12 +6,13 @@
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	transition: all 1s;
+	right: -80%;
 }
 
 #stationAdd .add-button {
-	margin-top: 10%;
+	margin-top: 20%;
 	height: 10%;
-	width: 20%;
+	width: 25%;
 	background: rgba(28, 42, 62, 0.7);
 	box-shadow: 1px 7px 14px 1px rgba(0,0,0,0.28);
 	float: right;
@@ -19,14 +20,14 @@
 }
 
 #stationAdd .add-button img {
-	width: 60%;
-	padding-top: 25%;
+	width: 50%;
+	padding-top: 15%;
 	padding-left: 25%;
 }
 
 #stationAdd .add-form {
 	height: 100%;
-	width: 80%;
+	width: 74%;
 	background: rgba(28, 42, 62, 0.7);
 	box-shadow: 1px 7px 14px 1px rgba(0,0,0,0.28);
 	float: right;
@@ -35,7 +36,7 @@
 
 #stationAdd .add-form .form-title {
 	padding-left: 15%;
-	padding-top: 20%;
+	padding-top: 35%;
 }
 
 #stationAdd .add-form .form-title span {
@@ -43,10 +44,31 @@
 	color: #FFFFFF;
 }
 
+#stationAdd .add-form .message {
+	padding-left: 15%;
+	padding-top: 5%;
+}
+
+#stationAdd .add-form .message span {
+	font-size: 16px;
+	color: #41E9FF;
+}
+
 #stationAdd .add-form .form-context {
 	padding-left: 15%;
-	padding-top: 25%;
-	line-height: 35px;
+	padding-top: 15%;
+	line-height: 30px;
+}
+
+#stationAdd .add-form .form-context input {
+	height: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 8px;
+	color: #FFFFFF;
+	font-size: 18px;
+	background-color: transparent;
+	opacity: 0.9;
+	padding-left: 2%;
 }
 
 #stationAdd .add-form .form-context .station-name-input label {
@@ -55,14 +77,7 @@
 }
 
 #stationAdd .add-form .form-context .station-name-input input {
-	width: 70%;
-	height: 25px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 8px;
-	color: #FFFFFF;
-	font-size: 18px;
-	background-color: transparent;
-	opacity: 0.9;
+	width: 75%;
 }
 
 #stationAdd .add-form .form-context .latitude-input label {
@@ -71,14 +86,7 @@
 }
 
 #stationAdd .add-form .form-context .latitude-input input {
-	width: 55%;
-	height: 25px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 8px;
-	color: #FFFFFF;
-	font-size: 18px;
-	background-color: transparent;
-	opacity: 0.9;
+	width: 60%;
 }
 
 #stationAdd .add-form .form-context .latitude-input span {
@@ -93,14 +101,7 @@
 }
 
 #stationAdd .add-form .form-context .longitude-input input {
-	width: 55%;
-	height: 25px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 8px;
-	color: #FFFFFF;
-	font-size: 18px;
-	background-color: transparent;
-	opacity: 0.9;
+	width: 60%;
 }
 
 #stationAdd .add-form .form-context .longitude-input span {
@@ -115,17 +116,55 @@
 }
 
 #stationAdd .add-form .form-context .elevation-input input {
-	width: 55%;
-	height: 25px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 8px;
-	color: #FFFFFF;
-	font-size: 18px;
-	background-color: transparent;
-	opacity: 0.9;
+	width: 60%;
 }
 
 #stationAdd .add-form .form-context .elevation-input span {
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 5%;
+}
+
+#stationAdd .add-form .form-context .water-level-input label {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#stationAdd .add-form .form-context .water-level-input input {
+	width: 60%;
+}
+
+#stationAdd .add-form .form-context .water-level-input span {
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 5%;
+}
+
+#stationAdd .add-form .form-context .soil-moisture-input label {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#stationAdd .add-form .form-context .soil-moisture-input input {
+	width: 50%;
+}
+
+#stationAdd .add-form .form-context .soil-moisture-input span {
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 5%;
+}
+
+#stationAdd .add-form .form-context .air-absorbed-dose-rate-input label {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#stationAdd .add-form .form-context .air-absorbed-dose-rate-input input {
+	width: 50%;
+}
+
+#stationAdd .add-form .form-context .air-absorbed-dose-rate-input span {
 	font-size: 20px;
 	color: #FFFFFF;
 	padding-left: 5%;
@@ -137,12 +176,12 @@
 }
 
 #stationAdd .add-form .form-context div:not(:first-child) {
-	padding-top: 5%;
+	padding-top: 8%;
 }
 
 #stationAdd .submit-button {
 	margin-top: 10%;
-	margin-left: 30%;
+	margin-left: 35%;
 	float: left;
 	width: 25%;
 	height: 3.5%;
@@ -162,7 +201,8 @@
 	outline: 0;
 }
 
-.fadIn {
-	/*position: absolute;*/
-	width: 20%;
+#stationAdd .valid-image {
+	float: right;
+    padding-right: 25%;
+    padding-top: 3%;
 }
