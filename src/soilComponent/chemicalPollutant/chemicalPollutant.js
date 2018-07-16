@@ -102,7 +102,9 @@ class chemicalPollutant extends Component {
       	tooltip: {
       		position: 'top',
           	formatter: function (params) {
-            	return params.seriesName + '<br/>' + params.name + ' ' + params.value;
+          		var name = params.name.split(",");
+          		var flg = params.seriesName.indexOf('series')
+            	return name && flg == -1 ? params.seriesName + '<br/>' + name[0] + ' ' + name[1] : '';
           	},
           	backgroundColor: 'rgba(255,255,255,0.40)',
 			extraCssText: 'text-align: center;'
@@ -123,7 +125,19 @@ class chemicalPollutant extends Component {
 	        }
 	    },
 	    xAxis: {
-	        data: ['Cd', 'Hg', 'As', 'Cu', 'Pb', 'Cr', 'Zn', 'Ni', 'C6H6CL6', 'Cd'],
+	        // data: ['Cd', 'Hg', 'As', 'Cu', 'Pb', 'Cr', 'Zn', 'Ni', 'C6H6CL6', 'Cd'],
+	        data: [
+	        		['Cd', 0.3],
+	        		['Hg', 0.5],
+	        		['As', 24],
+	        		['Cu', 100],
+	        		['Pb', 300],
+	        		['Cr', 300],
+	        		['Zn', 250],
+	        		['Ni', 50],
+	        		['C6H6CL6', 0.5],
+	        		['Cd', 0.5]
+	        ],
 	        show: false
 	    },
 	    yAxis: {

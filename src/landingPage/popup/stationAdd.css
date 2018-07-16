@@ -54,6 +54,10 @@
 	color: #41E9FF;
 }
 
+#stationAdd .add-form .warning-red span {
+	color: #B94141;
+}
+
 #stationAdd .add-form .form-context {
 	padding-left: 15%;
 	padding-top: 15%;
@@ -67,7 +71,7 @@
 	color: #FFFFFF;
 	font-size: 18px;
 	background-color: transparent;
-	opacity: 0.9;
+	opacity: 0.6;
 	padding-left: 2%;
 }
 

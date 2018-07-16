@@ -111,7 +111,7 @@ class biogenicElementAnalysis extends Component {
       },
       series: [
           {
-              name:'N',
+              name:'P',
               type:'line',
               symbolSize: 8,
               itemStyle: {
@@ -127,7 +127,7 @@ class biogenicElementAnalysis extends Component {
               data:[2200, 3800, 2600, 3100, 2500, 1400]
           },
           {
-              name:'P',
+              name:'N',
               type:'line',
               symbolSize: 8,
               itemStyle: {

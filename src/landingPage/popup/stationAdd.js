@@ -36,7 +36,9 @@ class stationAdd extends Component {
     }
 
     document.onclick = function(ev) {
-      document.getElementById('stationAdd').style.right = '-80%';
+      if (document.getElementById('stationAdd')) {
+        document.getElementById('stationAdd').style.right = '-80%';
+      }
     }
 
   }
@@ -92,7 +94,7 @@ class stationAdd extends Component {
           <div className='form-title'>
             <span>Add Station</span>
           </div>
-          <div className='message'>
+          <div id='message' className='message'>
             <span>{this.message}</span>
           </div>
           <div className='form-context'>
@@ -217,6 +219,7 @@ class stationAdd extends Component {
       });
       document.getElementById('stationAdd').style.right = '-80%';
     } else {
+      document.getElementById('message').className='message warning-red'
       this.message = 'Data is not correct, please check';
       this.setState({
         refresh: !this.state.refresh

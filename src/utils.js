@@ -1,5 +1,5 @@
 let isNumber = (val) => {
-    let reg = /^[0-9]*$/;
+    let reg = /^\d+(\.\d+)?$/;
     return reg.test(val);
 };
 
