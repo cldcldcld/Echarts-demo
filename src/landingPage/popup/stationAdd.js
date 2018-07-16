@@ -149,7 +149,7 @@ class stationAdd extends Component {
 
   openModal(ev) {
       ev.nativeEvent.stopImmediatePropagation();
-      if (document.getElementById('stationAdd').style.right != '-80%') {
+      if (document.getElementById('stationAdd').style.right !== '-80%') {
         document.getElementById('stationAdd').style.right = '-80%';
       } else {
         document.getElementById('stationAdd').style.right = 0;

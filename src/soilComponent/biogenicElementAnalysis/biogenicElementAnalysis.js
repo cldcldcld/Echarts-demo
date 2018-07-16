@@ -72,7 +72,6 @@ class biogenicElementAnalysis extends Component {
       },
       xAxis: {
           type: 'category',
-          boundaryGap: false,
           data: ['Jan','Feb','Mar','Apr','May','Jun'],
           axisLine: {
             show: false,

@@ -104,7 +104,7 @@ class chemicalPollutant extends Component {
           	formatter: function (params) {
           		var name = params.name.split(",");
           		var flg = params.seriesName.indexOf('series')
-            	return name && flg == -1 ? params.seriesName + '<br/>' + name[0] + ' ' + name[1] : '';
+            	return name && flg === -1 ? params.seriesName + '<br/>' + name[0] + ' ' + name[1] : '';
           	},
           	backgroundColor: 'rgba(255,255,255,0.40)',
 			extraCssText: 'text-align: center;'

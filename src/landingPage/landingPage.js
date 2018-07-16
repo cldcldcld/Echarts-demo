@@ -787,7 +787,6 @@ class landingPage extends Component {
 
   buttonClick(e) {
     var element;
-    var id;
     if (e && e.target) {
       if (e.target.className) {
         element = e.target;
