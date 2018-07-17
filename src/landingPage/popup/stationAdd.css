@@ -6,7 +6,7 @@
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	transition: all 1s;
-	right: -80%;
+	right: -75%;
 }
 
 #stationAdd .add-button {
@@ -76,7 +76,7 @@
 }
 
 #stationAdd .add-form .form-context .station-name-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
@@ -85,37 +85,39 @@
 }
 
 #stationAdd .add-form .form-context .latitude-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
 #stationAdd .add-form .form-context .latitude-input input {
-	width: 60%;
+	width: 65%;
 }
 
 #stationAdd .add-form .form-context .latitude-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
-	padding-left: 5%;
+	padding-left: 3%;
+	opacity: 0.6;
 }
 
 #stationAdd .add-form .form-context .longitude-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
 #stationAdd .add-form .form-context .longitude-input input {
-	width: 60%;
+	width: 65%;
 }
 
 #stationAdd .add-form .form-context .longitude-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
-	padding-left: 5%;
+	padding-left: 3%;
+	opacity: 0.6;
 }
 
 #stationAdd .add-form .form-context .elevation-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
@@ -124,54 +126,57 @@
 }
 
 #stationAdd .add-form .form-context .elevation-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
 	padding-left: 5%;
 }
 
 #stationAdd .add-form .form-context .water-level-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
 #stationAdd .add-form .form-context .water-level-input input {
-	width: 60%;
+	width: 65%;
 }
 
 #stationAdd .add-form .form-context .water-level-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
-	padding-left: 5%;
+	padding-left: 3%;
+	opacity: 0.6;
 }
 
 #stationAdd .add-form .form-context .soil-moisture-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
 #stationAdd .add-form .form-context .soil-moisture-input input {
-	width: 50%;
+	width: 55%;
 }
 
 #stationAdd .add-form .form-context .soil-moisture-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
-	padding-left: 5%;
+	padding-left: 3%;
+	opacity: 0.6;
 }
 
 #stationAdd .add-form .form-context .air-absorbed-dose-rate-input label {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 }
 
 #stationAdd .add-form .form-context .air-absorbed-dose-rate-input input {
-	width: 50%;
+	width: 58%;
 }
 
 #stationAdd .add-form .form-context .air-absorbed-dose-rate-input span {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
-	padding-left: 5%;
+	padding-left: 3%;
+	opacity: 0.6;
 }
 
 #stationAdd .add-form .form-context div input:focus {

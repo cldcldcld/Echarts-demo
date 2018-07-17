@@ -30,12 +30,12 @@ class dashboardSoil extends Component {
             title: 'As'
         },
         {   
-            value: 48,
-            title: 'Cu'
-        },
-        {   
             value: 240,
             title: 'Pb'
+        },
+        {   
+            value: 48,
+            title: 'Cu'
         },
         {   
             value: 140,

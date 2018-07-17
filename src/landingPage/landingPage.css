@@ -19,7 +19,7 @@
 .navigation-button {
 	position: absolute;
 	background-color: rgba(28,42,62,0.6);
-	width: 7.8%;
+	width: 7.5%;
 	height: 53%;
 	margin-top: 3%;
 	margin-left: 3%;
@@ -35,12 +35,12 @@
 }
 
 .air-button img {
-	padding-top: 17%;
-	padding-left: 29%;
+	padding-top: 14%;
+	padding-left: 27%;
 }
 
 .air-button span {
-	padding-left: 22%;
+	padding-left: 21%;
 	font-size: 18px;
 	color: #FFFFFF;
 }
@@ -53,12 +53,12 @@
 }
 
 .water-button img {
-	padding-top: 19%;
+	padding-top: 17%;
 	padding-left: 25%;
 }
 
 .water-button span {
-	padding-left: 13%;
+	padding-left: 11%;
 	font-size: 18px;
 	color: #FFFFFF;
 }
@@ -72,11 +72,11 @@
 
 .soil-button img {
 	padding-top: 20%;
-	padding-left: 20%;
+	padding-left: 18%;
 }
 
 .soil-button span {
-	padding-left: 15%;
+	padding-left: 14%;
 	font-size: 18px;
 	color: #FFFFFF;
 }

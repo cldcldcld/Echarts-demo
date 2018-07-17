@@ -37,7 +37,7 @@ class stationAdd extends Component {
 
     document.onclick = function(ev) {
       if (document.getElementById('stationAdd')) {
-        document.getElementById('stationAdd').style.right = '-80%';
+        document.getElementById('stationAdd').style.right = '-75%';
       }
     }
 
@@ -99,10 +99,10 @@ class stationAdd extends Component {
           </div>
           <div className='form-context'>
             <div className='station-name-input'>
-              <label>Station name</label>
+              <label>Station Name</label>
               {this.validImg(this.valid['stationNameValid'])}
               <br/>
-              <input placeholder='' name='stationName' onChange={this.inputValid} value={this.state.stationName}></input>
+              <input placeholder='eg: West Lake' name='stationName' onChange={this.inputValid} value={this.state.stationName}></input>
             </div>
             <div className='longitude-input'>
               <label>Longitude</label>
@@ -149,8 +149,8 @@ class stationAdd extends Component {
 
   openModal(ev) {
       ev.nativeEvent.stopImmediatePropagation();
-      if (document.getElementById('stationAdd').style.right !== '-80%') {
-        document.getElementById('stationAdd').style.right = '-80%';
+      if (document.getElementById('stationAdd').style.right !== '-75%') {
+        document.getElementById('stationAdd').style.right = '-75%';
       } else {
         document.getElementById('stationAdd').style.right = 0;
       }
@@ -217,7 +217,7 @@ class stationAdd extends Component {
         longitude: '',
         elevation: ''
       });
-      document.getElementById('stationAdd').style.right = '-80%';
+      document.getElementById('stationAdd').style.right = '-75%';
     } else {
       document.getElementById('message').className='message warning-red'
       this.message = 'Data is not correct, please check';

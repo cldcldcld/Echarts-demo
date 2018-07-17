@@ -19,7 +19,7 @@ class soilBasicInfo extends Component {
             <span className='moisture-label'>Moisture</span>
           </div>
           <div className='other-info'>
-            <span>Texture: ClayT</span><br/>
+            <span>Texture: Clay</span><br/>
             <span>pH: 6.7</span>
           </div>
         </div>
@@ -28,7 +28,7 @@ class soilBasicInfo extends Component {
             <img src={require('../../image/thermometer.png')} alt='Thermometer'></img>
           </div>
           <div className='density-content'>
-            <span className='density-number'>20 ℃</span><br/>
+            <span className='density-number'>20℃</span><br/>
             <span className='density-label'>Temperature</span>
           </div>
           <div className='other-info'>
