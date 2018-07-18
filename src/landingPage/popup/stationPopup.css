@@ -101,12 +101,14 @@
 
 .popup-content .station-img {
 	width: 35%;
+	height: 100%;
 	float: left;
 }
 
 .popup-content .station-img img {
-	padding-top: 9%;
-	width: 95%
+	padding-top: 7%;
+	width: 95%;
+	height: 80%;
 }
 
 .popup-content .station-AQI-data {

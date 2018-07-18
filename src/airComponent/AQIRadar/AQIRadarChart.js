@@ -117,8 +117,8 @@ class AQIRadarChart extends Component {
                         color: new echarts.graphic.LinearGradient(
                             0, 0, 0, 1,
                             [
-                                {offset: 0, color: 'rgba(167,246,252,0.11)'},
-                                {offset: 1, color: '#22B5C8'}
+                                {offset: 0, color: 'rgba(167,246,252,0.5)'},
+                                {offset: 1, color: 'rgba(34,181,200)'}
                             ]
                         )
                     }

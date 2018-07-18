@@ -121,7 +121,7 @@ class stationAdd extends Component {
             {specialtyInput}
           </div>
           <div className='submit-button'>
-            <button onClick={this.addPoint}>
+            <button className={this.props.type} onClick={this.addPoint}>
               Add
             </button>
           </div>

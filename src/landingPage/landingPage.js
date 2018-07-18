@@ -729,7 +729,7 @@ class landingPage extends Component {
             </div>
           </div>
           <div className='station-add'>
-            <StationAdd addMapPoint={this.addMapPoint} type={this.state.type}></StationAdd>
+            <StationAdd addMapPoint={this.addMapPoint} type={this.state.type} ></StationAdd>
           </div>
           <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}

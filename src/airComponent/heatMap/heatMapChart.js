@@ -119,7 +119,7 @@ class heatMapChart extends Component {
             },
             inRange: {
                 // color: ['#F2DA9C', '#DE987D', '#CD6964', '#BF444C']
-                color: ['#22C89C', '#F0C368', 'red']
+                color: ['#22C89C', '#F0C368', '#CCCD6B', 'red']
             }
         },
         series: [{

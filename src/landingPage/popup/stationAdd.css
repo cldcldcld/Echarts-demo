@@ -198,13 +198,30 @@
 }
 
 #stationAdd .submit-button button {
-	background: #3BC4D6;
+/*	background: #3BC4D6;*/
 	border-radius: 8px;
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
 	color: #FFFFFF;
 }
+
+#stationAdd .submit-button .Air {
+	background: #55DDEE;
+}
+
+#stationAdd .submit-button .Water {
+	background: #9885FE;
+}
+
+#stationAdd .submit-button .Soil {
+	background: #FFE08C;
+}
+
+#stationAdd .submit-button .Radiation {
+	background: #55FFA5;
+}
+
 
 #stationAdd .submit-button button:focus {
 	outline: 0;
