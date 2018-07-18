@@ -16,7 +16,7 @@ class alarmInfo extends Component {
         <div className='alarm-content'>
           <div className='alarm-details'>
             <div className='alarm-station'>
-              <span className='station-name'>Fuchun Rd Station</span><br/>
+              <span className='station-name'>BinSheng Station</span><br/>
               <span className='station-details'>Cu Exceeds Limit Pending</span>
             </div>
             <div className='alarm-operation'>
