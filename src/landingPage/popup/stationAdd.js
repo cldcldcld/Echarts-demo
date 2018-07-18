@@ -108,14 +108,14 @@ class stationAdd extends Component {
               <label>Longitude</label>
               {this.validImg(this.valid['longitudeValid'])}
               <br/>
-              <input placeholder='eg: 120.190229' name='longitude' onChange={this.inputValid} value={this.state.longitude}></input>
+              <input placeholder='eg: 120.104462' name='longitude' onChange={this.inputValid} value={this.state.longitude}></input>
               <span>°E</span>
             </div>
             <div className='latitude-input'>
               <label>Latitude</label>
               {this.validImg(this.valid['latitudeValid'])}
               <br/>
-              <input placeholder='eg: 30.189844' name='latitude' onChange={this.inputValid} value={this.state.latitude}></input>
+              <input placeholder='eg: 30.305522' name='latitude' onChange={this.inputValid} value={this.state.latitude}></input>
               <span>°N</span>
             </div>
             {specialtyInput}
