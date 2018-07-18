@@ -106,8 +106,8 @@ class heatMapChart extends Component {
             }
         },
         visualMap: {
-            min: 0,
-            max: 500,
+            min: 20,
+            max: 400,
             // calculable: true,
             orient: 'horizontal',
             left: '61%',
