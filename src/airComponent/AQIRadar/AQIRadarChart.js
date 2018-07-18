@@ -48,7 +48,7 @@ class AQIRadarChart extends Component {
         backgroundColor: '#1E314B',
         title: {
             text: [
-                    '{titleImage|}{titleContext|Major Pollutant Analysis}'
+                    '{titleImage|}{titleContext|Weekly Major Pollutant Analysis}'
                   ].join('\n'),
             top: 15,
             left: 15,
