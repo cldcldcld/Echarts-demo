@@ -190,7 +190,7 @@ class stationAdd extends Component {
       sumbitData = {
         location: {
           text: '',
-          location: this.state.latitude + ',' + this.state.longitude
+          location: this.state.longitude + ',' + this.state.latitude
         },
         locationDetails: {
           stationNumber: '11',

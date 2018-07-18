@@ -721,7 +721,7 @@ class landingPage extends Component {
             </div>
             <div onClick={this.buttonClick} className='soil-button' id='Soil' name='button-select'>
               <img src={require('../image/soil.png')} alt='Soil'></img><br/>
-              <span>Solid Quality</span>
+              <span>Soil Quality</span>
             </div>
             <div onClick={this.buttonClick} className='radiation-button' id='Radiation' name='button-select'>
               <img src={require('../image/Radiation.png')} alt='Radiation'></img><br/>

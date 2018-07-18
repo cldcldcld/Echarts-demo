@@ -17,7 +17,7 @@ class alarmInfo extends Component {
           <div className='alarm-details'>
             <div className='alarm-station'>
               <span className='station-name'>Fuchun Rd Station</span><br/>
-              <span className='station-details'>KMnO4 Exceeds limit Pending</span>
+              <span className='station-details'>Cu Exceeds Limit Pending</span>
             </div>
             <div className='alarm-operation'>
               <img src={require('../../image/bell.png')} alt='Details'></img>
