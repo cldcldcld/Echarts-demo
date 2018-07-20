@@ -70,6 +70,15 @@ class smoothLineChart extends Component {
     var myChart = echarts.init(document.getElementById('smoothLineChart'));
 
     myChart.setOption(this.option);
+
+    // var self = this;
+    // setInterval( function (){
+    //     self.option.series[0].data.slice(0, 8);
+    //     self.option.series[0].data.push(30);
+    //     self.option.xAxis.data.slice(0);
+    //     self.option.xAxis.data.push(16);
+    //     myChart.setOption(self.option, true);
+    // }, 500);
   }
 
   createOption(date, data, AQIData) {
