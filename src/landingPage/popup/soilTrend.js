@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './soilTrend.css'
+// import './soilTrend.css'
 
 class soilTrend extends Component {
   render() {

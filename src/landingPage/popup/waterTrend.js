@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './waterTrend.css'
+// import './waterTrend.css'
 
 class waterTrend extends Component {
   render() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './scss/index.scss';
 import './index.css';
 import App from './App';
 // import baseRadarChart from './airComponent/radar/baseRadarChart';

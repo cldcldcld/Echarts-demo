@@ -15,11 +15,12 @@ class smoothLineChart extends Component {
     this.AQIData[3] = [];
     this.AQIData[4] = [];
     this.AQIData[5] = [];
+    this.length = 120;
 
     var data = [];
 
-    var date = ['June 1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
-    for (var i = 0; i < 120; i++) {
+    var date = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    for (var i = 0; i < this.length; i++) {
         data.push(date[parseInt(i/8, 10)]);
         this.AQIData[0].push((Math.sin(i / 6) * (i / 6 -5) + i / 8) * 3+30);
         this.AQIData[1].push((Math.cos(i / 5) * (i / 5 -7) + i / 9) * 3+30);
@@ -28,9 +29,9 @@ class smoothLineChart extends Component {
         this.AQIData[4].push((Math.sin(i / 6) * (i / 5 -4) + i / 7) * 3+35);
         this.AQIData[5].push((Math.sin(i / 7) * (i / 6 -5) + i / 6) * 3+35);
     }
+    // this.AQIData[0] = [3, 5, 9, 4, 5, 2, 3, 9, 8, 6, 4, 6, 3, 7, 4];
 
-    this.createOption(date, data, this.AQIData)
-
+    this.createOption(data, this.AQIData);
   }
 
   render() {
@@ -73,15 +74,45 @@ class smoothLineChart extends Component {
 
     // var self = this;
     // setInterval( function (){
-    //     self.option.series[0].data.slice(0, 8);
-    //     self.option.series[0].data.push(30);
-    //     self.option.xAxis.data.slice(0);
-    //     self.option.xAxis.data.push(16);
+    //     self.setOptionValue();
     //     myChart.setOption(self.option, true);
-    // }, 500);
+    // }, 3000);
   }
 
-  createOption(date, data, AQIData) {
+  setOptionValue() {
+    var data = [];
+    var num = 0;
+    var tempValue = 0;
+    data = this.option.xAxis.data;
+    tempValue = parseInt(data[119] + 1)
+
+    for (var i = 0; i < 8; i++) {
+        num = this.length + i
+        // this.AQIData[0] = this.AQIData[0].slice(1);
+        this.AQIData[1] = this.AQIData[1].slice(1);
+        this.AQIData[2] = this.AQIData[2].slice(1);
+        this.AQIData[3] = this.AQIData[3].slice(1);
+        this.AQIData[4] = this.AQIData[4].slice(1);
+        this.AQIData[5] = this.AQIData[5].slice(1);
+        // this.AQIData[0].push((Math.sin(num / 6) * (num / 6 -5) + num / 8) * 3+30);
+        this.AQIData[0].push(i);
+        this.AQIData[1].push((Math.cos(num / 5) * (num / 5 -7) + num / 9) * 3+30);
+        this.AQIData[2].push((Math.sin(num / 5) * (num / 6 -4) + num / 8) * 3+35);
+        this.AQIData[3].push((Math.cos(num / 4) * (num / 5 -8) + num / 9) * 3+30);
+        this.AQIData[4].push((Math.sin(num / 6) * (num / 5 -4) + num / 7) * 3+35);
+        this.AQIData[5].push((Math.sin(num / 7) * (num / 6 -5) + num / 6) * 3+35);
+        data = data.slice(1);
+        data.push(tempValue);
+    }
+
+    this.AQIData[0] = this.AQIData[0].slice(1);
+    this.AQIData[0].push(1);
+    var date = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    this.length = this.length + 8;
+    this.createOption(date, this.AQIData);
+  }
+
+  createOption(data, AQIData) {
     var option = {
         title:{
             text: [
@@ -173,10 +204,12 @@ class smoothLineChart extends Component {
             lineStyle: {
                 color: 'rgba(103,227,243)',
                 width: '3'
-            }
+            },
+            smooth: true
         },
         {
             data: this.AQIData[1],
+            // data: [],
             type: 'line',
             areaStyle: {
                 color: 'rgba(147,123,242,0.18)'

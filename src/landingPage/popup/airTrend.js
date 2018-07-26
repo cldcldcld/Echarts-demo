@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './airTrend.css'
+// import './airTrend.css'
 
 class airTrend extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './stationPopup.css';
+// import './stationPopup.css';
 import AirTrend from './airTrend';
 import WaterTrend from './waterTrend';
 import SoilTrend from './soilTrend';
@@ -40,7 +40,7 @@ class stationPopup extends Component {
      </div>
 
     return (
-      <div className='station-popup'>
+      <div id='station-popup' className='station-popup'>
         <div className='popup-title'>
           <div className='station-title'>
             {popupImage}
