@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './stackLineChart.css'
+// import './stackLineChart.css'
 
 class stackLineChart extends Component {
   render() {
@@ -90,6 +90,10 @@ class stackLineChart extends Component {
             }
         ]   
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 }

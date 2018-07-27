@@ -1,0 +1,38 @@
+.water-real-data {
+	.item-value {
+		text-align: center;
+		padding-top: 5%;
+
+		span {
+			font-size: 36px;
+		}
+	}
+
+	.item-title {
+		text-align: center;
+
+		span {
+			opacity: 0.6;
+			font-size: 16px;
+		}
+	}
+
+	.item-description {
+		text-align: center;
+		padding-top: 3%;
+
+		span {
+			opacity: 0.4;
+			font-size: 12px;
+			color: #FFFFFF;
+		}
+	}
+
+	.item-white {
+		color: #FFFFFF;
+	}
+
+	.item-red {
+		color: #B94E4E;
+	}
+}

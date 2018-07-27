@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './dashboardAir.css';
+// import './dashboardAir.css';
 import App from './App'
 import HeatMapChart from './airComponent/heatMap/heatMapChart';
 // import ScatterChart from './airComponent/scatter/scatterChart';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './relationSchema.css';
+// import './relationSchema.css';
 
 
 class relationSchema extends Component {
@@ -69,6 +69,10 @@ class relationSchema extends Component {
             ]
         }, true);
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
 
   }

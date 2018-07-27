@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './qualityInfo.css'
+// import './qualityInfo.css'
 
 class qualityInfo extends Component {
   render() {

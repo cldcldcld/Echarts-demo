@@ -100,6 +100,10 @@ class soilTrend extends Component {
           ]      
     })
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 }
 

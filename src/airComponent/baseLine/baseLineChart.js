@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './baseLineChart.css'
+// import './baseLineChart.css'
 
 class baseLineChart extends Component {
   render() {
@@ -39,6 +39,10 @@ class baseLineChart extends Component {
           smooth: true
       }]     
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 }

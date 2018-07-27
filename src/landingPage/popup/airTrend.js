@@ -104,7 +104,12 @@ class airTrend extends Component {
           ]      
     })
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 }
+
 
 export default airTrend;

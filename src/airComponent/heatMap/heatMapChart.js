@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './heatMapChart.css'
+// import './heatMapChart.css'
 
 class heatMapChart extends Component {
   render() {
@@ -145,6 +145,10 @@ class heatMapChart extends Component {
             }
         }]        
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 }

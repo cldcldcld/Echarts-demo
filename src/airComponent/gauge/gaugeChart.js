@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './gaugeChart.css'
+// import './gaugeChart.css'
 
 class gaugeChart extends Component {
   render() {
@@ -40,6 +40,10 @@ class gaugeChart extends Component {
         option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
         myChart.setOption(option, true);
     },2000);
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
   }
 }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './riverDataAnalysis.css';
+// import './riverDataAnalysis.css';
 import echarts from 'echarts';
 
 class riverDataAnalysis extends Component {
@@ -46,6 +46,10 @@ class riverDataAnalysis extends Component {
     normalizeData(data);
 
     myChart.setOption(getOption(data));
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
 
 

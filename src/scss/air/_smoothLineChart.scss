@@ -1,0 +1,63 @@
+.smoothLineChart {
+	height: 100%;
+	background: #1E314B;
+  	border-radius: 20px;
+
+	#smoothLineChart {
+	  	height: 100%;
+	}
+
+	.button-list {
+		position: absolute;
+		left: 71%;
+		width: 25%;
+		top: 28.5%;
+		z-index: 2;
+
+		button:focus{
+			outline: none;
+		}
+
+		button {
+			margin-right: 4%;
+			background-color: transparent;
+			border-color: transparent;
+			font-size: 16px;
+			color: #FFFFFF;
+
+			span {
+				opacity: 0.4;
+			}
+
+			.clicked {
+			    padding-bottom: 3px;
+			    border-bottom:  2px solid;
+			    opacity: 1;
+			}
+
+			.color-0 {
+				border-bottom-color: #25B7CA;
+			}
+
+			.color-1 {
+				border-bottom-color: rgba(147,123,242,1);
+			}
+
+			.color-2 {
+				border-bottom-color: #F0D99C;
+			}
+
+			.color-3 {
+				border-bottom-color: #DE987D;
+			}
+
+			.color-4 {
+				border-bottom-color: #6143FE;
+			}
+
+			.color-5 {
+				border-bottom-color: #FFFFFF;
+			}
+		}
+	}
+}

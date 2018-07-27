@@ -116,6 +116,10 @@ class waterTrend extends Component {
           ]      
     })
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 }
 

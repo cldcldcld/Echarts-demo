@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './indexDependency.css';
+// import './indexDependency.css';
 import echarts from 'echarts';
 
 class indexDependency extends Component {
@@ -87,6 +87,10 @@ class indexDependency extends Component {
             }
         ]
     }, true);
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
 
   }

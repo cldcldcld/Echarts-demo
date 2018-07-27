@@ -1,0 +1,55 @@
+.scatterChart {
+  height: 100%;
+  border-radius: 20px;
+
+	#scatterChart {
+	  	height: 100%;
+
+		div {
+	  		border-radius: 20px;
+		}
+	}
+
+	.Y-dropdown {
+		position: absolute;
+		z-index: 2;
+		left: 78%;
+		top: 70%;
+
+		button {
+			background-color: transparent;
+			border-color: transparent;
+			font-size: 16px;
+			color: #55DDEE;
+			opacity: 0.8;
+		}
+
+		.close {
+			display: none;
+		}
+	}
+
+	.X-dropdown {
+		position: absolute;
+		z-index: 2;
+		left: 89%;
+		top: 88%;
+
+		button {
+			background-color: transparent;
+			border-color: transparent;
+			font-size: 16px;
+			color: #55DDEE;
+			opacity: 0.8;
+		}
+
+		.close {
+			display: none;
+		}
+
+		#X-menu {
+			margin-top: -180%;
+		}
+	}
+
+}

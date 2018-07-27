@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './realData.css'
+// import './realData.css'
 
 class realData extends Component {
 
@@ -26,7 +26,7 @@ class realData extends Component {
         );
     const isWarning = this.props.realData.warning;
     return (
-      <div className='realData'>
+      <div className='air-real-data'>
         <div className='index-value'>
             { !isWarning ? <span className='white'>{this.props.realData.value}</span>
               : <span className='red'>{this.props.realData.value}</span>}

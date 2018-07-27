@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './AQIRadarChart.css'
+// import './AQIRadarChart.css'
 
 class AQIRadarChart extends Component {
   render() {
@@ -133,6 +133,10 @@ class AQIRadarChart extends Component {
     }
 
     myChart.setOption(option);
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 }

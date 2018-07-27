@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './histogramChart.css'
+// import './histogramChart.css'
 
 class histogramChart extends Component {
   render() {
@@ -86,6 +86,10 @@ class histogramChart extends Component {
           return idx * 15;
       }
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 }

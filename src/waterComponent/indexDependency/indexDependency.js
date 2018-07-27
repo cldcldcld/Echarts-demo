@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './indexDependency.css';
+// import './indexDependency.css';
 import echarts from 'echarts';
 
 class indexDependency extends Component {
   render() {
     return (
-      <div className='indexDependency'>
+      <div className='water-indexDependency'>
         <div id='indexDependency'></div>
       </div>
     );
@@ -15,7 +15,9 @@ class indexDependency extends Component {
     var myChart = echarts.init(document.getElementById('indexDependency'));
 
     var json = require('./indexData.json');
+
     myChart.hideLoading();
+
     myChart.setOption({
         title: {
             text: [
@@ -89,6 +91,9 @@ class indexDependency extends Component {
         ]
     }, true);
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10);
 
   }
 

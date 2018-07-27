@@ -1,0 +1,37 @@
+.air-real-data {
+	.index-value {
+		text-align: center;
+
+		span {
+			font-size: 48px;
+		}
+
+		.white {
+			color: #FFFFFF;
+		}
+
+		.red {
+			color: #B94E4E;
+		}
+	}
+
+	.index-title {
+		text-align: center;
+
+		span {
+			opacity: 0.4;
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+	}
+
+	.index-description {
+		text-align: center;
+
+		span {
+			opacity: 0.4;
+			font-size: 12px;
+			color: #FFFFFF;
+		}
+	}
+}

@@ -121,6 +121,10 @@ class radiationTrend extends Component {
           ]      
     })
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 }
 

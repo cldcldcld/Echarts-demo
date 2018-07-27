@@ -1,10 +1,42 @@
 @import '_main';
 
-// @import '_landingPage';
+@import '_landingPage';
 @import '_stationAdd';
 @import '_stationPopup';
 
+// air
 @import 'air/_airTrend';
+@import 'air/_dashboardAir';
+@import 'air/_app';
+@import 'air/_weatherInfo';
+@import 'air/_warningInfo';
+@import 'air/_standardHistogram';
+@import 'air/_smoothLineChart';
+@import 'air/_scatterChart';
+@import 'air/_relationSchema';
+@import 'air/_realData';
+@import 'air/_rainfallChart';
+@import 'air/_radarChart';
+@import 'air/_baseRadarChart';
+@import 'air/_indexDependency';
+@import 'air/_histogramChart';
+@import 'air/_heatMapChart';
+@import 'air/_gaugeChart';
+@import 'air/_confidenceBandChart';
+@import 'air/_baseLineChart';
+@import 'air/_AQIRadarChart';
+
+// water
 @import 'water/_waterTrend';
+// @import 'water/_dashboardWater';
+@import 'water/_riverDataAnalysis';
+@import 'water/_realTimeData';
+@import 'water/_qualityInfo';
+@import 'water/_indexDependency';
+
+// soil
 @import 'soil/_soilTrend';
+// @import 'soil/_dashboardsoil';
+
+// radiation
 @import 'radiation/_radiationTrend';

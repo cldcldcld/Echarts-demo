@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './rainfallChart.css'
+// import './rainfallChart.css'
 
 class rainfallChart extends Component {
   render() {
@@ -207,6 +207,11 @@ class rainfallChart extends Component {
           }
       ]
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 }
 

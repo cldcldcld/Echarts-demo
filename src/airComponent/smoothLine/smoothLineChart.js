@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-import './smoothLineChart.css'
+// import './smoothLineChart.css'
 
 class smoothLineChart extends Component {
   constructor(props) {
@@ -77,6 +77,11 @@ class smoothLineChart extends Component {
     //     self.setOptionValue();
     //     myChart.setOption(self.option, true);
     // }, 3000);
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
+
   }
 
   setOptionValue() {

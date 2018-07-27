@@ -1,0 +1,74 @@
+.warningInfo {
+	height: 100%;
+	background: #203758;
+  	border-radius: 20px;
+  	border: 2px solid #B94141;
+  	box-shadow: 0 2px 14px 2px rgba(247,86,86,0.31);
+
+	.warning-title {
+		height: 10%;
+		width: 100%;
+		padding-top: 3%;
+		padding-left: 5%;
+
+		.warning-image {
+			float: left;
+		}
+
+		.warning-title-details {
+			float: left;
+			width: 40%;
+			padding-top: 1%
+		}
+
+		span {
+			font-size: 20px;
+			color: #F86B6B;
+			text-shadow: 0 4px 4px rgba(0,0,0,0.50);
+		}
+	}
+
+	.warning-content {
+		height: 70%;
+		width: 100%;
+		padding-left: 5%;
+		float: left;
+
+		.warning-details {
+			.warning-station {
+				float: left;
+				padding-left: 8%;
+				padding-top: 2%;
+
+				.air-station-name {
+					opacity: 0.5;
+					font-size: 14px;
+					color: #FFFFFF;
+				}
+
+				.station-details {
+					opacity: 0.8;
+					font-size: 16px;
+					color: #FFFFFF;
+				}
+			}
+
+			.operation {
+				float: right;
+				padding-right: 10%;
+				padding-top: 2%;
+				width: 20%;
+				text-align: center;
+
+				img {
+					padding-right: 5%;
+				}
+
+				span {
+					font-size: 16px;
+					color: #22B5C8;
+				}
+			}
+		}
+	}
+}

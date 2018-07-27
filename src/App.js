@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 // import axios from 'axios';
 import echarts from 'echarts';
 import bmap from 'echarts/extension/bmap/bmap.js';
@@ -100,6 +100,10 @@ class App extends Component {
 
 
     // });
+        setTimeout(function(){
+          myChart.resize();
+        }, 10)
+
 
 
   }
