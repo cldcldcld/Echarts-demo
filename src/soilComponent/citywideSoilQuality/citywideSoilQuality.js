@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './citywideSoilQuality.css'
+// import './citywideSoilQuality.css'
 import echarts from 'echarts';
+import '../../scss/soil/_citywideSoilQuality.scss'
 
 class citywideSoilQuality extends Component {
 
@@ -154,6 +155,10 @@ class citywideSoilQuality extends Component {
           }
       ]
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 

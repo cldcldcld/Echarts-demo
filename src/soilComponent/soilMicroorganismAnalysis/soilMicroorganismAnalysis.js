@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './soilMicroorganismAnalysis.css'
+// import './soilMicroorganismAnalysis.css'
+import '../../scss/soil/_soilMicroorganismAnalysis.scss'
 import echarts from 'echarts';
 import LegendLabel from './legendLabel';
 
@@ -186,6 +187,10 @@ class soilMicroorganismAnalysis extends Component {
       ],
       color: ['#6944DB', '#5ABEDF', '#5A67DF', '#CD6964', '#DE987D', '#F0D99C']
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 

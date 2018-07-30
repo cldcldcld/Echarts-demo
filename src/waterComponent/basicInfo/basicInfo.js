@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './basicInfo.css'
+import '../../scss/water/_basicInfo.scss'
 
 class basicInfo extends Component {
   render() {

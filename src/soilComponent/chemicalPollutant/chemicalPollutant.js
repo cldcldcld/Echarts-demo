@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './chemicalPollutant.css';
+// import './chemicalPollutant.css';
 import echarts from 'echarts';
+import '../../scss/soil/_chemicalPollutant.scss';
 
 class chemicalPollutant extends Component {
 
@@ -202,6 +203,11 @@ class chemicalPollutant extends Component {
 	        data: [4, 5, 12, 4, 6, 12, 6, 2, 9, 9]
 	    }]
     })
+
+    setTimeout(function(){
+    	myChartBar.resize();
+      	myChartParallel.resize();
+    }, 10)
 
   }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './excessiveIndexAnalysis.css';
+// import './excessiveIndexAnalysis.css';
 import echarts from 'echarts';
 
 class excessiveIndexAnalysis extends Component {
@@ -117,6 +117,11 @@ class excessiveIndexAnalysis extends Component {
           }
       ]
     });
+
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
 
   }

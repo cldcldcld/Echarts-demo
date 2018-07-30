@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './historicDataAnalysis.css';
+// import './historicDataAnalysis.css';
 import echarts from 'echarts';
 
 class historicDataAnalysis extends Component {
@@ -144,6 +144,10 @@ class historicDataAnalysis extends Component {
               }
           ]      
     });
+
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 

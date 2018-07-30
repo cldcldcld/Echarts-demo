@@ -2,145 +2,145 @@
 	width: 100%;
 	height: 100%;
   	background-color: #2A3C55;
-}
 
-.dashboardSoil img {
-	width: 100%;
-}
+	img {
+		width: 100%;
+	}
 
-.dashboardSoil .host-button {
-	height: 135px;
-	width: 135px;
-	position: absolute;
-	background: #1C2A3E;
-	border: 4px solid #FFA229;
-	box-shadow: 0 5px 4px 1px rgba(37,55,81,0.65);
-	border-radius: 50%;
-	top: 3%;
-	left: 3%;
-}
+	.host-button {
+		height: 135px;
+		width: 135px;
+		position: absolute;
+		background: #1C2A3E;
+		border: 4px solid #FFA229;
+		box-shadow: 0 5px 4px 1px rgba(37,55,81,0.65);
+		border-radius: 50%;
+		top: 3%;
+		left: 3%;
 
-.dashboardSoil .host-button img {
-	margin-left: 25%;
-	margin-top: 20%;
-	width: 50%;
-}
+		img {
+			margin-left: 25%;
+			margin-top: 20%;
+			width: 50%;
+		}
 
-.dashboardSoil .host-button span {
-	font-size: 14px;
-	color: #FFFFFF;
-	margin-left: 25%;
-}
+		span {
+			font-size: 14px;
+			color: #FFFFFF;
+			margin-left: 25%;
+		}
+	}
 
-.dashboardSoil .soil-left {
-	width: 26%;
-	height: 90%;
-	float: left;
-	margin: 5vh 1vw 5vh 4vw;
-}
+	.soil-left {
+		width: 26%;
+		height: 90%;
+		float: left;
+		margin: 5vh 1vw 5vh 4vw;
 
-.dashboardSoil .soil-left .soil-basic-info {
-	width: 100%;
-	height: 23%;
-	float: left;
-}
+		.soil-basic-info {
+			width: 100%;
+			height: 23%;
+			float: left;
+		}
 
-.dashboardSoil .soil-left .soil-quality-info {
-	width: 100%;
-	height: 14%;
-	margin-top: 4%;
-	float: left;
-}
+		.soil-quality-info {
+			width: 100%;
+			height: 14%;
+			margin-top: 4%;
+			float: left;
+		}
 
-.dashboardSoil .soil-left .alarm-notification {
-	width: 100%;
-	height: 18%;
-	margin-top: 4%;
-	float: left;
-}
+		.alarm-notification {
+			width: 100%;
+			height: 18%;
+			margin-top: 4%;
+			float: left;
+		}
 
-.dashboardSoil .soil-left .biogenic-element-analysis {
-	width: 100%;
-	height: 39%;
-	margin-top: 4%;
-	float: left;
-}
+		.biogenic-element-analysis {
+			width: 100%;
+			height: 39%;
+			margin-top: 4%;
+			float: left;
+		}
+	}
 
-.dashboardSoil .soil-right {
-	width: 64.5%;
-	height: 90%;
-	float: left;
-	margin: 5vh 4vw 5vh 0;
-}
+	.soil-right {
+		width: 64.5%;
+		height: 90%;
+		float: left;
+		margin: 5vh 4vw 5vh 0;
 
-.dashboardSoil .soil-right .soil-real-data {
-	width: 100%;
-	height: 23%;
-	margin-bottom: 1.5%;
-	float: left;
-	background: #1E314B;
-	border-radius: 20px;
-}
+		.soil-real-data {
+			width: 100%;
+			height: 23%;
+			margin-bottom: 1.5%;
+			float: left;
+			background: #1E314B;
+			border-radius: 20px;
 
-.dashboardSoil .soil-right .soil-real-data .soil-real-data-title {
-	height: 12%;
-	width: 100%;
-	margin-top: 2%;
-	margin-left: 2.5%;
-	display: inline-block;
-}
+			.soil-real-data-title {
+				height: 12%;
+				width: 100%;
+				margin-top: 2%;
+				margin-left: 2.5%;
+				display: inline-block;
 
-.dashboardSoil .soil-right .soil-real-data .soil-real-data-image {
-	float: left;
-	padding-top: 1px;
-}
+				span {
+					font-size: 22px;
+					color: #FFFFFF;
+					padding-left: 0.6%;
+				}
+			}
 
-.dashboardSoil .soil-right .soil-real-dataa .soil-real-data-title-content {
-	float: left;
-	width: 50%;
-}
+			.soil-real-data-image {
+				float: left;
+				padding-top: 1px;
+			}
 
-.dashboardSoil .soil-right .soil-real-data .soil-real-data-title span {
-	font-size: 22px;
-	color: #FFFFFF;
-	padding-left: 0.6%;
-}
+			.soil-real-data-title-content {
+				float: left;
+				width: 50%;
+			}
 
-.dashboardSoil .soil-right .soil-real-data .soil-real-data-value {
-	height: 70%;
-	width: 100%;
-	margin-top: 2.5%; 
-	margin-left: 2.5%;
-}
+			.soil-real-data-value {
+				height: 70%;
+				width: 100%;
+				margin-top: 2.5%; 
+				margin-left: 2.5%;
+			}
 
-.dashboardSoil .soil-right .soil-real-data .real-time-data-item {
-	float: left;
-	margin-left: 3%;
-	width: 8.5%;
-}
+			.real-time-data-item {
+				float: left;
+				margin-left: 3%;
+				width: 8.5%;
+			}
+		}
 
-.dashboardSoil .soil-right .analysis-details {
-	width: 68%;
-	height: 74.5%;
-	float: left;
-}
+		.analysis-details {
+			width: 68%;
+			height: 74.5%;
+			float: left;
 
-.dashboardSoil .soil-right .analysis-details .chemical-pollutant {
-	width: 100%;
-	height: 61%;
-	float: left;
-	margin-bottom: 2%;
-}
+			.chemical-pollutant {
+				width: 100%;
+				height: 61%;
+				float: left;
+				margin-bottom: 2%;
+			}
 
-.dashboardSoil .soil-right .analysis-details .citywide-soil-quality {
-	width: 100%;
-	height: 37%;
-	float: left;
-}
+			.citywide-soil-quality {
+				width: 100%;
+				height: 37%;
+				float: left;
+			}
+		}
 
-.dashboardSoil .soil-right .soil-microorganism-analysis {
-	width: 30.5%;
-	height: 74.5%;
-	margin-left: 1.5%;
-	float: left;
+		.soil-microorganism-analysis {
+			width: 30.5%;
+			height: 74.5%;
+			margin-left: 1.5%;
+			float: left;
+		}
+	}
 }

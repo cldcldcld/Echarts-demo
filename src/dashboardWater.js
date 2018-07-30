@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './dashboardWater.css';
+import './scss/water/_dashboardWater.scss';
+// import './dashboardWater.css';
 import BasicInfo from './waterComponent/basicInfo/basicInfo';
 import QualityInfo from './waterComponent/qualityInfo/qualityInfo';
 import IndexDependency from './waterComponent/indexDependency/indexDependency';

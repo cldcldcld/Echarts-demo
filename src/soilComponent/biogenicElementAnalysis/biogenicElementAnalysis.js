@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './biogenicElementAnalysis.css'
+// import './biogenicElementAnalysis.css'
 import echarts from 'echarts';
 
 class biogenicElementAnalysis extends Component {
@@ -143,6 +143,9 @@ class biogenicElementAnalysis extends Component {
       ]
     });
 
+    setTimeout(function(){
+      myChart.resize();
+    }, 10)
 
   }
 

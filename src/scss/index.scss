@@ -25,6 +25,7 @@
 @import 'air/_confidenceBandChart';
 @import 'air/_baseLineChart';
 @import 'air/_AQIRadarChart';
+@import 'air/_mainDashboard';
 
 // water
 @import 'water/_waterTrend';
@@ -33,10 +34,23 @@
 @import 'water/_realTimeData';
 @import 'water/_qualityInfo';
 @import 'water/_indexDependency';
+@import 'water/_historicDataAnalysis';
+@import 'water/_excessiveIndexAnalysis';
+// @import 'water/_basicInfo';
+// @import 'water/_alarmInfo';
 
 // soil
 @import 'soil/_soilTrend';
-// @import 'soil/_dashboardsoil';
+// @import 'soil/_dashboardSoil';
+// @import 'soil/_soilRealData';
+// @import 'soil/_soilQualityInfo';
+// @import 'soil/_legendLabel';
+// @import 'soil/_soilMicroorganismAnalysis';
+// @import 'soil/_soilBasicInfo';
+// @import 'soil/_citywideSoilQuality';
+// @import 'soil/_chemicalPollutant';
+@import 'soil/_biogenicElementAnalysis';
+// @import 'soil/_alarmNotification';
 
 // radiation
 @import 'radiation/_radiationTrend';

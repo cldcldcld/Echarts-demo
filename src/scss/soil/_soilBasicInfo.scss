@@ -1,0 +1,106 @@
+.soilBasicInfo {
+	height: 100%;
+	background: #1E314B;
+  	border-radius: 20px;
+
+	.basic-info-title {
+		padding-left: 30%;
+		padding-top: 5%;
+
+		span {
+			font-size: 20px;
+			color: #FFFFFF;
+		}
+	}
+
+	.basic-info-content {
+		padding-left: 30%;
+		padding-top: 4%;
+
+		span {
+			opacity: 0.6;
+			font-size: 14px;
+			color: #FFFFFF;
+		}
+
+		.moisture-info {
+			width: 30%;
+			float: left;
+
+			.moisture-img {
+				width: 50%;
+				float: left;
+				padding-top: 1%;
+			}
+
+			.moisture-content {
+				padding-left: 8%;
+				float: left;
+				width: 40%;
+				text-align: center;
+				padding-top: 3%;
+
+				.moisture-number {
+					font-size: 26px;
+					color: #FFFFFF;
+				}
+
+				.moisture-label {
+					font-size: 14px;
+					color: #FFFFFF;
+				}
+			}
+
+			.other-info {
+				padding-top: 8%;
+				float: left;
+
+				span {
+					font-size: 14px;
+					color: rgba(255,255,255,0.6);
+					line-height: 20px;
+				}
+			}
+		}
+
+		.density-info {
+			padding-left: 12%;
+			width: 40%;
+			float: left;
+
+			.density-img {
+				width: 20%;
+				float: left;
+			}
+
+			.density-content {
+				float: left;
+				width: 70%;
+				text-align: center;
+				line-height: 25px;
+				padding-top: 3%;
+
+				.density-number {
+					font-size: 26px;
+					color: #FFFFFF;
+				}
+
+				.density-label {
+					font-size: 14px;
+					color: #FFFFFF;
+				}
+			}
+
+			.other-info {
+				padding-top: 5%;
+				float: left;
+
+				span {
+					font-size: 14px;
+					color: rgba(255,255,255,0.6);
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './alarmInfo.css'
+import '../../scss/water/_alarmInfo.scss'
 
 class alarmInfo extends Component {
   render() {

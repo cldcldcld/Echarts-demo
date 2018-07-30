@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './soilRealData.css'
+import '../../scss/soil/_soilRealData.scss'
 
 class soilRealData extends Component {
 
