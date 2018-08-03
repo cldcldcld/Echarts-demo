@@ -1,0 +1,49 @@
+.air-main-dashboard {
+	height: 100%;
+	width: 100%;
+	background: #2A3C55;
+	padding-left: 12%;
+
+	.weather-info {
+		padding-top: 15%;
+		height: 23%;
+		width: 72%;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+	.AQI-info {
+		height: 18%;
+		width: 72%;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+	.AQI-forecast {
+		height: 28%;
+		width: 72%;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+	.navigation-module {
+		width: 70%;
+
+		.navigation-link {
+			padding-top: 8%;
+
+			.navigtion-link-content {
+				font-size: 36px;
+				color: #41BEFE;
+				text-decoration: none;
+			}
+		}
+
+		.navigation-content {
+			padding-top: 4%;
+
+			span {
+				font-size: 18px;
+				color: #FFFFFF;
+				line-height: 25px;
+			}
+		}
+	}
+}

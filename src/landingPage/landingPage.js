@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {Map, MarkerList} from 'react-bmap';
 import StationPopup from './popup/stationPopup';
 import StationAdd from './popup/stationAdd';
+import MainDashboard from '../airComponent/airMainDashboard/airMainDashboard';
 
 class landingPage extends Component {
 
@@ -11,6 +12,9 @@ class landingPage extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
+    this.handleWarningClick = this.handleWarningClick.bind(this);
+    this.handleWarningMouseOver = this.handleWarningMouseOver.bind(this);
+    this.handleWarningMouseOut = this.handleWarningMouseOut.bind(this);
     this.buttonClick = this.buttonClick.bind(this);
     this.addMapPoint = this.addMapPoint.bind(this);
     
@@ -703,12 +707,13 @@ class landingPage extends Component {
                         isShowShadow={false}
                         multiple={false} 
                         autoViewport={false}
-                        onClick={this.handleClick}
+                        onClick={this.handleWarningClick}
                         onMouseOver={this.handleWarningMouseOver}
                         onMouseOut={this.handleWarningMouseOut}
                         /> : <div></div>
 
     return (
+      <div className='landing-page'>
         <div id='map-container' className='map-container'>
           <div className='navigation-button'>
             <div onClick={this.buttonClick} className='air-button selected' id='Air' name='button-select'>
@@ -728,9 +733,9 @@ class landingPage extends Component {
               <span>Radiation</span>
             </div>
           </div>
-          <div className='station-add'>
+{/*          <div className='station-add'>
             <StationAdd addMapPoint={this.addMapPoint} type={this.state.type} ></StationAdd>
-          </div>
+          </div>*/}
           <Map style={styles.mapContainer} mapStyle={mapStyles} center={{lng: 120.153601, lat: 30.223677}} zoom='12'>
             {markList}
             {warningList}
@@ -738,6 +743,10 @@ class landingPage extends Component {
           {pointPopUpComponent}
           {warningPopUpComponent}
         </div>
+        <div className='landing-page-dashboard'>
+          <MainDashboard></MainDashboard>
+        </div>
+      </div>
     );
   }
 
@@ -751,6 +760,10 @@ class landingPage extends Component {
 
   handleClick(number) {
     this.props.history.push('/dashboard' + this.state.type);
+  }
+
+  handleWarningClick(number) {
+    this.props.history.push('/warningDashboard' + this.state.type);
   }
 
   handleMouseOver(number) {
@@ -824,9 +837,10 @@ class landingPage extends Component {
 
 const styles = {
   mapContainer: {
-    height: '100%',
-    width: '100%',
+    height: '95%',
+    width: '70%',
     position: 'fixed',
+    margin: '1.5%',
     zIndex: 0
   }
 }

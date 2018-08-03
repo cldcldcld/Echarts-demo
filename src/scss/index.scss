@@ -25,14 +25,19 @@
 @import 'air/_confidenceBandChart';
 @import 'air/_baseLineChart';
 @import 'air/_AQIRadarChart';
-@import 'air/_mainDashboard';
+// @import 'air/_airMainDashboard';
+// @import 'air/_dashboardWeatherInfo';
+// @import 'air/_AQIInfo';
+// @import 'air/_AQIForecast';
+// @import 'air/_warningDashboardAir';
+// @import 'air/_diagnosisRecommendation';
 
 // water
 @import 'water/_waterTrend';
 // @import 'water/_dashboardWater';
 @import 'water/_riverDataAnalysis';
 @import 'water/_realTimeData';
-@import 'water/_qualityInfo';
+// @import 'water/_qualityInfo';
 @import 'water/_indexDependency';
 @import 'water/_historicDataAnalysis';
 @import 'water/_excessiveIndexAnalysis';

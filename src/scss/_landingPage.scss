@@ -1,113 +1,127 @@
-#map-container {
+.landing-page {
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 
-	.point-pop-up {
-		position: absolute;
-		height: 300px;
-		width: 800px;
-		z-index: 4;
-	}
-
-	.hide {
-		position: fixed;
-		margin-top: 5000px;
-	}
-
-	.navigation-button {
-		position: absolute;
-		background-color: rgba(28,42,62,0.6);
-		width: 7.5%;
-		height: 53%;
-		margin-top: 3%;
-		margin-left: 3%;
-		z-index: 2;
-		border-radius: 100px;
-	}
-
-	.air-button {
-		height: 25%;
-		border-radius: 100px;
-		border: 4px hidden rgba(34,181,200,0.60);
-		opacity: 0.4;
-	}
-
-	.air-button img {
-		padding-top: 14%;
-		padding-left: 27%;
-	}
-
-	.air-button span {
-		padding-left: 21%;
-		font-size: 18px;
-		color: #FFFFFF;
-	}
-
-	.water-button {
-		height: 25%;
-		border: 4px hidden rgba(152,133,254,1);
-		border-radius: 100px;
-		opacity: 0.4;
-	}
-
-	.water-button img {
-		padding-top: 17%;
-		padding-left: 25%;
-	}
-
-	.water-button span {
-		padding-left: 11%;
-		font-size: 18px;
-		color: #FFFFFF;
-	}
-
-	.soil-button {
-		height: 25%;
-		border: 4px hidden #FFE08C;
-		border-radius: 100px;
-		opacity: 0.4;
-	}
-
-	.soil-button img {
-		padding-top: 20%;
-		padding-left: 18%;
-	}
-
-	.soil-button span {
-		padding-left: 14%;
-		font-size: 18px;
-		color: #FFFFFF;
-	}
-
-	.radiation-button {
-		height: 25%;
-		border: 4px hidden #55FFA5;
-		border-radius: 100px;
-		opacity: 0.4;
-	}
-
-	.radiation-button img {
-		padding-top: 15%;
-		padding-left: 24%;
-	}
-
-	.radiation-button span {
-		padding-left: 23%;
-		font-size: 18px;
-		color: #FFFFFF;
-	}
-
-	.selected {
-		border-style: solid;
-		opacity: 1;
-	}
-
-	.station-add {
-		position: relative;
-		width: 25%;
+	#map-container {
 		height: 100%;
-		float: right;
-		z-index: 2;
+		width: 72%;
+		float: left;
+		background: #2A3C55;
+		overflow: hidden;
+
+		.point-pop-up {
+			position: absolute;
+			height: 300px;
+			width: 800px;
+			z-index: 4;
+		}
+
+		.hide {
+			position: fixed;
+			margin-top: 5000px;
+		}
+
+		.navigation-button {
+			position: absolute;
+			background-color: rgba(28,42,62,0.6);
+			width: 7.5%;
+			height: 53%;
+			margin-top: 3%;
+			margin-left: 3%;
+			z-index: 2;
+			border-radius: 100px;
+		}
+
+		.air-button {
+			height: 25%;
+			border-radius: 100px;
+			border: 4px hidden rgba(34,181,200,0.60);
+			opacity: 0.4;
+		}
+
+		.air-button img {
+			padding-top: 14%;
+			padding-left: 27%;
+		}
+
+		.air-button span {
+			padding-left: 21%;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+
+		.water-button {
+			height: 25%;
+			border: 4px hidden rgba(152,133,254,1);
+			border-radius: 100px;
+			opacity: 0.4;
+		}
+
+		.water-button img {
+			padding-top: 17%;
+			padding-left: 25%;
+		}
+
+		.water-button span {
+			padding-left: 11%;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+
+		.soil-button {
+			height: 25%;
+			border: 4px hidden #FFE08C;
+			border-radius: 100px;
+			opacity: 0.4;
+		}
+
+		.soil-button img {
+			padding-top: 20%;
+			padding-left: 18%;
+		}
+
+		.soil-button span {
+			padding-left: 14%;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+
+		.radiation-button {
+			height: 25%;
+			border: 4px hidden #55FFA5;
+			border-radius: 100px;
+			opacity: 0.4;
+		}
+
+		.radiation-button img {
+			padding-top: 15%;
+			padding-left: 24%;
+		}
+
+		.radiation-button span {
+			padding-left: 23%;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+
+		.selected {
+			border-style: solid;
+			opacity: 1;
+		}
+
+		.station-add {
+			position: relative;
+			width: 25%;
+			height: 100%;
+			float: right;
+			z-index: 2;
+		}
+	}
+
+	.landing-page-dashboard {
+		height: 100%;
+		width: 28%;
+		float: left;
+		overflow: hidden;
 	}
 }

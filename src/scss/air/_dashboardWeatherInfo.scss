@@ -1,0 +1,90 @@
+.dashboard-weather-info {
+	width: 100%;
+	padding-top: 5%;
+
+	.weather-left {
+		height: 100%;
+		width: 50%;
+		float: left;
+
+		.weather-title {
+			padding-top: 5%;
+
+			span {
+				font-size: 36px;
+				color: #FFFFFF;
+			}
+		}
+
+		.weather-date {
+			padding-top: 15%;
+			padding-left: 10%;
+
+			span {
+				opacity: 0.8;
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+		}
+
+		.weather-details {
+			padding-top: 12%;
+			padding-left: 10%;
+			line-height: 24px;
+
+			span {
+				opacity: 0.6;
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.weather-right {
+		height: 100%;
+		float: right;
+		width: 40%;
+
+		.weather-degree {
+			padding-top: 25%;
+			height: 54%;
+
+			.weather-number {
+				float: left;
+				padding-top: 35%;
+
+				span {
+					font-size: 64px;
+					color: #FFFFFF;
+				}
+			}
+
+			.weather-image {
+
+				img {
+					width: 50%;
+					color: #22B5C8;
+				}
+			}
+
+			.weather-unit {
+				padding-top: 5%;
+
+				span {
+					font-size: 36px;
+					color: #FFFFFF;
+				}
+			}
+		}
+
+		.weather-content {
+			padding-top: 3%;
+
+			span {
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+}

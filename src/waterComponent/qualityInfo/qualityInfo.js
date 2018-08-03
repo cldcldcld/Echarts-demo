@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './qualityInfo.css'
+import '../../scss/water/_qualityInfo.scss'
 
 class qualityInfo extends Component {
   render() {

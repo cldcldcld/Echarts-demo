@@ -1,0 +1,37 @@
+.dashboard-AQI-info {
+	.AQI-title {
+		padding-top: 7%;
+		font-size: 36px;
+		color: #FFFFFF;
+	}
+
+	.AQI-location {
+		width: 50%;
+		float: left;
+		padding-top: 10%;
+
+		span {
+			opacity: 0.8;
+			font-size: 18px;
+			color: #FFFFFF;
+			padding-left: 15%;
+		}
+	}
+
+	.AQI-content {
+		float: right;
+		padding-right: 10%;
+		padding-top: 3%;
+		text-align: center;
+
+		.AQI-number {
+			font-size: 48px;
+			color: #FFFFFF;
+		}
+
+		.AQI-description {
+			font-size: 14px;
+			color: #22B5C8;
+		}
+	}
+}
