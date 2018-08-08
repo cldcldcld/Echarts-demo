@@ -113,9 +113,9 @@ class warningDashboardAir extends Component {
                     </div>
 
                 </div>
-                <div className="histogram-chart">
+{/*                <div className="histogram-chart">
                     <SmoothLineChart></SmoothLineChart>
-                </div>
+                </div>*/}
                 <div className="diagnosis-recommendation">
                     <DiagnosisRecommendation></DiagnosisRecommendation>
                 </div>

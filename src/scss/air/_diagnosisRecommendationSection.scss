@@ -1,0 +1,39 @@
+#diagnosisRecommendationSection {
+	height: 100%;
+	width: 90%;
+
+	.section-title {
+		height: 20%;
+		width: 100%;
+
+		.section-image {
+			float: left;
+		}
+
+		.section-title-content {
+			float: left;
+			padding-top: 2%;
+			padding-left: 4%;
+
+			span {
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.section-content {
+		height: 100%;
+		width: 70%;
+		word-wrap: break-word;
+		padding-top: 6%;
+		padding-left: 12%;
+
+		span {
+			line-height: 21px;
+			opacity: 0.6;
+			font-size: 14px;
+			color: #FFFFFF;
+		}
+	}
+}
