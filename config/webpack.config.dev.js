@@ -11,6 +11,7 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -190,17 +191,10 @@ module.exports = {
           },
           {
               test: /\.scss$/,
-              use: [{
-                  loader: "style-loader"
-              }, {
-                  loader: "css-loader", options: {
-                      sourceMap: true
-                  }
-              }, {
-                  loader: "sass-loader", options: {
-                      sourceMap: true
-                  }
-              }]
+              use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: ['css-loader', 'sass-loader']
+              })
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
@@ -257,6 +251,7 @@ module.exports = {
     // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     // You can remove this if you don't use Moment.js:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new ExtractTextPlugin('css/[name].css') //路径以及命名
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
@@ -272,5 +267,5 @@ module.exports = {
   // cumbersome.
   performance: {
     hints: false,
-  },
+  }
 };

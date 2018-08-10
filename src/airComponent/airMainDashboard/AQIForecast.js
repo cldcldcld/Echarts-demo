@@ -19,7 +19,6 @@ class AQIForecast extends Component {
   }
 
   componentDidMount() {
-    console.dir(document.getElementById('dashboardAQIForecast'))
     var myChart = echarts.init(document.getElementById('dashboardAQIForecast'));
 
     var option = {
