@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../scss/air/_AQIInfo.scss';
+// import '../../scss/air/_AQIInfo.scss';
 
 class dashboardWeatherInfo extends Component {
 

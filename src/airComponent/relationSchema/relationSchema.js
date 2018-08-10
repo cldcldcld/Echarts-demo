@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './relationSchema.css';
 
 
 class relationSchema extends Component {

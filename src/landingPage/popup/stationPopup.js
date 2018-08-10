@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './stationPopup.css';
 import AirTrend from './airTrend';
 import WaterTrend from './waterTrend';
 import SoilTrend from './soilTrend';

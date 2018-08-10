@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
 import DiagnosisRecommendationSection from './diagnosisRecommendationSection';
-import '../../scss/air/_diagnosisRecommendation.scss';
+// import '../../scss/air/_diagnosisRecommendation.scss';
 
 class diagnosisRecommendation extends Component {
 

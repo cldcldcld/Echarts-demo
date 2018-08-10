@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './radiationTrend.css'
 
 class radiationTrend extends Component {
   render() {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './warningInfo.css'
 
 class warningInfo extends Component {
   render() {

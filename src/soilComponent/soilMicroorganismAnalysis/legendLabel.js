@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import './legendLabel.css'
-import '../../scss/soil/_legendLabel.scss'
+// import '../../scss/soil/_legendLabel.scss'
 
 class legendLabel extends Component { 
 

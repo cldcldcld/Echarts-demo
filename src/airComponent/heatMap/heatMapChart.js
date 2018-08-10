@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './heatMapChart.css'
 
 class heatMapChart extends Component {
   render() {

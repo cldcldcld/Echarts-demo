@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import './citywideSoilQuality.css'
 import echarts from 'echarts';
-import '../../scss/soil/_citywideSoilQuality.scss'
+// import '../../scss/soil/_citywideSoilQuality.scss'
 
 class citywideSoilQuality extends Component {
 

@@ -3,7 +3,7 @@ import DashboardWeatherInfo from './dashboardWeatherInfo';
 import AQIForecast from './AQIForecast';
 import AQIInfo from './AQIInfo';
 import { Link } from 'react-router-dom';
-import '../../scss/air/_airMainDashboard.scss';
+// import '../../scss/air/_airMainDashboard.scss';
 
 class airMainDashboard extends Component {
 

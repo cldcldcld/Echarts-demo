@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './confidenceBandChart.css';
 // import axios from 'axios';
 
 class confidenceBandChart extends Component {

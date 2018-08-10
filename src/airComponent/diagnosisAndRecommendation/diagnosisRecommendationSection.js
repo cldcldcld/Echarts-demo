@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../scss/air/_diagnosisRecommendationSection.scss';
+// import '../../scss/air/_diagnosisRecommendationSection.scss';
 
 class diagnosisRecommendationSection extends Component {
 

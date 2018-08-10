@@ -17,7 +17,7 @@ class historicDataAnalysis extends Component {
     myChart.setOption({
           title:{
             text: [
-                    '{titleImage|}{titleContext|Water Quality Historic Data Analysis}'
+                    '{titleImage|}{titleContext|Water Quality Historical Data Analysis}'
                   ].join('\n'),
             top: 10,
             left: 20,

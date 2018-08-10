@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './smoothLineChart.css'
 
 class smoothLineChart extends Component {
   constructor(props) {

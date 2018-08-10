@@ -743,9 +743,11 @@ class landingPage extends Component {
           {pointPopUpComponent}
           {warningPopUpComponent}
         </div>
+        { this.state.type === 'Air' ?
         <div className='landing-page-dashboard'>
           <MainDashboard></MainDashboard>
-        </div>
+        </div> : <div></div>
+        }
       </div>
     );
   }
@@ -838,7 +840,7 @@ class landingPage extends Component {
 const styles = {
   mapContainer: {
     height: '95%',
-    width: '70%',
+    width: '97%',
     position: 'fixed',
     margin: '1.5%',
     zIndex: 0

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './baseRadarChart.css';
 
 
 class baseRadarChart extends Component {

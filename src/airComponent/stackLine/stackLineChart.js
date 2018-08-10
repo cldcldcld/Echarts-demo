@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './stackLineChart.css'
 
 class stackLineChart extends Component {
   render() {

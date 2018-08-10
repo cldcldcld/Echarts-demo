@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './baseLineChart.css'
 
 class baseLineChart extends Component {
   render() {

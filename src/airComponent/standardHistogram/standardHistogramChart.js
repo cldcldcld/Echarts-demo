@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './standardHistogramChart.css'
 
 class standardHistogramChart extends Component {
   render() {

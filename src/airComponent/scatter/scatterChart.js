@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
 // import axios from 'axios';
-// import './scatterChart.css';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 

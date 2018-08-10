@@ -26,33 +26,35 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import warningDashboardAir from './warningDashboardAir';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render((
-  <BrowserRouter>
-    <MuiThemeProvider>
-    	<div style={{height: '100%'}}>
-        <Route path="/" exact component={LandingPage}/>
-        <Route path="/landingpage/:type" component={LandingPage}/>
-    		<Route path="/dashboardAir" component={dashboardAir}/>
-        <Route path="/dashboardWater" component={dashboardWater}/>
-        <Route path="/dashboardSoil" component={dashboardSoil}/>
-        <Route path="/warningDashboardAir" component={warningDashboardAir}/>
-       	<Route path="/map" component={App}/>
-  {/*     	<Route path="/baseRadarChart" component={baseRadarChart}/>
-       	<Route path="/radarChart" component={radarChart}/>
-       	<Route path="/histogramChart" component={histogramChart}/>
-       	<Route path="/confidenceBandChart" component={confidenceBandChart}/>
-       	<Route path="/rainfallChart" component={rainfallChart}/>
-       	<Route path="/heatMapChart" component={heatMapChart}/>
-       	<Route path="/baseLineChart" component={baseLineChart}/>
-       	<Route path="/stackLineChart" component={stackLineChart}/>
-       	<Route path="/standardHistogramChart" component={standardHistogramChart}/>
-       	<Route path="/gaugeChart" component={gaugeChart}/>
-        <Route path="/scatterChart" component={scatterChart}/>
-        <Route path="/AQIRadarChart" component={AQIRadarChart}/>
-        <Route path="/SmoothLineChart" component={SmoothLineChart}/>*/}
-      </div>
-    </MuiThemeProvider>
-  </BrowserRouter>
-), document.getElementById('root'))
+
+setTimeout(function() {
+  ReactDOM.render((
+    <BrowserRouter>
+      <MuiThemeProvider>
+      	<div style={{height: '100%'}}>
+          <Route path="/" exact component={LandingPage}/>
+          <Route path="/landingpage/:type" component={LandingPage}/>
+      		<Route path="/dashboardAir" component={dashboardAir}/>
+          <Route path="/dashboardWater" component={dashboardWater}/>
+          <Route path="/dashboardSoil" component={dashboardSoil}/>
+          <Route path="/warningDashboardAir" component={warningDashboardAir}/>
+         	<Route path="/map" component={App}/>
+    {/*     	<Route path="/baseRadarChart" component={baseRadarChart}/>
+         	<Route path="/radarChart" component={radarChart}/>
+         	<Route path="/histogramChart" component={histogramChart}/>
+         	<Route path="/confidenceBandChart" component={confidenceBandChart}/>
+         	<Route path="/rainfallChart" component={rainfallChart}/>
+         	<Route path="/heatMapChart" component={heatMapChart}/>
+         	<Route path="/baseLineChart" component={baseLineChart}/>
+         	<Route path="/stackLineChart" component={stackLineChart}/>
+         	<Route path="/standardHistogramChart" component={standardHistogramChart}/>
+         	<Route path="/gaugeChart" component={gaugeChart}/>
+          <Route path="/scatterChart" component={scatterChart}/>
+          <Route path="/AQIRadarChart" component={AQIRadarChart}/>
+          <Route path="/SmoothLineChart" component={SmoothLineChart}/>*/}
+        </div>
+      </MuiThemeProvider>
+    </BrowserRouter>
+  ), document.getElementById('root'))}, 100);
 
 registerServiceWorker();

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import './chemicalPollutant.css';
 import echarts from 'echarts';
-import '../../scss/soil/_chemicalPollutant.scss';
+// import '../../scss/soil/_chemicalPollutant.scss';
 
 class chemicalPollutant extends Component {
 

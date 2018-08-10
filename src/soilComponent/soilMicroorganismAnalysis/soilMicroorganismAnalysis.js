@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import './soilMicroorganismAnalysis.css'
-import '../../scss/soil/_soilMicroorganismAnalysis.scss'
+// import '../../scss/soil/_soilMicroorganismAnalysis.scss'
 import echarts from 'echarts';
 import LegendLabel from './legendLabel';
 

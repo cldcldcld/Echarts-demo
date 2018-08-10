@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './indexDependency.css';
 import echarts from 'echarts';
 
 class indexDependency extends Component {

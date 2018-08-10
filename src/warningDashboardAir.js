@@ -8,7 +8,7 @@ import WeatherInfo from './airComponent/weatherInfo/weatherInfo';
 import WarningInfo from './airComponent/warningInfo/warningInfo';
 import IndexDependency from './airComponent/indexDependency/indexDependency';
 import DiagnosisRecommendation from './airComponent/diagnosisAndRecommendation/diagnosisRecommendation';
-import './scss/air/_warningDashboardAir.scss';
+// import './scss/air/_warningDashboardAir.scss';
 
 class warningDashboardAir extends Component {
 

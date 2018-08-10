@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import './alarmNotification.css'
-import '../../scss/soil/_alarmNotification.scss'
+// import '../../scss/soil/_alarmNotification.scss'
 
 class alarmNotification extends Component {
   render() {

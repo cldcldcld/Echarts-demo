@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './realData.css'
 
 class realData extends Component {
 

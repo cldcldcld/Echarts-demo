@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './histogramChart.css'
 
 class histogramChart extends Component {
   render() {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './AQIRadarChart.css'
 
 class AQIRadarChart extends Component {
   render() {

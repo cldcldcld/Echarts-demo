@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './scss/soil/_dashboardSoil.scss';
-// import './dashboardSoil.css';
+// import './scss/soil/_dashboardSoil.scss';
 import SoilBasicInfo from './soilComponent/soilBasicInfo/soilBasicInfo';
 import ChemicalPollutant from './soilComponent/chemicalPollutant/chemicalPollutant';
 import SoilQualityInfo from './soilComponent/soilQualityInfo/soilQualityInfo';

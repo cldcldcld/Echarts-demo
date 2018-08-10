@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import echarts from 'echarts';
-// import './gaugeChart.css'
 
 class gaugeChart extends Component {
   render() {

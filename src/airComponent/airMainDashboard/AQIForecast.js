@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../scss/air/_AQIForecast.scss';
+// import '../../scss/air/_AQIForecast.scss';
 import echarts from 'echarts';
 
 class AQIForecast extends Component {
@@ -19,6 +19,7 @@ class AQIForecast extends Component {
   }
 
   componentDidMount() {
+    console.dir(document.getElementById('dashboardAQIForecast'))
     var myChart = echarts.init(document.getElementById('dashboardAQIForecast'));
 
     var option = {

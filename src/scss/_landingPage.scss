@@ -1,12 +1,13 @@
 .landing-page {
 	height: 100%;
 	width: 100%;
+	background: #2A3C55;
 
 	#map-container {
 		height: 100%;
 		width: 72%;
-		float: left;
 		background: #2A3C55;
+		float: left;
 		overflow: hidden;
 
 		.point-pop-up {
