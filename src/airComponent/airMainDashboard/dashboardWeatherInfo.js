@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 // import '../../scss/air/_dashboardWeatherInfo.scss';
 
 class dashboardWeatherInfo extends Component {
 
   constructor() {
     super();
-   
+
   }
 
   render() {
@@ -17,7 +18,7 @@ class dashboardWeatherInfo extends Component {
               <span>Weather</span>
             </div>
             <div className='weather-date'>
-              <span>July 26, 2018</span>
+              <span>{moment().format('LL')}</span>
             </div>
             <div className='weather-details'>
               <span>Humidity: 54%</span><br/>
