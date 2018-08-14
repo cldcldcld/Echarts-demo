@@ -24,6 +24,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import warningDashboardAir from './warningDashboardAir';
+import airAnalysis from './airComponent/airAnalysis/airAnalysis';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -66,6 +67,7 @@ import warningDashboardAir from './warningDashboardAir';
           <Route path="/dashboardWater" component={dashboardWater}/>
           <Route path="/dashboardSoil" component={dashboardSoil}/>
           <Route path="/warningDashboardAir" component={warningDashboardAir}/>
+          <Route path="/airAnalysis" component={airAnalysis}/>
           <Route path="/map" component={App}/>
     {/*       <Route path="/baseRadarChart" component={baseRadarChart}/>
           <Route path="/radarChart" component={radarChart}/>

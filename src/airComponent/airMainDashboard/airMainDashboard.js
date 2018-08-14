@@ -33,7 +33,7 @@ class airMainDashboard extends Component {
             </div>
             <div className='navigation-module'>
                 <div className='navigation-link'>
-                  <Link to='/dashboardAir' className='navigtion-link-content'>VOC Analysis</Link>
+                  <Link to='/airAnalysis' className='navigtion-link-content'>VOC Analysis</Link>
                 </div>
                 <div className='navigation-content'>
                   <span>Categorize and deduce VOCs by industry and transportation, provide recommendations and forecast analysis</span>
