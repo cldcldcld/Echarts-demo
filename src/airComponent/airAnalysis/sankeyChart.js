@@ -26,64 +26,146 @@ class sankeyChart extends Component {
     var myChart = echarts.init(document.getElementById('sankeyChart'));
 
     var option = {
+        backgroundColor: '#2a3c55',
         series: {
             type: 'sankey',
             layout:'none',
-            nodeWidth: 0,
+            nodeWidth: 10,
+            nodeGap: 20,
+            lineStyle: {
+                color: '#FFFFFF'
+            },
+            label:{
+                color: '#FFFFFF'
+            },
             data: [{
-                name: 'a'
+                name: 'Benzene'
             }, {
-                name: 'b'
+                name: 'Alkane'
             }, {
-                name: 'a1',
-                label: {
-                  formatter: [
-                        '{firstImageContext|a1}',
-                        '{firstImage|}'
-                      ].join('\n'),
-                  rich: {
-                      firstImage: {
-                          backgroundColor: {
-                              image: require('../../image/会员发展趋势.png')
-                          },
-                          height: 40
-                      },
-                      firstImageContext: {
-                          color: 'black',
-                          fontFamily: 'Helvetica',
-                          fontSize: 20,
-                          padding: [0,0,0,5]
-                      }
-                  }
-                }
+                name: 'Olefin',
             }, {
-                name: 'b1'
+                name: 'Halohydrocarbon'
             }, {
-                name: 'c'
+                name: 'Alcohols'
+            }, {
+                name: 'Aldehydes'
+            }, {
+                name: 'Ketones'
+            }, {
+                name: 'Esters'
+            }, {
+                name: 'Aromatic Hydrocarbon'
+            }, {
+                name: 'Printing & Recording Media Replication'
+            }, {
+                name: 'Metal Manufacturing'
+            }, {
+                name: 'Textile Processing'
+            }, {
+                name: 'Rubber and Plastic Goods'
+            }, {
+                name: 'Trasportation'
+                // label: {
+                //   formatter: [
+                //         '{firstImageContext|a1}',
+                //         '{firstImage|}'
+                //       ].join('\n'),
+                //   rich: {
+                //       firstImage: {
+                //           backgroundColor: {
+                //               image: require('../../image/会员发展趋势.png')
+                //           },
+                //           height: 40
+                //       },
+                //       firstImageContext: {
+                //           color: 'black',
+                //           fontFamily: 'Helvetica',
+                //           fontSize: 20,
+                //           padding: [0,0,0,5]
+                //       }
+                //   }
+                // }
             }],
             links: [{
-                source: 'a',
-                target: 'a1',
+                source: 'Benzene',
+                target: 'Printing & Recording Media Replication',
                 value: 2
             }, {
-                source: 'a',
-                target: 'b1',
+                source: 'Olefin',
+                target: 'Printing & Recording Media Replication',
+                value: 4
+            }, {
+                source: 'Alcohols',
+                target: 'Printing & Recording Media Replication',
                 value: 2
             }, {
-                source: 'b',
-                target: 'b1',
+                source: 'Aldehydes',
+                target: 'Printing & Recording Media Replication',
+                value: 6
+            },{
+                source: 'Ketones',
+                target: 'Printing & Recording Media Replication',
                 value: 2
             }, {
-                source: 'b',
-                target: 'a1',
+                source: 'Esters',
+                target: 'Printing & Recording Media Replication',
+                value: 4
+            }, {
+                source: 'Amines',
+                target: '',
                 value: 2
             }, {
-                source: 'c',
-                target: 'a1',
+                source: 'Benzene',
+                target: 'Metal Manufacturing',
                 value: 2
             }, {
-                source: 'c',
-                target: 'b1',
+                source: 'Esters',
+                target: 'Metal Manufacturing',
+                value: 2
+            }, {
+                source: 'Benzene',
+                target: 'Textile Processing',
+                value: 4
+            }, {
+                source: 'Esters',
+                target: 'Textile Processing',
+                value: 2
+            }, {
+                source: 'Benzene',
+                target: 'Rubber and Plastic Goods',
+                value: 2
+            }, {
+                source: 'Halohydrocarbon',
+                target: 'Rubber and Plastic Goods',
+                value: 2
+            }, {
+                source: 'Alcohols',
+                target: 'Rubber and Plastic Goods',
+                value: 2
+            }, {
+                source: 'Aldehydes',
+                target: 'Rubber and Plastic Goods',
+                value: 2
+            },{
+                source: 'Ketones',
+                target: 'Rubber and Plastic Goods',
+                value: 6
+            }, {
+                source: 'Alkane',
+                target: 'Trasportation',
+                value: 2
+            }, {
+                source: 'Olefin',
+                target: 'Trasportation',
+                value: 2
+            }, {
+                source: 'Halohydrocarbon',
+                target: 'Trasportation',
+                value: 10
+            }, {
+                source: 'Aromatic Hydrocarbon',
+                target: 'Trasportation',
                 value: 2
             }]
         }
