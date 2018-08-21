@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import App from './App'
 import HeatMapChart from './airComponent/heatMap/heatMapChart';
-import AQIRadarChart from './airComponent/AQIRadar/AQIRadarChart';
+// import AQIRadarChart from './airComponent/AQIRadar/AQIRadarChart';
 import RealData from './airComponent/realData/realData';
-import SmoothLineChart from './airComponent/smoothLine/smoothLineChart';
+// import SmoothLineChart from './airComponent/smoothLine/smoothLineChart';
 import WeatherInfo from './airComponent/weatherInfo/weatherInfo';
-import WarningInfo from './airComponent/warningInfo/warningInfo';
-import IndexDependency from './airComponent/indexDependency/indexDependency';
+// import WarningInfo from './airComponent/warningInfo/warningInfo';
+// import IndexDependency from './airComponent/indexDependency/indexDependency';
 import DiagnosisRecommendation from './airComponent/diagnosisAndRecommendation/diagnosisRecommendation';
 // import './scss/air/_warningDashboardAir.scss';
 

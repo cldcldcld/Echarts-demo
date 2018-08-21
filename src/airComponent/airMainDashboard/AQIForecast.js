@@ -4,10 +4,10 @@ import echarts from 'echarts';
 
 class AQIForecast extends Component {
 
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
    
-  }
+  // }
 
   render() {
     return (
@@ -41,7 +41,7 @@ class AQIForecast extends Component {
       tooltip: {
           position: 'top',
           formatter: function (params) {
-              return params.name + '<br/>' + 'AQI ' + params.value;
+              return params.name + '<br/>AQI ' + params.value;
           },
           backgroundColor: 'rgba(255,255,255,0.40)',
           extraCssText: 'text-align: center;'

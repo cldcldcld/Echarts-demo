@@ -4,10 +4,10 @@ import moment from 'moment';
 
 class dashboardWeatherInfo extends Component {
 
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
 
-  }
+  // }
 
   render() {
 

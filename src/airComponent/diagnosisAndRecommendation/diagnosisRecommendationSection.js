@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 
 class diagnosisRecommendationSection extends Component {
 
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
 
-  }
+  // }
 
   render() {
 

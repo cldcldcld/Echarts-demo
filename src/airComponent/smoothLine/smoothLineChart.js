@@ -88,7 +88,7 @@ class smoothLineChart extends Component {
     var num = 0;
     var tempValue = 0;
     data = this.option.xAxis.data;
-    tempValue = parseInt(data[119] + 1)
+    tempValue = parseInt(data[119] + 1, 10);
 
     for (var i = 0; i < 8; i++) {
         num = this.length + i

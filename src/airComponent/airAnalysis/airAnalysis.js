@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import VOCSankeyChart from './sankeyChart';
-import EmissionIntensity from './emissionIntensity';
+// import { Link } from 'react-router-dom';
+// import VOCSankeyChart from './sankeyChart';
+// import EmissionIntensity from './emissionIntensity';
 // import SpatialDistributionChart from './spatialDistribution';
 
 class airAnalysis extends Component {
